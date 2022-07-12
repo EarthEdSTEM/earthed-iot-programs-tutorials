@@ -3,10 +3,10 @@
 
 ## Tutorials
 
-* [Code a Servo](/earthed-iot-programs-tutorials/T_Servo)
-* [Code a LED](/earthed-iot-programs-tutorials/T_LED)
+* [Make Servo Motor Move](/earthed-iot-programs-tutorials/T_Servo)
+* [Make a Light Emitting Diode (LED) Shine](/earthed-iot-programs-tutorials/T_LED)
 
-## Use as Extension
+<!## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
 
@@ -29,7 +29,7 @@ This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
 ![A rendered view of the blocks](https://github.com/earthedstem/earthed-iot-programs-tutorials/raw/master/.github/makecode/blocks.png)
-
+>
 #### Metadata (used for search, rendering)
 
 * for PXT/microbit
