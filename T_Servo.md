@@ -12,7 +12,7 @@
 Servo Motor tutorial
 --------------------
 In this tutorial, we will use[variables](https://launchschool.com/books/ruby/read/variables) to control a servo. By using variables, inputs from users or sensors, can be stored and used to control when the servo moves and by how far.
-![](https://github.com/EarthEdSTEM/IOT_Smart_City/raw/main/Images/SmartCityBanner.jpg)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
