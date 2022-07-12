@@ -7,15 +7,21 @@
     ------------------------- LED TUTORIAL-------------------------
     --------------------------------------------------------------- >
 
-## Introduction @showdialog
+## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
+--------------------
+In this tutorial, we will use[variables](https://launchschool.com/books/ruby/read/variables) and booleans to cntrol a Light Emitting Diode (LED).
 ![](https://github.com/EarthEdSTEM/IOT_Smart_City/raw/main/Images/SmartCityBanner.jpg)
 
-Welcome this EarthEd IoT Tutorial. <br> 
-In this tutorial, you will learn how to use your micro:bit computer and IoTbit shield to switch a Light Emitting Diode (LED).
 
-## Step 1 - Collect the parts
+## Step 2 - Collect the parts. @unplugged
+Collect the parts
+-----------------
+For this tutorial, you will need these parts: <br>
+1x Servo Motor, 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire < br > <br>
+![Parts Needed: 1x IoT Smart City LED (Red, Green or Yellow), 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Parts_List.svg)
+<br>
 
-## Step 2 - Connect Up!
+## Step 3 - Connect Up!
 Physical Connections
 --------------------
 1. Plug the micro:bit into the SensorBit sheild.
@@ -23,14 +29,14 @@ Physical Connections
 3. Connect the other end of the wire to the LED.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Connections.svg)
 
-## Step 3 - Prepare to Code!
+## Step 4 - Prepare to Code!
 Delete unused blocks
 --------------------
 1. Clear the previous blocks by dragging them to the menu bar.
 2. Place a ``||basic:forever||`` block and a ``||on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Delete_code.png)
 
-## Step 4 - Create Variables (Setting the Environment)
+## Step 5 - Create Variables (Setting the Environment)
 Coding: Creating Variables
 --------------------------
 Variables are containers that hold a value. For this task, we will use the values 1 for 'true' and 0 for 'False'.
@@ -41,7 +47,7 @@ We will start by creating a new variable, adding it and then setting it to 'fals
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
 Each time the program starts the value of ButtonAPress will be '0'.
 
-## Step 5 - Add a Conditional Block
+## Step 6 - Add a Conditional Block
 Coding: Add an If block
 -----------------------
 The switch for turning on the LED will be the A button on the micro:bit. We will use the 'If...then' Logic Block to check if the A button is pressed and if the LED is off. If both are true the LED is set to on.
@@ -55,7 +61,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 6 - Add a Conditional Block
+## Step 7 - Add a Conditional Block
 Coding: Set conditions
 ----------------------
 1. Place a Boolean ``||logic:and||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
@@ -71,7 +77,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 - Add a Conditional Block
+## Step 8 - Add a Conditional Block
 Coding: If True
 ---------------
 The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 2 then pause, allowing the user to remove their finger from Button A.
@@ -89,7 +95,7 @@ basic.forever(function () {
     
 })
 ```
-## Step 8 - Program Continued
+## Step 9 - Program Continued
 Coding: Turning the LED off
 ---------------------------
 Now we add what will happen if the condition is not true. 
@@ -113,7 +119,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 9 - Test It
+## Step 10 - Test It
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens and adjust the values as needed.<br>
