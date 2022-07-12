@@ -3,6 +3,7 @@
 
 Tutorials 
 # EarthED IoT Program Makecode Tutorials 
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
 Menu
 --------------------------------------
 Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial from the list below.
