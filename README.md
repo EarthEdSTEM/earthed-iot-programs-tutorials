@@ -6,7 +6,7 @@
 * [Make Servo Motor Move](/earthed-iot-programs-tutorials/T_Servo)
 * [Make a Light Emitting Diode (LED) Shine](/earthed-iot-programs-tutorials/T_LED)
 
-<!## Use as Extension
+<! ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
 
