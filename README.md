@@ -1,6 +1,11 @@
 
 > Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
 
+## Tutorials
+
+* [Code a Servo](/earthed-iot-programs-tutorials/T_Servo)
+* [Code a LED](/earthed-iot-programs-tutorials/T_LED)
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
