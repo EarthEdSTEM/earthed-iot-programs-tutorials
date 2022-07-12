@@ -4,6 +4,7 @@
 ## Tutorials
 
 * [Make Servo Motor Move](/earthed-iot-programs-tutorials/T_Servo)
+* [Record a Temperature](/earthed-iot-programs-tutorials/T_DHT11)
 * [Make a Light Emitting Diode (LED) Shine](/earthed-iot-programs-tutorials/T_LED)
 
 <! ## Use as Extension

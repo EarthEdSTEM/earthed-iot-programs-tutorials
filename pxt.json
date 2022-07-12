@@ -11,7 +11,8 @@
         "main.ts",
         "README.md",
         "T_Servo.md",
-        "T_LED.md"
+        "T_LED.md",
+        "T_DHT11.md"
     ],
     "testFiles": [
         "test.ts"
