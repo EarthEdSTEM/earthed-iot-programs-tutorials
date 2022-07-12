@@ -10,7 +10,8 @@
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 --------------------
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and booleans to control a Light Emitting Diode (LED).
-![](https://github.com/EarthEdSTEM/IOT_Smart_City/raw/main/Images/SmartCityBanner.jpg)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+
 
 
 ## Step 2 - Collect the parts. @unplugged
