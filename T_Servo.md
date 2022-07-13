@@ -35,7 +35,7 @@ Delete unused blocks if needed
 ------------------------------
 1. If starting fresh, clear the previous blocks by dragging them to the menu bar where a 'bin' will appear.
 2. Place a`` || basic: forever || `` block and a`` || on start || `` onto the work space.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Delete_code.png)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
 
 ## Step 5 - Set the Environment Part 1
 Coding: Creating Variables
@@ -45,7 +45,7 @@ Setting up the environment means getting things ready for the program.In this ca
 2. Go to`` || Variables || `` and place the`` || Variables: Set ServoValue to || `` block inside the`` || Basic: on Start || `` block.
 3. Check that the value of the`` || Variables: Set ServoValue to || `` block is set to '0'.< br > <br>
 Each time the program starts the value of ServoValue will be '0'.This can be changed depending on what start angle you want the servo to begin at.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create%20Variable.png)
 
 ## Step 6 - Set the Environment Part 2
 Coding: Create More Variables
