@@ -47,7 +47,7 @@ When creating new code, it is good practice to 'declare' the variables you will 
 2. Click ``||Variables: Make a Variable...||`` to create a variable and call it Humdity.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Temperature to||`` block inside the ``||Basic:on Start||`` block.
 4. Repeat for Humidity
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
 
 ## Step 6 - Display Text
 Coding: Displaying Text on the micro:bit
