@@ -56,12 +56,19 @@ The ``||Basic: String||`` block displays text on the LED array on the front of t
 1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Temperature: ' in the placeholder.
 2. Place a second ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Humidity: ' in the placeholder.
 
+```blocks
+basic.forever(function () {
+    basic.showString("Temperature:")
+    basic.showString("Humidity:")
+})
+```
+
 ## Step 7 - Add the Extension
 Coding: Add the Smart Science Extension
 ----------------------------------------
 In this section, we will add an extension so that we can access the readings from the DHT11 sensor. Extensions are code that is supplied by developers to hel 'extend' the functionality of teh MakeCode app.
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the 'Octopus' sensors.
+2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
 ## Step 7 - Add the Extension
 Coding: Add the DHT11 Sensor readings
@@ -76,11 +83,11 @@ While the DHT11 sensor readings can be added directly a string block, by placing
 5. Drag a ``||Variables:Temperature||`` variable block and put it in the ``||Basic: String||`` placeholder.
 6. Repeat to for humidity
 
-## Step 9 - Test It
+## Step 8 - Test It
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the sensors into your code to trigger the servo or LED lights?<br><br>
+How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
