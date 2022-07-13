@@ -51,6 +51,11 @@ When creating new code, it is good practice to 'declare' the variables you will 
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
 
 
+## Step 9 - Test It
+Test It! Debug it!
+------------------
+Time to test your code.Download the code to the micro: bit and try it out.Observe what happens and adjust the values as needed.<br>
+How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>

@@ -127,7 +127,12 @@ basic.forever(function () {
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?
+How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+
+
+Congratulations! You have finished this tutorial.
+** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
+
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
 
