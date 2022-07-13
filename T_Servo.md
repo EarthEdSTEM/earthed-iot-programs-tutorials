@@ -11,8 +11,8 @@
 ## Step 1 - Control a Servo Motor
 Servo Motor tutorial
 --------------------
-In this tutorial, we will use[variables](https://launchschool.com/books/ruby/read/variables) to control a servo. By using variables, inputs from users or sensors, can be stored and used to control when the servo moves and by how far.
-![](https://github.com/EarthEdSTEM/IOT_Smart_City/raw/main/Images/SmartCityBanner.jpg)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) to control a servo. By using variables, inputs from users or sensors, can be stored and used to control when the servo moves and by how far.
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
@@ -107,7 +107,12 @@ basic.forever(function () {
 Test It! Debug it!
 ------------------
 Time to test your code.Download the code to the micro: bit and try it out.Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?
+How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+
+
+Congratulations! You have finished this tutorial.
+** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
+
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
 

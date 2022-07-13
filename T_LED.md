@@ -9,8 +9,9 @@
 
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 --------------------
-In this tutorial, we will use[variables](https://launchschool.com/books/ruby/read/variables) and booleans to cntrol a Light Emitting Diode (LED).
-![](https://github.com/EarthEdSTEM/IOT_Smart_City/raw/main/Images/SmartCityBanner.jpg)
+In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and booleans to control a Light Emitting Diode (LED).
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+
 
 
 ## Step 2 - Collect the parts. @unplugged
@@ -32,8 +33,9 @@ Physical Connections
 ## Step 4 - Prepare to Code!
 Delete unused blocks
 --------------------
+**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
 1. Clear the previous blocks by dragging them to the menu bar.
-2. Place a ``||basic:forever||`` block and a ``||on start||`` onto the work space.
+2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Delete_code.png)
 
 ## Step 5 - Create Variables (Setting the Environment)
@@ -42,7 +44,7 @@ Coding: Creating Variables
 Variables are containers that hold a value. For this task, we will use the values 1 for 'true' and 0 for 'False'.
 We will start by creating a new variable, adding it and then setting it to 'false'.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it ButtonAPress.
-2. Go to ``||Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
+2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to 0 (for false).
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
 Each time the program starts the value of ButtonAPress will be '0'.
@@ -64,10 +66,12 @@ basic.forever(function () {
 ## Step 7 - Add a Conditional Block
 Coding: Set conditions
 ----------------------
+This section asks the question: Is the A button pressed and the LED switched off? To code it:
 1. Place a Boolean ``||logic:and||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
 **Note that the placeholder has pointed ends. Only blocks with pointed ends can fit in the placeholder. The ``||logic:and||`` block has two placeholders with rounded ends for adding variables and values.
 2. Place a Comparison ``||logic:equals||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. Add a ``||variables:ButtonAPress||`` and a value of 0.
-
+3. Place a ``||input: button A is pressed||`` input into the ``||logic:and||``.
+This section asks the question: Is the A button pressed and the LED switched off? To code it:
 
 ```blocks
 let ButtonAPressed = 0
@@ -123,7 +127,12 @@ basic.forever(function () {
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?
+How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+
+
+Congratulations! You have finished this tutorial.
+** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
+
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
 
