@@ -4,10 +4,10 @@
 
 
 ## Step 1 - Control a Servo Motor
-Servo Motor tutorial
---------------------
+---------------------------------
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
-In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) to control a servo. By using variables, inputs from users or sensors, can be stored and used to control when the servo moves and by how far.
+In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) to control a servo motor. A servo is a type of motor that can rotate to a given position then hold it. 
+By using variables, inputs from users or sensors will be stored and used to control when the servo moves and by how far.
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
