@@ -91,3 +91,5 @@ How could you integrate the sensors into your code to trigger the servo or LED l
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
+
+<script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
