@@ -20,7 +20,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x DHT111 Sensor, 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire < br > <br>
-![Parts Needed: 1x DHT11 Sensor, 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Parts_List.svg)
+![Parts Needed: 1x DHT11 Sensor, 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
@@ -29,7 +29,7 @@ Physical Connections
 1. Plug the micro:bit into the SensorBit sheild.
 2. Use the wire to connect the DHT11 to Pin 2 (or other pin) on the SensorBit sheild. 
 3. Connect the other end of the wire to the DHT11.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Connections.svg)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Connections.png)
 
 ## Step 4 - Prepare to Code!
 Delete unused blocks
