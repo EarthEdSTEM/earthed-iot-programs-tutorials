@@ -28,7 +28,7 @@ Connect the Parts Together
 1. Plug the micro: bit into the SensorBit sheild.
 2. Connect the wire to Pin 2 on the SensorBit sheild.
 3. Connect the other end of the wire to the Servo.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Connections.svg)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/Images/IoT_Servo_Connections.svg)
 
 ## Step 4 - Prepare to Code!
 Delete unused blocks if needed
