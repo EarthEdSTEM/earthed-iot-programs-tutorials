@@ -19,7 +19,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x Servo Motor, 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire < br > <br>
-![Parts Needed: 1x IoT Smart City LED (Red, Green or Yellow), 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Parts_List.svg)
+![Parts Needed: 1x IoT Smart City LED (Red, Green or Yellow), 1x IoT: Bit sheild, 1x micro: bit, 1x Connector Wire](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
@@ -28,7 +28,7 @@ Physical Connections
 1. Plug the micro:bit into the SensorBit sheild.
 2. Use the wire to connect the LED to Pin 2 on the SensorBit sheild.
 3. Connect the other end of the wire to the LED.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/IoT_LED_Connections.svg)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Connections.png)
 
 ## Step 4 - Prepare to Code!
 Delete unused blocks
@@ -36,7 +36,7 @@ Delete unused blocks
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
 1. Clear the previous blocks by dragging them to the menu bar.
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Delete_code.png)
+![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
 
 ## Step 5 - Create Variables (Setting the Environment)
 Coding: Creating Variables
@@ -46,7 +46,7 @@ We will start by creating a new variable, adding it and then setting it to 'fals
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it ButtonAPress.
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to 0 (for false).
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/IOT_Smart_City/main/Images/Make_variable.jpg)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create%20Variable.png)
 Each time the program starts the value of ButtonAPress will be '0'.
 
 ## Step 6 - Add a Conditional Block
