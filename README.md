@@ -2,7 +2,7 @@
 > Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
  
 # EarthED IoT Program Makecode Tutorials 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IOT_Tutorial_Banner.png)
 Menu
 --------------------------------------
 Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial from the list below.
