@@ -13,7 +13,8 @@
         "T_Servo.md",
         "T_LED.md",
         "T_DHT11.md",
-        "T_Connect.md"
+        "T_Connect.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
