@@ -1,18 +1,15 @@
-# T_DHT11
+# DHT11 Tutorial
 
-<! To do:
-    -Change URLs for Graphics
-    - Change the variables graphics
->
-<!  ---------------------------------------------------------------
-    ----------------------- DHT11 TUTORIAL-------------------------
-    --------------------------------------------------------------- >
+
+<!---------------------------------------------------------------
+------------------------- DHT11 TUTORIAL-------------------------
+----------------------------------------------------------------->
 
 ## Step 1 Taking a Temperature @showdialog
 Taking a Temperature using the DHT11 Sensor
 -------------------------------------------
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 In this tutorial, we will use the DHT11 sensor to take temperature and humidity readings. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the DHT11 sensor readings.
 
 ## Step 2 - Collect the parts. @unplugged
@@ -47,7 +44,7 @@ When creating new code, it is good practice to 'declare' the variables you will 
 2. Click ``||Variables: Make a Variable...||`` to create a variable and call it Humdity.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Temperature to||`` block inside the ``||Basic:on Start||`` block.
 4. Repeat for Humidity
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create%20Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
 
 ## Step 6 - Display Text
 Coding: Displaying Text on the micro:bit

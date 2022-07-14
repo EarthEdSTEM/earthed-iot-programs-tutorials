@@ -6,7 +6,7 @@
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 ----------------------------------------------
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and booleans to control a Light Emitting Diode (LED).
 Booleans work by comparing, adding or subtracting two values.
 

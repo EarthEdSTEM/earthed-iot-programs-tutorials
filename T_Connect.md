@@ -7,7 +7,7 @@
 <!---  Designed to test if the microbit is working --->
 
 ## Step 1 Connecting the microbit
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Earth%20Ed%20Horizontal%20Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 
 Plug in your micro:bit to connect!<br>
 You will need a USB cable, micro:bit comuter and a PC computer to complte this task. Make sure you have removed the micro:bit computer from the IOT sheild.
