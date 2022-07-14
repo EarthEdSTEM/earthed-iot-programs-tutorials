@@ -86,6 +86,6 @@ Time to test your code. Download the code to the micro: bit and try it out. Obse
 How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
 
 Congratulations! You have finished this tutorial.
-** [- Click here to return to the menu](/earthed-iot-programs-tutorials/README)**<br>
+** [- Click here to return to the menu](- Click here to return to the menu](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/README)**<br>
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
