@@ -4,12 +4,13 @@
 -------------------------  Menu -------------------------
 ----------------------------------------------------------------->
 
-> Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
+Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
  
 ## Step 1 - Menu 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IOT_Tutorial_Banner.png)
 Menu
 --------------------------------------
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IOT_Tutorial_Banner.png)
+
 Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial from the list below.
 
 **[- Connect and Test the micro:bit](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Connect)**<br>
