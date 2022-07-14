@@ -18,7 +18,7 @@ Connect the micro:bit to your your computer using the USB cable.
 Need to know how to connect your micro:bit to your computer? [Watch this video](https://www.youtube.com/watch?v=qSjMDG84bMY)
 <br>
 
-## Step 2 @fullscreen
+## Step 2 Simple Code @fullscreen
 Create some simple code to test your micro:bit.
 ------------------------------------
 In the Basic Tab, place the ``||basic:show leds||`` block in the ``||basic:forever||`` block and draw a pattern like this.
