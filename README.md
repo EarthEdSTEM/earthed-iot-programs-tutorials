@@ -1,7 +1,12 @@
+# Menu
+
+<!---------------------------------------------------------------  
+-------------------------  Menu -------------------------
+----------------------------------------------------------------->
 
 > Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
  
-# EarthED IoT Program Makecode Tutorials 
+## Step 1 - Menu 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IOT_Tutorial_Banner.png)
 Menu
 --------------------------------------
