@@ -7,7 +7,7 @@
 ----------------------------------------------
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
-In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and booleans to control a Light Emitting Diode (LED).
+In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) to control a Light Emitting Diode (LED).
 Booleans work by comparing, adding or subtracting two values.
 
 ## Step 2 - Collect the parts. @unplugged
