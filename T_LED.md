@@ -57,10 +57,10 @@ If both are true, then the LED is set to on.
 1. Place a ``||logic:if||`` block from the Logic menu into the ``||basic.forever||`` block.
 
 ```blocks
-let ButtonAPressed = 0
 basic.forever(function () {
-    if () {
-     
+    if (true) {
+    	
+    }
 })
 ```
 
@@ -75,10 +75,11 @@ then the Pin 2 is set to '1' and powers up. To code it:
 3. Place a ``||input: button A is pressed||`` input into the ``||logic:and||``.
 
 ```blocks
-let ButtonAPressed = 0
+let ButtonAPress = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A) && ButtonAPress == 0) {
-    
+    	
+    }
 })
 ```
 
@@ -91,13 +92,13 @@ The 'if' block checks if a condition is 'true' and executes commands if it is. H
 3. Set the ButtonAPressed variable to 1 (True) to indicate that Button A has been pressed.
 
 ```blocks
-let ButtonAPressed = 0
+let ButtonAPress = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A) && ButtonAPress == 0) {
         pins.digitalWritePin(DigitalPin.P2, 1)
         control.waitMicros(240)
-        ButtonAPressed = 1
-    
+        ButtonAPress = 1
+    }
 })
 ```
 ## Step 9 Program Continued
