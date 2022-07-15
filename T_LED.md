@@ -10,7 +10,7 @@
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) to control a Light Emitting Diode (LED).
 Booleans work by comparing, adding or subtracting two values.
 
-## Step 2 - Collect the parts. @unplugged
+## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
@@ -18,7 +18,7 @@ For this tutorial, you will need these parts: <br>
 ![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Parts_List.png)
 <br>
 
-## Step 3 - Connect Up!
+## Step 3 Connect Up!
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
@@ -26,7 +26,7 @@ Physical connections
 3. Connect the other end of the wire to the LED.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Connections.png)
 
-## Step 4 - Prepare to Code!
+## Step 4 Prepare to Code!
 Delete unused blocks
 --------------------
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
@@ -34,7 +34,7 @@ Delete unused blocks
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
 
-## Step 5 - Create Variables (Setting the Environment)
+## Step 5 Create Variables (Setting the Environment)
 Coding: creating variables
 --------------------------
 Variables are containers that hold a value. For this task, we will use the values 1 for 'true' and 0 for 'False'.
@@ -46,7 +46,7 @@ Now, each time the program starts, the value of ButtonAPress will be '0'.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
 
 
-## Step 6 - Add a Conditional Block
+## Step 6 Add a Conditional Block
 Coding: add an If block
 -----------------------
 The switch for turning on the LED will be the A button on the micro:bit. We will use the 'If...then' Logic Block to check if the A button is pressed and if the LED is off. 
@@ -61,7 +61,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 - Add a Conditional Block
+## Step 7 Add a Conditional Block
 Coding: Creating the Boolean for 'On'
 -----------------------------------------------------
 This section asks the question: "Is the A button pressed and the LED switched **off**?" by using an ``||logic:and||`` boolean. If both conditions are True
@@ -79,7 +79,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 8 - Add a Conditional Block
+## Step 8 Add a Conditional Block
 Coding: If True....Then switch on!
 ----------------------------------
 The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 2 then pause, allowing the user to remove their finger from Button A.
@@ -97,7 +97,7 @@ basic.forever(function () {
     
 })
 ```
-## Step 9 - Program Continued
+## Step 9 Program Continued
 Coding: Turning the LED off using an else condition
 ---------------------------------------------------
 This section asks the question: "Is the A button pressed and the LED switched **on**?" by using an ``||logic:and||`` boolean. If both conditions are True
@@ -122,7 +122,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 10 - Test It
+## Step 10 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens and adjust the values as needed.<br>

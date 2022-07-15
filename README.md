@@ -3,8 +3,6 @@
 <!---------------------------------------------------------------  
 -------------------------  Menu -------------------------
 ----------------------------------------------------------------->
-
-Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)
  
 ## Step 1 - Menu 
 Menu
@@ -23,5 +21,5 @@ basic.forever(function () {
 	
 })
 ```
-
+<!Open this page at [https://earthedstem.github.io/earthed-iot-programs-tutorials/](https://earthedstem.github.io/earthed-iot-programs-tutorials/)>
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
