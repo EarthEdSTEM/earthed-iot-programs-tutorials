@@ -17,7 +17,7 @@ By using variables, inputs from users or sensors will be stored and used to cont
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor < br > <br>
+1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor <br><br>
 ![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Servo_Parts_List.png)
 <br>
 
