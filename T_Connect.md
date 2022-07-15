@@ -1,16 +1,15 @@
 # micro:bit Connection Tutorial 
 
 <!---------------------------------------------------------------  
--------------------------  NEW ACTIVITY -------------------------
+-------------------------TEST and CONNECT------------------------
 ----------------------------------------------------------------->
-
-<!---  Designed to test if the microbit is working --->
 
 ## Step 1 Introduction
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 Welcome
 ----------------------------------------------
+
 In this tutorial, you will learn how to plug your micr:bit into your computer and download code. You will also learn how to display shapes on the micro:bit LED array.
 
 ## Step 2 Plug and Connect
