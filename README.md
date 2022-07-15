@@ -4,7 +4,7 @@
 -------------------------  Menu -------------------------
 ----------------------------------------------------------------->
  
-## Step 1 - Menu 
+## Step 1 - Menu @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IOT_Tutorial_Banner.png)
 Menu
