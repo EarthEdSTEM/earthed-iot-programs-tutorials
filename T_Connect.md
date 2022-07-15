@@ -49,6 +49,6 @@ Clicking ``|Download|`` opens a dialogue box. From here, you can download the fi
 
 ## Step 5 - Success!
 Congratulations! This connecting and downloading process needs to be done, each time you wish to test your code with the IoT kits.<br>
-** [- Click here to return to the menu](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/README)**<br>
+** [- Click here to return to the menu](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/)**<br>
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>

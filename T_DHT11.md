@@ -66,7 +66,7 @@ In this section, we will add an extension so that we can access the readings fro
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
-## Step 7 - Add the Extension
+## Step 8 - Add the Extension
 Coding: Add the DHT11 sensor readings
 -------------------------------------
 While the DHT11 sensor readings can be added directly a string block, by placing the values in a variable, they can be used again in other sections of code.
@@ -79,7 +79,7 @@ While the DHT11 sensor readings can be added directly a string block, by placing
 5. Drag a ``||Variables:Temperature||`` variable block and put it in the ``||Basic: String||`` placeholder.
 6. Repeat to for humidity
 
-## Step 8 - Test It
+## Step 9 - Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
