@@ -4,7 +4,7 @@
 ----------------------------------------------------------------->
 
 
-## Step 1 - Control a Servo Motor
+## Step 1 - Control a Servo Motor @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 Control a Servo Motor

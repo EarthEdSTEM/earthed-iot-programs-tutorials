@@ -4,7 +4,7 @@
 -------------------------TEST and CONNECT------------------------
 ----------------------------------------------------------------->
 
-## Step 1 Introduction
+## Step 1 Introduction @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
 Welcome
