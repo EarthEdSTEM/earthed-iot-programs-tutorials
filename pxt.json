@@ -16,7 +16,8 @@
         "T_LED.md",
         "T_DHT11.md",
         "T_Connect.md",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "T_Light_Sensor.md"
     ],
     "testFiles": [
         "test.ts"

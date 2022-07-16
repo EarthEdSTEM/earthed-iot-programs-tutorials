@@ -1,22 +1,22 @@
-# DHT11 Tutorial
+# T_Light_Sensor Tutorial
 
 <!---------------------------------------------------------------
-------------------------- DHT11 TUTORIAL-------------------------
+-------------------Light Sensor TUTORIAL-------------------------
 ----------------------------------------------------------------->
 
-## Step 1 Taking a Temperature @showdialog
+## Step 1 Sensing Light @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
-Taking a Temperature using the DHT11 sensor
+Measuring light using the Light Sensor
 -------------------------------------------
 
-In this tutorial, we will use the DHT11 sensor to take temperature and humidity readings. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the DHT11 sensor readings.  Extensions only need to be added once.
+In this tutorial, we will use the light sensor to measure the amount of light in the environment. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the light sensor readings.
 
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor<br><br>
+1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Light sensor<br><br>
 ![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Parts_List.png)
 <br>
 
@@ -24,8 +24,8 @@ For this tutorial, you will need these parts:<br>
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the DHT11 to Pin 2 (or other pin) on the iot:bit sheild. 
-3. Connect the other end of the wire to the DHT11 sensor.
+2. Use the wire to connect the light sensor to Pin 2 (or other pin) on the iot:bit sheild. 
+3. Connect the other end of the wire to the light sensor.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Connections.png)
 
 ## Step 4 Prepare to Code!
@@ -40,44 +40,40 @@ Delete unused blocks
 Coding: Creating variables
 --------------------------
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a temperature value and a humidity value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Temperature.
-2. Click ``||Variables: Make a Variable...||`` to create a variable and call it Humdity.
-3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Temperature to||`` block inside the ``||Basic:on Start||`` block.
-4. Repeat for Humidity
+1. Click ``||Variables: Make a Variable...||`` to create a variable and call it LightValue.
+3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set LightValue to||`` block inside the ``||Basic:on Start||`` block.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
 
 ## Step 6 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
 The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Temperature: ' in the placeholder.
-2. Place a second ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Humidity: ' in the placeholder.
-
+1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Light Value: ' in the placeholder.
+This section is only needed if you wish to display the light value on the LED array on the micro:bit.
 ```blocks
 basic.forever(function () {
-    basic.showString("Temperature:")
-    basic.showString("Humidity:")
+    basic.showString("Light:")
 })
 ```
 
 ## Step 7 Add the Extension
 Coding: Add the Smart Science Extension
 ----------------------------------------
-In this section, we will add an extension so that we can access the readings from the DHT11 sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app.
+In this section, we will add an extension so that we can access the readings from the light sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
 ## Step 8 Add the Extension
-Coding: Add the DHT11 sensor readings
+Coding: Add the light sensor readings
 -------------------------------------
-While the DHT11 sensor readings can be added directly a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set Temperature to||`` block above the Temperature string block you made previously.
+While the light sensor readings can be added directly a string block, by placing the values in a variable, they can be used again in other sections of code.
+1. Place a ``||Variables:Set LightValue to||`` block above the LightValue string block you made previously.
 2. Click on the ``||Octopus||`` menu and then click ``||...More||``.
-3. Drag the ``||Value of dht11 temperature||`` block and put it in the ``||Variables:Set Temperature to ||`` placeholder.
+3. Drag the ``||value of light intensity (0~100) at pin||`` block and put it in the ``||Variables:Set LightValue to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to.
 <br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
 
-4. Place a new ``||Basic: String||`` block underneath the Temperature string block.
-5. Drag a ``||Variables:Temperature||`` variable block and put it in the ``||Basic: String||`` placeholder.
+4. Place a new ``||Basic: String||`` block underneath the LightValue string block.
+5. Drag a ``||Variables:LightValue||`` variable block and put it in the ``||Basic: String||`` placeholder.
 6. Repeat to for humidity
 
 ## Step 9 Test It
