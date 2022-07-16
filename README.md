@@ -15,7 +15,7 @@ Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial 
 **[- Connect and Test the micro:bit](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Connect)**<br>
 **[- Make a Servo Motor Move](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Servo)**<br>
 **[- Record a Temperature](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_DHT11)**<br>
-**[- Make a Light Emitting Diode (LED) Shine](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_ConnectT_LED)**<br><br>
+**[- Make a Light Emitting Diode (LED) Shine](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_LED)**<br><br>
 
 ```ghost
 basic.forever(function () {
