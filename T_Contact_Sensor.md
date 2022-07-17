@@ -18,7 +18,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Crash_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -28,7 +28,7 @@ Physical connections
 2. Use one wire to connect the Crash Sensor to Pin 2 on the iot:bit sheild.
 3. Use the other wires to connect the LEDs to Pins 3, 4 and 5 on the iot:bit sheild.
 
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Crash_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
