@@ -27,6 +27,8 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use one wire to connect the Crash Sensor to Pin 2 on the iot:bit sheild.
 3. Use the other wires to connect the LEDs to Pins 3, 4 and 5 on the iot:bit sheild.
+4. Check that the wires are connected to the crash sensor and LEDs in the correct order.
+
 
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Crash_Sensor_Connections.png)
 
@@ -74,7 +76,7 @@ Coding: Add the Smart Home Extension
 In this section, we will add an extension so that we can access the Crash Sensor block. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
 1. Go to the ``||Extensions||`` menu and search for the Smarthome-kit extension. 
 2. Click the Smarthome-kit extension to load it. New menu items will now appear, giving access to the ``||Smart Home||`` blocks.
-3. Place a ``||Smart Home:Setup crash sensor at Pin||`` block in the ```||On start||``` block to initialise it.
+3. Place a ``||Smart Home:Setup crash sensor at Pin||`` block in the ``||On start||`` block to initialise it.
 
 ## Step 8 Add a Conditional Block
 Coding: Creating the Boolean for 'On'

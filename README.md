@@ -17,6 +17,7 @@ Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial 
 **[- Record a Temperature](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_DHT11)**<br>
 **[- Measure Light](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Light_Sensor)**<br>
 **[- Make a Light Emitting Diode (LED) Shine](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_LED)**<br><br>
+**[- Detect a Crash](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Contact_Sensor)**<br>
 
 ```ghost
 basic.forever(function () {
