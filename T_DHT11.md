@@ -70,7 +70,7 @@ In this section, we will add an extension so that we can access the readings fro
 ## Step 8 Add the Extension
 Coding: Add the DHT11 sensor readings
 -------------------------------------
-While the DHT11 sensor readings can be added directly a string block, by placing the values in a variable, they can be used again in other sections of code.
+While the DHT11 sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
 1. Place a ``||Variables:Set Temperature to||`` block above the Temperature string block you made previously.
 2. Click on the ``||Octopus||`` menu and then click ``||...More||``.
 3. Drag the ``||Value of dht11 temperature||`` block and put it in the ``||Variables:Set Temperature to ||`` placeholder.
@@ -80,6 +80,19 @@ While the DHT11 sensor readings can be added directly a string block, by placing
 5. Drag a ``||Variables:Temperature||`` variable block and put it in the ``||Basic: String||`` placeholder.
 6. Repeat to for humidity
 
+```blocks
+let Temperature = 0
+let Humidity = 0
+basic.forever(function () {
+    Temperature = Environment.dht11value(Environment.DHT11Type.DHT11_temperature_C, DigitalPin.P2)
+    basic.showString("Temperature: ")
+    basic.showString("" + (Temperature))
+    Temperature = Environment.dht11value(Environment.DHT11Type.DHT11_humidity, DigitalPin.P2)
+    basic.showString("Humidity: " + Humidity)
+})
+```
+** Note: In the sample code shown here, the join block has been used to added to items of text together.
+ 
 ## Step 9 Test It
 Test it! Debug it!
 ------------------

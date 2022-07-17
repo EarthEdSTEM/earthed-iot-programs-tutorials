@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Light sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Light_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -26,7 +26,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the light sensor to Pin 2 (or other pin) on the iot:bit sheild. 
 3. Connect the other end of the wire to the light sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Light_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -39,20 +39,26 @@ Delete unused blocks
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables
 --------------------------
-When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a temperature value and a humidity value.
+When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a light level value.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it LightValue.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set LightValue to||`` block inside the ``||Basic:on Start||`` block.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
+
+```blocks
+LightValue = 0
+```
 
 ## Step 6 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
 The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Light Value: ' in the placeholder.
-This section is only needed if you wish to display the light value on the LED array on the micro:bit.
+1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
+2. 2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` bock.
+3. Type the word 'Light Level: ' in the first placeholder. Join is used to combine two string values.<br>
+** Note:This section is only needed if you wish to display the light value on the LED array on the micro:bit.
 ```blocks
 basic.forever(function () {
-    basic.showString("Light:")
+    basic.showString("Light Level: " + " ")
 })
 ```
 
@@ -66,15 +72,31 @@ In this section, we will add an extension so that we can access the readings fro
 ## Step 8 Add the Extension
 Coding: Add the light sensor readings
 -------------------------------------
-While the light sensor readings can be added directly a string block, by placing the values in a variable, they can be used again in other sections of code.
+While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
 1. Place a ``||Variables:Set LightValue to||`` block above the LightValue string block you made previously.
-2. Click on the ``||Octopus||`` menu and then click ``||...More||``.
+2. Click on the ``||Octopus||`` menu.
 3. Drag the ``||value of light intensity (0~100) at pin||`` block and put it in the ``||Variables:Set LightValue to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to.
 <br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
 
-4. Place a new ``||Basic: String||`` block underneath the LightValue string block.
-5. Drag a ``||Variables:LightValue||`` variable block and put it in the ``||Basic: String||`` placeholder.
-6. Repeat to for humidity
+```blocks
+let LightValue = 0
+basic.forever(function () {
+    LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
+})
+```
+## Step 10 Join Command
+Coding: Combining two string elements
+-------------------------------------
+1. Make sure that the first placeholder on the ``||Advanced:Join||`` block says "Light Level: ".
+2. Drag a ``||Variables:LightValue||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
+
+```blocks
+LightValue = 0
+basic.forever(function () {
+    LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
+    basic.showString("Light Level: " + LightValue)
+})
+```
 
 ## Step 9 Test It
 Test it! Debug it!
