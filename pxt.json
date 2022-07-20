@@ -19,7 +19,6 @@
         "tutorial-info-cache.json",
         "T_Light_Sensor.md",
         "T_Contact_Sensor.md",
-        "T_Ultrasonic.ts",
         "T_Ultrasonic.md"
     ],
     "testFiles": [
