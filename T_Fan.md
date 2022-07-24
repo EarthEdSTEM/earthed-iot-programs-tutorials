@@ -4,21 +4,20 @@
 ----------------------------------------------------------------->
 
 
-## Step 1 - Control a Fan Motor @showdialog
+## Step 1 - Control a Fan @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
-Control a Fan Motor
+Control a Fan
 ---------------------------------
 
-In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) to control a servo motor. A servo is a type of motor that can rotate to a given position then hold it. 
-By using variables, inputs from users or sensors will be stored and used to control when the servo moves and by how far.
+In this tutorial we will use input commands and output pins, to activate a fan. The pins can be switched between active (having power) or not active (not having power) states. Pins can also receive signals from sensors.
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan <br><br>
-![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Servo_Parts_List.png)
+![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Fan_List.png)
 <br>
 
 ## Step 3 - Connect Up!
