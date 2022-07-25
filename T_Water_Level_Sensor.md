@@ -1,32 +1,32 @@
-# T_Light_Sensor Tutorial
+# T_Water_Level_Sensor Tutorial
 
 <!---------------------------------------------------------------
--------------------Light Sensor TUTORIAL------Complete------------
+-------------Water Level Sensor TUTORIAL -  Incomplete ----------
 ----------------------------------------------------------------->
 
-## Step 1 Sensing Light @showdialog
+## Step 1 Measuring Water Level @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
-Measuring light using the Light Sensor
+Measuring water level using the Water Level Sensor
 -------------------------------------------
 
-In this tutorial, we will use the light sensor to measure the amount of light in the environment. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the light sensor readings.
+In this tutorial, we will use the water level sensor to measure water depth. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the light sensor readings.
 
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Light sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Light_Sensor/IoT_Light_Sensor_Parts_List.png)
+1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water Level sensor<br><br>
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water Level sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the light sensor to Pin 2 (or other pin) on the iot:bit sheild. 
-3. Connect the other end of the wire to the light sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Light_Sensor/IoT_Light_Sensor_Connections.png)
+2. Use the wire to connect the water level sensor to Pin 2 (or other pin) on the iot:bit sheild. 
+3. Connect the other end of the wire to the water level sensor.
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -42,7 +42,7 @@ Coding: Creating variables
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a light level value.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it LightValue.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set LightValue to||`` block inside the ``||Basic:on Start||`` block.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Light_Sensor/IoT_Light_Sensor_Create_Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Create_Variable.png)
 
 ```blocks
 LightValue = 0
@@ -54,11 +54,11 @@ Coding: Displaying text on the micro:bit
 The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
 1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
 2. 2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
-3. Type the word 'Light Level: ' in the first placeholder. Join is used to combine two string values.<br>
+3. Type the words 'Water Level: ' in the first placeholder. Join is used to combine two string values.<br>
 ** Note:This section is only needed if you wish to display the light value on the LED array on the micro:bit.
 ```blocks
 basic.forever(function () {
-    basic.showString("Light Level: " + " ")
+    basic.showString("Water Level: " + " ")
 })
 ```
 
@@ -73,7 +73,7 @@ In this section, we will add an extension so that we can access the readings fro
 Coding: Add the light sensor readings
 -------------------------------------
 While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set LightValue to||`` block above the LightValue string block you made previously.
+1. Place a ``||Variables:Set WaterLevel to||`` block above the LightValue string block you made previously.
 2. Click on the ``||Octopus||`` menu.
 3. Drag the ``||value of light intensity (0~100) at pin||`` block and put it in the ``||Variables:Set LightValue to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to.
 <br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
@@ -82,6 +82,8 @@ While the light sensor readings can be added directly to a string block, by plac
 let LightValue = 0
 basic.forever(function () {
     LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
+    basic.forever(function () {
+    basic.showNumber(pins.analogReadPin(AnalogPin.P1))
 })
 ```
 ## Step 10 Join Command

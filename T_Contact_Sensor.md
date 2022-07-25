@@ -1,7 +1,7 @@
 # T_Crash_Sensor Tutorial
 
 <!---------------------------------------------------------------
----------------Crash Sensor TUTORIAL---------------------------
+---------------Crash Sensor TUTORIAL---------------Complete------
 ----------------------------------------------------------------->
 
 ## Step 1 Using the Crash Sensor as an input  @showdialog
