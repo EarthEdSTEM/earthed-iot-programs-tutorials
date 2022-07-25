@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sensorbit:sonar Ultrasonic sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Light_Sensor_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Ultrasonic_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -26,7 +26,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the Ultrasonic sensor to Pin 2 (or other pin) on the iot:bit sheild. 
 3. Connect the other end of the wire to the Ultrasonic sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Light_Sensor_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Ultrasonic_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -42,7 +42,7 @@ Coding: Creating variables
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a distance value.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Distance to||`` block inside the ``||Basic:on Start||`` block.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Ultrasonic_Sensor_Variable.png)
 
 ```blocks
 Distance = 0
