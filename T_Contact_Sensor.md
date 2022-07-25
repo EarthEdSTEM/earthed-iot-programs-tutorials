@@ -160,7 +160,7 @@ How could you integrate the other sensors into your code to trigger the servo in
 
 
 Congratulations! You have finished this tutorial.
-** [- Click here to return to the menu](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/README)**<br>
+** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
 
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
