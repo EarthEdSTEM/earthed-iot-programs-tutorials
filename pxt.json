@@ -21,7 +21,8 @@
         "T_Contact_Sensor.md",
         "T_Ultrasonic.md",
         "T_Fan.md",
-        "T_Water_Level_Sensor.md"
+        "T_Water_Level_Sensor.md",
+        "T_PIR_Sensor.md"
     ],
     "testFiles": [
         "test.ts"
