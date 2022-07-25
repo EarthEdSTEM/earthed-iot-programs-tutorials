@@ -6,7 +6,7 @@
 
 ## Step 1 Taking a Temperature @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Taking a Temperature using the DHT11 sensor
 -------------------------------------------
 
@@ -34,7 +34,7 @@ Delete unused blocks
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
 1. Clear the previous blocks by dragging them to the menu bar.
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
+![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables

@@ -6,7 +6,7 @@
 
 ## Step 1 - Control a Fan @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Control a Fan
 ---------------------------------
 
@@ -33,7 +33,7 @@ Delete unused blocks if needed
 ------------------------------
 1. If starting fresh, clear the previous blocks by dragging them to the menu bar where a 'bin' will appear.
 2. Place a ``||basic: forever||`` block and a ``||on start||`` onto the work space.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 - Set the Environment
 Coding: Creating Variables

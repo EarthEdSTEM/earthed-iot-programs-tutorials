@@ -6,7 +6,7 @@
 
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Making a LED shine
 -----------------
 
@@ -18,7 +18,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) <br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -27,7 +27,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the LED to Pin 2 on the iot:bit sheild.
 3. Connect the other end of the wire to the LED.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_LED_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -35,7 +35,7 @@ Delete unused blocks
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
 1. Clear the previous blocks by dragging them to the menu bar.
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
+![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: creating variables
@@ -46,7 +46,7 @@ We will start by creating a new variable, adding it and then setting it to 'fals
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to '0' (for false).
 Now, each time the program starts, the value of ButtonAPress will be '0'.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Create_Variable.png)
 
 
 ## Step 6 Add a Conditional Block
