@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sensorbit:sonar Ultrasonic sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Sensor_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -34,7 +34,7 @@ Delete unused blocks
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
 1. Clear the previous blocks by dragging them to the menu bar.
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Gneral/Delete_blocks.png)
+![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables
@@ -42,7 +42,7 @@ Coding: Creating variables
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a distance value.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Distance to||`` block inside the ``||Basic:on Start||`` block.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Sensor_Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Create_Variable.png)
 
 ```blocks
 Distance = 0
