@@ -6,7 +6,7 @@
 
 ## Step 1 - Control a Servo Motor @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Control a Servo Motor
 ---------------------------------
 
@@ -18,7 +18,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor <br><br>
-![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Servo_Parts_List.png)
+![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Servo Motor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Servo/IoT_Servo_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
@@ -27,14 +27,14 @@ Connect the Parts Together
 1. Plug the micro: bit into the iot:bit sheild.
 2. Connect the wire to Pin 2 on the iot:bit sheild.
 3. Connect the other end of the wire to the Servo.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Servo_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Servo/IoT_Servo_Connections.png)
 
 ## Step 4 - Prepare to Code!
 Delete unused blocks if needed
 ------------------------------
 1. If starting fresh, clear the previous blocks by dragging them to the menu bar where a 'bin' will appear.
 2. Place a ``||basic: forever||`` block and a ``||on start||`` onto the work space.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Delete_blocks.png)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 - Set the Environment Part 1
 Coding: Creating Variables
@@ -43,7 +43,7 @@ Setting up the environment means getting things ready for the program. In this c
 1. Click ``|| Variables: Make a Variable...||`` to create a variable and call it 'ServoValue'.
 2. Go to ``|| Variables ||`` and place the ``|| Variables: Set ServoValue to||`` block inside the ``|| Basic: on Start ||`` block.
 3. Check that the value of the ``|| Variables: Set ServoValue to||`` is set to '0'. This can be changed later, depending on what start angle you want the servo to begin at.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Servo/IoT_Servo_Create_Variable.png)
 
 ## Step 6 - Set the Environment Part 2
 Coding: Create More Variables
