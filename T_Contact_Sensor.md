@@ -18,7 +18,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Crash_Sensor_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -30,7 +30,7 @@ Physical connections
 4. Check that the wires are connected to the crash sensor and LEDs in the correct order.
 
 
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Crash_Sensor_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -49,7 +49,7 @@ We will start by creating a new variable, adding it and then setting it to 'fals
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set CrashPressed to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set CrashPressed to||`` block is set to '0' (for false).
 Now, each time the program starts, the value of CrashPressed will be '0'.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/Create_Variable.png)
+![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Create_Variable.png)
 ```blocks
 let CrashPressed = 0
 ```
