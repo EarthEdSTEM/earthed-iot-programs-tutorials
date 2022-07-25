@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan <br><br>
-![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Fan_Parts_List.png)
+![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
@@ -26,7 +26,7 @@ Connect the Parts Together
 1. Plug the micro: bit into the iot:bit sheild.
 2. Connect the wire to Pin 2 on the iot:bit sheild.
 3. Connect the other end of the wire to the Fan.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Fan_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Connections.png)
 
 ## Step 4 - Prepare to Code!
 Delete unused blocks if needed
@@ -42,7 +42,7 @@ Setting up the environment means getting things ready for the program. In this c
 1. Click ``|| Variables: Make a Variable...||`` to create a variable and call it 'FanOn'.
 2. Go to ``|| Variables ||`` and place the ``|| Variables: Set FanOn to||`` block inside the ``|| Basic: on Start ||`` block.
 3. Check that the value of the ``|| Variables: Set FanOn to||`` is set to '0'. This will ensure that the fan doesn't run until it is switched on.
-![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_Fan_Variables.png)
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Create_Variables.png)
 
 ## Step 6 - Add some inputs
 Coding: Add Inputs to Trigger the Fan
