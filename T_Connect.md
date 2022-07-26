@@ -47,7 +47,7 @@ Clicking ``|Download|`` opens a dialogue box. From here, you can download the fi
 [Need more help connecting? Click here.](https://www.youtube.com/watch?v=qSjMDG84bMY)
 
 ## Step 5 - Success!
-Congratulations! This connecting and downloading process needs to be done, each time you wish to test your code with the IoT kits.<br>
+Congratulations! You have Connected and Downloaded your first program. The Downloading process needs to be done each time you wish to test your code with the IoT kits.<br>
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
