@@ -78,6 +78,10 @@ In this section, we will add an extension so that we can access the Crash Sensor
 2. Click the Smarthome-kit extension to load it. New menu items will now appear, giving access to the ``||Smart Home||`` blocks.
 3. Place a ``||Smart Home:Setup crash sensor at Pin||`` block in the ``||On start||`` block to initialise it.
 
+```package
+smarthome=github:tinkertanker/pxt-smarthome 2.2.1
+```
+
 ## Step 8 Add a Conditional Block
 Coding: Creating the Boolean for 'On'
 -----------------------------------------------------
