@@ -34,16 +34,22 @@ Delete unused blocks
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
-## Step 5 Create Variables (Setting the Environment)
-Coding: Creating variables
+## Step 5 Add the Extension
+Coding: Add the Smart Science Extension
+----------------------------------------
+The blocks for the OLED display aren't a part of the standard micro:bit MakeCode program and need to have an extension added to be used. 
+1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
+2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+
+## Step 6 Initialise the OLED Display
+Coding: Initialise the OLED display
 --------------------------
-When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a distance value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
+Before it can be used, OLED needs to be initialised. 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Distance to||`` block inside the ``||Basic:on Start||`` block.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Create_Variable.png)
 
 ```blocks
-Distance = 0
+OLED.init(128, 64)
 ```
 
 ## Step 6 Display Text
@@ -60,21 +66,6 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 Add the Extension
-Coding: Add the Smart Science Extension
-----------------------------------------
-In this section, we will add an extension so that we can access the readings from the Ultrasonic sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
-1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
-
-## Step 8 Add the Extension
-Coding: Add the Ultrasonic sensor readings
--------------------------------------
-While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set Distance to||`` block above the Distance string block you made previously.
-2. Click on the ``||Octopus||`` menu.
-3. Drag the ``||ultrasonic distance in unit mm at pin 16||`` block and put it in the ``||Variables:Set Distance to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to and units are centimetres.
-<br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
 
 ```blocks
 Distance = 0
@@ -90,10 +81,18 @@ Coding: Combining two string elements
 3. Click the '+' symbol on the ``||Advanced:Join||`` block and add the text ' cm' to the new placeholder.
 
 ```blocks
-Distance = 0
+basic.pause(1000)
+OLED.init(128, 64)
 basic.forever(function () {
-    Distance = Environment.sonarbit_distance(Environment.Distance_Unit.Distance_Unit_cm, DigitalPin.P2)
-    basic.showString("Distance: " + Distance + " cm")
+    OLED.drawLine(
+    0,
+    0,
+    127,
+    63
+    )
+    basic.pause(1000)
+    OLED.clear()
+    OLED.writeStringNewLine("Hello World")
 })
 ```
 
