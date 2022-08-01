@@ -81,18 +81,21 @@ Coding: Combining two string elements
 3. Click the '+' symbol on the ``||Advanced:Join||`` block and add the text ' cm' to the new placeholder.
 
 ```blocks
-basic.pause(1000)
 OLED.init(128, 64)
 basic.forever(function () {
-    OLED.drawLine(
-    0,
-    0,
-    127,
-    63
-    )
-    basic.pause(1000)
-    OLED.clear()
-    OLED.writeStringNewLine("Hello World")
+    if (pins.analogReadPin(AnalogPin.P1) < 30) {
+        OLED.clear()
+        OLED.writeStringNewLine("Water Level Low")
+        basic.pause(500)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 440) {
+        OLED.clear()
+        OLED.writeStringNewLine("Warning! Water Level High")
+        basic.pause(500)
+    } else {
+        OLED.clear()
+        OLED.writeStringNewLine("Water Level OK.")
+        basic.pause(500)
+    }
 })
 ```
 
