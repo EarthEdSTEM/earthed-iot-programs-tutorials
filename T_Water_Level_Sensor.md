@@ -39,17 +39,26 @@ Delete unused blocks
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables
 --------------------------
-When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a light level value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it LightValue.
-3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set LightValue to||`` block inside the ``||Basic:on Start||`` block.
+In coding, a 'constant' is like a variable, except that contains a set value. We will use this constant to compare the numerical value returned by the water level sensor with a target value defined by us.  
+1. To create the constant, click ``||Variables: Make a Variable...||`` and call it MaxWaterLevel.
+2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set MaxWaterLevel to||`` block inside the ``||Basic:on Start||`` block.
+3. Go to the Text menu and drag the ``||Text:Parse to Number||`` block into the Set Water Level block. Set the value to 10.
+The ``||Text:Parse to Number||`` command is used to convert an input into a number. This is important here, because we will wan to be able to compare it 
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Create_Variable.png)
 
 ```blocks
-LightValue = 0
+let WaterLevel = parseFloat("10")
 ```
 
-## Step 6 Display Text
-Coding: Displaying text on the micro:bit
+## Step 6 Add the Extension
+Coding: Add the Smart Science Extension
+----------------------------------------
+In this section, we will add an extension so that we can access the readings from the light sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
+1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
+2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+
+## Step 7 Get the Water Level
+Coding: Get the Water Level
 ----------------------------------------
 The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
 1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
@@ -61,13 +70,6 @@ basic.forever(function () {
     basic.showString("Water Level: " + " ")
 })
 ```
-
-## Step 7 Add the Extension
-Coding: Add the Smart Science Extension
-----------------------------------------
-In this section, we will add an extension so that we can access the readings from the light sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
-1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
 ## Step 8 Add the Extension
 Coding: Add the light sensor readings
@@ -93,11 +95,28 @@ Coding: Combining two string elements
 2. Drag a ``||Variables:LightValue||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
 
 ```blocks
-LightValue = 0
+let WaterLevel = parseFloat("10")
 basic.forever(function () {
-    LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
-    basic.showString("Light Level: " + LightValue)
+    if (Environment.ReadWaterLevel(AnalogPin.P2) > WaterLevel) {
+        for (let index = 0; index < 4; index++) {
+            music.playMelody("D D E F G G F E ", 120)
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                . . # . .
+                . . . . .
+                . . . . .
+                `)
+            basic.pause(200)
+            basic.showIcon(IconNames.SmallSquare)
+            basic.pause(200)
+            basic.showIcon(IconNames.Square)
+            basic.pause(200)
+            basic.showIcon(IconNames.SmallSquare)
+        }
+    }
 })
+
 ```
 
 ## Step 9 Test It
