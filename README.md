@@ -20,7 +20,8 @@ Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial 
 **[- Detect a Crash (Crash sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Contact_Sensor)**<br>
 **[- Measure Distance (Ultrasonic sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Ultrasonic)**<br>
 **[- Rotate a Fan (Fan motor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Fan)**<br>
-**[- Detect movement (PIR sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_PIR_Sensor)**<br>
+**[- Measure water level (Water level sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Water_Level_Sensor)**<br>
+
 ```ghost
 basic.forever(function () {
 	
