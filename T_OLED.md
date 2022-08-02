@@ -1,4 +1,4 @@
-# T_OLED Tutorial
+# T_OLED Tutorial - Simple Text Display
 
 <!---------------------------------------------------------------
 ------------------------- OLED TUTORIAL--------INComplete----
@@ -10,7 +10,7 @@
 Displaying information using the OLED Display
 -------------------------------------------
 
-In this tutorial, we will connect the OLED display to the iot:bit and display a simple 'string'.
+In the first part of this tutorial, we will connect the OLED display to the iot:bit and display a simple 'string'.
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
@@ -23,7 +23,7 @@ For this tutorial, you will need these parts:<br>
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the OLED display into I2C interface (middle black plug) on the iot:bit sheild. There are two rows of connectors. Either row will work.
+2. The OLED display is plugged directly into the I2C interface (middle black plug) on the iot:bit sheild. The I2C interface has a 'G' pin - ensure that the 'G' pin on the OLED is connected to it.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
@@ -44,66 +44,31 @@ The blocks for the OLED display aren't a part of the standard micro:bit MakeCode
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display
 --------------------------
-Before it can be used, OLED needs to be initialised. 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
-3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Distance to||`` block inside the ``||Basic:on Start||`` block.
-![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Create_Variable.png)
+Before it can be used, OLED needs to be initialised - the software needs to be told that it is there.
+1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the Start block.
 
 ```blocks
 OLED.init(128, 64)
 ```
 
-## Step 6 Display Text
+## Step 7 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
-2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
-3. Type the word 'Distance: ' in the first placeholder. Join is used to combine two string values.<br>
-** Note:This section is only needed if you wish to display the Distance value on the LED array on the micro:bit.
-```blocks
-basic.forever(function () {
-    basic.showString("Distance: " + " ")
-})
-```
-
-
-```blocks
-Distance = 0
-basic.forever(function () {
-    Distance = Environment.sonarbit_distance(Environment.Distance_Unit.Distance_Unit_cm, DigitalPin.P2)
-})
-```
-## Step 10 Join Command
-Coding: Combining two string elements
--------------------------------------
-1. Make sure that the first placeholder on the ``||Advanced:Join||`` block says "Light Level: ".
-2. Drag a ``||Variables:Distance||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
-3. Click the '+' symbol on the ``||Advanced:Join||`` block and add the text ' cm' to the new placeholder.
+In coding, a line of text is called a string. Strings don't have a numerical value even if they contain a numerical digit. Here we will display a string on the OLED using a 'Show String' command.
+1. In the Forever block, go to the ``||OLED||`` menu and drag a ``||OLED:Show String||`` block into it. 
+2. Type 'Hello world' into the place holder.
 
 ```blocks
 OLED.init(128, 64)
 basic.forever(function () {
-    if (pins.analogReadPin(AnalogPin.P1) < 30) {
-        OLED.clear()
-        OLED.writeStringNewLine("Water Level Low")
-        basic.pause(500)
-    } else if (pins.analogReadPin(AnalogPin.P1) > 440) {
-        OLED.clear()
-        OLED.writeStringNewLine("Warning! Water Level High")
-        basic.pause(500)
-    } else {
-        OLED.clear()
-        OLED.writeStringNewLine("Water Level OK.")
-        basic.pause(500)
-    }
+    OLED.writeStringNewLine("Hello World")
 })
 ```
-
-## Step 9 Test It
+## Step 8 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
+How could you integrate the OLED into your code to output information?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>

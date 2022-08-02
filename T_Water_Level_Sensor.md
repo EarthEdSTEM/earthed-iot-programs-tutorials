@@ -95,25 +95,20 @@ Coding: Combining two string elements
 2. Drag a ``||Variables:LightValue||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
 
 ```blocks
-let WaterLevel = parseFloat("10")
+OLED.init(128, 64)
 basic.forever(function () {
-    if (Environment.ReadWaterLevel(AnalogPin.P2) > WaterLevel) {
-        for (let index = 0; index < 4; index++) {
-            music.playMelody("D D E F G G F E ", 120)
-            basic.showLeds(`
-                . . . . .
-                . . . . .
-                . . # . .
-                . . . . .
-                . . . . .
-                `)
-            basic.pause(200)
-            basic.showIcon(IconNames.SmallSquare)
-            basic.pause(200)
-            basic.showIcon(IconNames.Square)
-            basic.pause(200)
-            basic.showIcon(IconNames.SmallSquare)
-        }
+    if (pins.analogReadPin(AnalogPin.P1) < 30) {
+        OLED.clear()
+        OLED.writeStringNewLine("Water Level Low")
+        basic.pause(500)
+    } else if (pins.analogReadPin(AnalogPin.P1) > 440) {
+        OLED.clear()
+        OLED.writeStringNewLine("Warning! Water Level High")
+        basic.pause(500)
+    } else {
+        OLED.clear()
+        OLED.writeStringNewLine("Water Level OK.")
+        basic.pause(500)
     }
 })
 
