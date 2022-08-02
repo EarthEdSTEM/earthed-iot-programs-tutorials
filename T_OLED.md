@@ -16,7 +16,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x OLED display<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_OLED_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_OLED/IoT_OLED_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
