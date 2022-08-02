@@ -15,8 +15,8 @@ In the first part of this tutorial, we will connect the OLED display to the iot:
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x OLED display<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
+1x micro:bit, 1x iot:bit sheild, 1x OLED display<br><br>
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -39,12 +39,12 @@ Coding: Add the Smart Science Extension
 ----------------------------------------
 The blocks for the OLED display aren't a part of the standard micro:bit MakeCode program and need to have an extension added to be used. 
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+2. Click the <b>Environment-and-Science-iot<b> extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display
 --------------------------
-Before it can be used, OLED needs to be initialised - the software needs to be told that it is there.
+Before it can be used, OLED needs to be initialised - the software needs to be told that it is there.<br>
 1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the Start block.
 
 ```blocks
