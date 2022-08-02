@@ -13,13 +13,14 @@ Menu
 Welcome to the EarthED IoT Program Makecode Tutorials. Please choose a tutorial from the list below.
 
 **[- Connect and Test the micro:bit](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Connect)**<br>
-**[- Make a Servo Motor Move](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Servo)**<br>
-**[- Record a Temperature](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_DHT11)**<br>
-**[- Measure Light](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Light_Sensor)**<br>
+**[- Make a Servo Motor Move (Servo)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Servo)**<br>
+**[- Record a Temperature (DHT11 sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_DHT11)**<br>
+**[- Measure Light (Light sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Light_Sensor)**<br>
 **[- Make a Light Emitting Diode (LED) Shine](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_LED)**<br>
-**[- Detect a Crash](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Contact_Sensor)**<br>
-**[- Detect a Crash](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Contact_Sensor)**<br>
-
+**[- Detect a Crash (Crash sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Contact_Sensor)**<br>
+**[- Measure Distance (Ultrasonic sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Ultrasonic)**<br>
+**[- Rotate a Fan (Fan motor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_Fan)**<br>
+**[- Detect movement (PIR sensor)](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_PIR_Sensor)**<br>
 ```ghost
 basic.forever(function () {
 	
