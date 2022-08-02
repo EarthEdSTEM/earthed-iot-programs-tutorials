@@ -1,4 +1,4 @@
-# T_Crash_Sensor Tutorial
+# Crash Sensor Tutorial
 
 <!---------------------------------------------------------------
 ---------------Crash Sensor TUTORIAL---------------Complete------

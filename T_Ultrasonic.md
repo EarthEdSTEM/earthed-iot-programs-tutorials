@@ -1,4 +1,4 @@
-# T_Ultrasonic Tutorial
+# Ultrasonic Sensor Tutorial
 
 <!---------------------------------------------------------------
 ------------------------- Ultrasonic TUTORIAL--------Complete----

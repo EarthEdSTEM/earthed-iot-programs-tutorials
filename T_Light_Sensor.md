@@ -1,4 +1,4 @@
-# T_Light_Sensor Tutorial
+# Light Sensor Tutorial
 
 <!---------------------------------------------------------------
 -------------------Light Sensor TUTORIAL------Complete------------

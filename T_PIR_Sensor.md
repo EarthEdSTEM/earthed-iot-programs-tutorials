@@ -1,4 +1,4 @@
-# T_PIR_Sensor Tutorial
+# PIR Sensor Tutorial
 
 <!---------------------------------------------------------------
 ----------------PIR Sensor TUTORIAL -  Incomplete ----------------
