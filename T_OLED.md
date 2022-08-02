@@ -1,7 +1,7 @@
-# T_OLED Tutorial - Simple Text Display
+# OLED Display Tutorial
 
 <!---------------------------------------------------------------
-------------------------- OLED TUTORIAL--------INComplete----
+-------------------------T_OLED TUTORIAL-------------Complete----
 ----------------------------------------------------------------->
 
 ## Step 1 Using the OLED @showdialog
@@ -40,13 +40,13 @@ Coding: Add the Smart Science Extension
 ----------------------------------------
 The blocks for the OLED display aren't a part of the standard micro:bit MakeCode program and need to have an extension added to be used. 
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the <b>Environment-and-Science-iot<b> extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+2. Click the <b>Environment-and-Science-iot<b> extension to load it. New menu items will now appear, giving access to the ``||OLED||`` menu.
 
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display
 --------------------------
 Before it can be used, the OLED needs to be initialised - the software needs to be told that it is there.<br>
-1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the Start block.
+1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the ``||Start||`` block.
 
 ```blocks
 OLED.init(128, 64)
@@ -69,7 +69,7 @@ basic.forever(function () {
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the OLED into your code to output information?<br><br>
+How could you integrate the OLED into a project to output information gained from other sensors?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
