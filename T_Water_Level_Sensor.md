@@ -1,18 +1,21 @@
 # Water Level Sensor Tutorial
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Measuring water level using the Water Level Sensor
+
 <!---------------------------------------------------------------
--------------Water Level Sensor TUTORIAL -  Incomplete ----------
+----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
 ----------------------------------------------------------------->
+
 ## Activity 1 - Set up the Water Level Sensor @showdialog
+---------------------------------------------
 In this tutorial, we will use the water level sensor to measure water depth. By using nested conditional statements, we will also output messages to an OLED display.
 
 ### Step 1 -Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water Level sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water Level sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Parts_List.png)
+1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water level sensor<br><br>
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water level sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Parts_List.png)
 <br>
 
 ## Step 2 Connect Up!
@@ -21,7 +24,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the water level sensor to Pin 2 (or other pin) on the iot:bit sheild. 
 3. Connect the other end of the wire to the water level sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor.png)
 
 ### Step 3 Prepare to Code!
 Delete unused blocks
@@ -39,36 +42,36 @@ In this section, we will add an extension so that we can access the readings fro
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 
 ### Step 5 Measure the Water Level
-Coding: Measure the Water Level
+Coding: Measure and display the Water Level
 ----------------------------------------
-The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
-2. 2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
-3. Type the words 'Water Level: ' in the first placeholder. Join is used to combine two string values.<br>
-** Note:This section is only needed if you wish to display the light value on the LED array on the micro:bit.
+The ``||Basic: Number||`` block displays numbers on the LED array on the front of the micro:bit computer. Use Number if you need to perform a mathematical function on a numeric value. 
+1. Place a ``||Basic: Number||`` block inside the ``||basic:forever||`` block. 
+2. 2. Click on ``||Pins||``, then drag the ``||Pins:analogReadPin||`` block into the placeholder on the ``||Basic: Number||`` block.<br>
+
 ```blocks
 basic.forever(function () {
     basic.showNumber(pins.analogReadPin(AnalogPin.P0))
 })
 ```
+### Step 6 Test It
+Test it! Debug it!
+------------------
 
-## Step 8 Add the Extension
-Coding: Add the light sensor readings
--------------------------------------
-While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set WaterLevel to||`` block above the LightValue string block you made previously.
-2. Click on the ``||Octopus||`` menu.
-3. Drag the ``||value of light intensity (0~100) at pin||`` block and put it in the ``||Variables:Set LightValue to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to.
-<br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
 
-```blocks
-let LightValue = 0
-basic.forever(function () {
-    LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
-    basic.forever(function () {
-    basic.showNumber(pins.analogReadPin(AnalogPin.P1))
-})
-```
+<!---------------------------------------------------------------
+----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
+----------------------------------------------------------------->
+
+## Activity 2 - Collect and display the data @showdialog
+---------------------------------------------
+In this section of the tutorial, we will use nested conditional statements to determine what information is outputed to the OLED display.
+
+### Step 1 -Collect the parts. @unplugged
+Collect the parts
+-----------------
+Leaving the water level sensor connected, attach the OLED display making sure the 'G' Pin is match to the 'G' label on the I2C connector on teh micro:bit.
+
+Time to test this section of code. Download the code to the micro: bit and try it out. Observe what happens.<br>
 ## Step 10 Join Command
 Coding: Combining two string elements
 -------------------------------------
