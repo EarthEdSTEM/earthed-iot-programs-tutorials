@@ -56,10 +56,13 @@ basic.forever(function () {
 ### Step 6 Test It
 Test it! Debug it!
 ------------------
+Time to test this section of code. Download the code to the micro: bit and try it out. Observe what happens.<br>
+
+
 
 
 <!---------------------------------------------------------------
-----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
+----Water Level Sensor TUTORIAL Activity 2 -  Incomplete --------
 ----------------------------------------------------------------->
 
 ## Activity 2 - Collect and display the data @showdialog
@@ -69,14 +72,70 @@ In this section of the tutorial, we will use nested conditional statements to de
 ### Step 1 -Collect the parts. @unplugged
 Collect the parts
 -----------------
-Leaving the water level sensor connected, attach the OLED display making sure the 'G' Pin is match to the 'G' label on the I2C connector on teh micro:bit.
+1.Leave the water level sensor and micro:bit connected to the SensorBit.
+2.Attach the OLED display making sure the 'G' Pin is match to the 'G' label on the I2C connector on teh micro:bit.
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_OLED/OLED_Connections.png)
 
-Time to test this section of code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-## Step 10 Join Command
-Coding: Combining two string elements
+## Step 2 Nested Conditionals
+Coding: Create a conditional statement
 -------------------------------------
-1. Make sure that the first placeholder on the ``||Advanced:Join||`` block says "Light Level: ".
-2. Drag a ``||Variables:LightValue||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
+Conditional statements allow a question or query to be made, with actions taken based on the result.
+1. Place a ``||Logic:if||`` block in the ``||Basic:Forever||`` block under the existing ``||Basic: Number||`` block.
+2. Drag a ``||Logic: <||`` (less than) block from the ``||Logic||`` menu into the placeholder in the ``||Logic:if||`` block.
+3. Place a ``||Pins:analogReadPin||`` block into the first placeholder on the ``||Logic: >||`` block.
+4. Enter the value 300 into the second placeholder.
+
+ ```blocks
+OLED.init(128, 64)
+basic.forever(function () {
+    if (pins.analogReadPin(AnalogPin.P1) < 300) {
+        }
+})
+```
+
+## Step 3 Nested Conditionals
+Coding: Create a nested conditional statement
+-------------------------------------
+Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
+1. Click the plus sign on the ``||Logic:if||`` if block to expand it. You will see an 'Else' section. 
+2. Place a ``||Logic:if||`` block in the new 'Else' section.
+3. Drag a ``||Logic: >||`` (greater than) block from the Logic menu into the placeholder in the new ``||Logic:if||`` block.
+4. Place a ``||Pins:analogReadPin||`` block into the first placeholder on the ``||Logic: >||`` block.
+5. Enter the value 450 into the second placeholder.
+We now have a conditional that that checks to see if the value received from the water level sensor less than 300 (low) or more than 450 (high).
+
+```blocks
+OLED.init(128, 64)
+basic.forever(function () {
+    if (pins.analogReadPin(AnalogPin.P1) < 300) {
+    } else if (pins.analogReadPin(AnalogPin.P1) > 450) {
+    }
+})
+
+```
+## Step 4 Nested Conditionals
+Coding: Create a nested conditional statement
+-------------------------------------
+Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
+1. Click the plus sign on the ``||Logic:if||`` if block to expand it. You will see another 'Else' section.
+2. In this section we will add a ``||OLED:clear||`` block to refresh the OLED screen.
+3. We will add a ``||OLED: 
+
+```blocks
+OLED.init(128, 64)
+basic.forever(function () {
+    if (pins.analogReadPin(AnalogPin.P1) < 30) {
+
+    } else if (pins.analogReadPin(AnalogPin.P1) > 440) {
+
+    } else {
+        OLED.clear()
+        OLED.writeStringNewLine("Water Level OK.")
+        basic.pause(500)
+    }
+})
+```
+
 
 ```blocks
 OLED.init(128, 64)
