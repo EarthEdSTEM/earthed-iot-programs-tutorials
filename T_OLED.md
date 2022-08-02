@@ -16,7 +16,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x OLED display<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x OLED display](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_OLED_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -24,7 +24,7 @@ Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
 2. The OLED display is plugged directly into the I2C interface (middle black plug) on the iot:bit sheild. The I2C interface has a 'G' pin - ensure that the 'G' pin on the OLED is connected to it.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Sensor_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_OLED_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
@@ -44,7 +44,7 @@ The blocks for the OLED display aren't a part of the standard micro:bit MakeCode
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display
 --------------------------
-Before it can be used, OLED needs to be initialised - the software needs to be told that it is there.<br>
+Before it can be used, the OLED needs to be initialised - the software needs to be told that it is there.<br>
 1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the Start block.
 
 ```blocks
