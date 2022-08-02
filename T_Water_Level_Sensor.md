@@ -22,7 +22,7 @@ For this tutorial, you will need these parts:<br>
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the water level sensor to Pin 2 (or other pin) on the iot:bit sheild. 
+2. Use the wire to connect the water level sensor to Pin 1 (or other pin) on the iot:bit sheild. 
 3. Connect the other end of the wire to the water level sensor.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor.png)
 
@@ -50,7 +50,7 @@ The ``||Basic: Number||`` block displays numbers on the LED array on the front o
 
 ```blocks
 basic.forever(function () {
-    basic.showNumber(pins.analogReadPin(AnalogPin.P0))
+    basic.showNumber(pins.analogReadPin(AnalogPin.P1))
 })
 ```
 ### Step 6 Test It
@@ -73,10 +73,10 @@ In this section of the tutorial, we will use nested conditional statements to de
 Collect the parts
 -----------------
 1.Leave the water level sensor and micro:bit connected to the SensorBit.
-2.Attach the OLED display making sure the 'G' Pin is match to the 'G' label on the I2C connector on teh micro:bit.
+2.Attach the OLED display making sure the 'G' Pin is matched to the 'G' label on the I2C connector on the micro:bit.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_OLED/OLED_Connections.png)
 
-## Step 2 Nested Conditionals
+### Step 2 Nested Conditionals
 Coding: Create a conditional statement
 -------------------------------------
 Conditional statements allow a question or query to be made, with actions taken based on the result.
@@ -93,7 +93,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 3 Nested Conditionals
+### Step 3 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
@@ -113,13 +113,15 @@ basic.forever(function () {
 })
 
 ```
-## Step 4 Nested Conditionals
+### Step 4 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
-1. Click the plus sign on the ``||Logic:if||`` if block to expand it. You will see another 'Else' section.
+1. Click the plus sign on the ``||Logic:if||`` block to expand it. You will see another 'Else' section.
 2. In this section we will add a ``||OLED:clear||`` block to refresh the OLED screen.
-3. We will add a ``||OLED: 
+3. We will add a ``||OLED: show string||`` next, placing the words 'Water level OK' into the placeholder.
+4. Add a ``||Basic: pause||`` block last and give a value of 500 ms.<br>
+This section of code clears the screen, reads data from the water level sensor and then if it is in the range of 300 and 450, displays 'Water level OK' on the OLED display, pausing so the reader can view it.
 
 ```blocks
 OLED.init(128, 64)
@@ -135,7 +137,10 @@ basic.forever(function () {
     }
 })
 ```
-
+## Step 5 Nested Conditionals
+Coding: Complete the code
+-------------------------------------
+Using the scheme from the previous step, add 'Water low' and 'Water high' warnings.
 
 ```blocks
 OLED.init(128, 64)
@@ -160,8 +165,8 @@ basic.forever(function () {
 ## Step 9 Test It
 Test it! Debug it!
 ------------------
-Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
+Time to test your code. Download the code to the micro: bit and try it out. Observe what happens. You may need to tweak the ranges so that the code works consistently.<br>
+How could you integrate the water level sensor into your project to trigger the servo or LED lights or other device?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
