@@ -24,8 +24,7 @@
         "T_Fan.md",
         "T_Water_Level_Sensor.md",
         "T_PIR_Sensor.md",
-        "T_OLED.md",
-        "T_Crash_Sensor.md"
+        "T_OLED.md"
     ],
     "testFiles": [
         "test.ts"
@@ -37,5 +36,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
