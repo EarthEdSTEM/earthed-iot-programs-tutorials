@@ -1,7 +1,7 @@
 # Crash Sensor Tutorial
 
 <!---------------------------------------------------------------
----------------Crash Sensor TUTORIAL---------------Complete------
+---------------Crash Sensor TUTORIAL---------------INComplete------
 ----------------------------------------------------------------->
 
 ## Step 1 Using the Crash Sensor as an input  @showdialog
@@ -10,7 +10,7 @@
 Using the Contact Sensor as an input
 ------------------------------------
 
-In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) in conjunction with the light sensor, to control Light Emitting Diode (LED).
+In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) in conjunction with the light sensor, to control Light Emitting Diodes (LED).
 Booleans work by comparing, adding or subtracting two values. This is a more advanced tutorial.
 
 ## Step 2 Collect the parts. @unplugged
@@ -50,6 +50,7 @@ We will start by creating a new variable, adding it and then setting it to 'fals
 3. Check that the value of the ``||Variables:Set CrashPressed to||`` block is set to '0' (for false).
 Now, each time the program starts, the value of CrashPressed will be '0'.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Create_Variable.png)
+
 ```blocks
 let CrashPressed = 0
 ```
@@ -78,9 +79,7 @@ In this section, we will add an extension so that we can access the Crash Sensor
 2. Click the Smarthome-kit extension to load it. New menu items will now appear, giving access to the ``||Smart Home||`` blocks.
 3. Place a ``||Smart Home:Setup crash sensor at Pin||`` block in the ``||On start||`` block to initialise it.
 
-```package
-smarthome=github:tinkertanker/pxt-smarthome 2.2.1
-```
+
 
 ## Step 8 Add a Conditional Block
 Coding: Creating the Boolean for 'On'

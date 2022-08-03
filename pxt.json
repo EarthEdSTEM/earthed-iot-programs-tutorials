@@ -25,7 +25,8 @@
         "T_Fan.md",
         "T_Water_Level_Sensor.md",
         "T_PIR_Sensor.md",
-        "T_OLED.md"
+        "T_OLED.md",
+        "T_Crash.md"
     ],
     "testFiles": [
         "test.ts"
