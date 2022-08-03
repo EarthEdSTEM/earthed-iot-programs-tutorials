@@ -8,6 +8,9 @@
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
 Control a Fan
+``` ghost
+basic.forever
+```
 --------------------------------
 
 ## Step 9 - Test It
