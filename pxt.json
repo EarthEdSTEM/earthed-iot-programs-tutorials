@@ -20,12 +20,12 @@
         "tutorial-info-cache.json",
         "T_Light_Sensor.md",
         "T_Contact_Sensor.md",
-        "T_Crash.md",
         "T_Ultrasonic.md",
         "T_Fan.md",
         "T_Water_Level_Sensor.md",
         "T_PIR_Sensor.md",
         "T_OLED.md",
+        "T_Moisture_Sensor.md",
         "T_Crash.md"
     ],
     "testFiles": [
