@@ -1,6 +1,6 @@
 {
     "name": "EarthEd IoT Programs Tutorials",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -24,7 +24,9 @@
         "T_Fan.md",
         "T_Water_Level_Sensor.md",
         "T_PIR_Sensor.md",
-        "T_OLED.md"
+        "T_OLED.md",
+        "T_Moisture_Sensor.md",
+        "T_Crash.md"
     ],
     "testFiles": [
         "test.ts"
