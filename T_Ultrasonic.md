@@ -68,6 +68,7 @@ Coding: Add the Smart Science Extension
 In this section, we will add an extension so that we can access the readings from the Ultrasonic sensor. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
 ## Step 8 Add the Extension
 Coding: Add the Ultrasonic sensor readings
