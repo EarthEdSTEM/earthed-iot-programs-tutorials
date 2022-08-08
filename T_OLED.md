@@ -35,12 +35,14 @@ Delete unused blocks
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
-## Step 5 Add the Extension
+## Step 5 Add the Extension @unplugged
 Coding: Add the Smart Science Extension
 ----------------------------------------
-The blocks for the OLED display aren't a part of the standard micro:bit MakeCode program and need to have an extension added to be used. 
+An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
+<br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
-2. Click the <b>Environment-and-Science-iot<b> extension to load it. New menu items will now appear, giving access to the ``||OLED||`` menu.
+2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display

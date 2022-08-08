@@ -71,13 +71,14 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 Add the Extension
-Coding: Add the Smart Home Extension
+## Step 7 Add the Extension @unplugged
+Coding: Add the Smart Science Extension
 ----------------------------------------
-In this section, we will add an extension so that we can access the Crash Sensor block. Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once.
-1. Go to the ``||Extensions||`` menu and search for the Smarthome-kit extension. 
-2. Click the Smarthome-kit extension to load it. New menu items will now appear, giving access to the ``||Smart Home||`` blocks.
-3. Place a ``||Smart Home:Setup crash sensor at Pin||`` block in the ``||On start||`` block to initialise it.
+An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
+<br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
+1. Go to the ``||Extensions||`` menu and search for the Smarthome-kit  extension. 
+2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
+![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
 
 
