@@ -6,7 +6,7 @@
 
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Banners/LED_Banner.gif)
 Making a LED shine
 -----------------
 
