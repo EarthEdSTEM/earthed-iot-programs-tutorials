@@ -62,7 +62,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 Add the Extension
+## Step 7 Add the Extension @unplugged
 Coding: Add the Smart Science Extension
 ----------------------------------------
 Extensions are code that is supplied by developers to help 'extend' the functionality of the MakeCode app. Extensions only need to be added once. The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
@@ -70,7 +70,7 @@ Extensions are code that is supplied by developers to help 'extend' the function
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
-## Step 8 Add the Extension @unplugged
+## Step 8 Add the Extension 
 Coding: Add the Ultrasonic sensor readings
 -------------------------------------
 While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
