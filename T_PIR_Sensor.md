@@ -7,7 +7,7 @@
 
 ## Step 1 - Detect Motion @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_PIR_Sensor/PIR_Sensor_Banner.gif)
 Detect motion
 ---------------------------------
 
