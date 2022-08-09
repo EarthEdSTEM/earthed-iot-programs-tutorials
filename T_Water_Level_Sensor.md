@@ -1,5 +1,5 @@
 # Water Level Sensor Tutorial
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://github.com/EarthEdSTEM/earthed-iot-programs-tutorials/blob/master/Images/T_Water_Level_Sensor/Water_Level_Banner.gif)
 Measuring water level using the Water Level Sensor
 
 <!---------------------------------------------------------------
