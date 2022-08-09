@@ -1,6 +1,4 @@
 # Water Level Sensor Tutorial
-![](https://github.com/EarthEdSTEM/earthed-iot-programs-tutorials/blob/master/Images/T_Water_Level_Sensor/Water_Level_Banner.gif)
-Measuring water level using the Water Level Sensor
 
 <!---------------------------------------------------------------
 ----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
@@ -9,6 +7,8 @@ Measuring water level using the Water Level Sensor
 ## Activity 1 - Set up the Water Level Sensor @showdialog
 ---------------------------------------------
 In this tutorial, we will use the water level sensor to measure water depth. By using nested conditional statements, we will also output messages to an OLED display.
+![](https://github.com/EarthEdSTEM/earthed-iot-programs-tutorials/blob/master/Images/T_Water_Level_Sensor/Water_Level_Banner.gif)
+Measuring water level using the Water Level Sensor
 
 ### Step 1 -Collect the parts. @unplugged
 Collect the parts
@@ -18,7 +18,7 @@ For this tutorial, you will need these parts:<br>
 ![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water level sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Parts_List.png)
 <br>
 
-## Step 2 Connect Up!
+### Step 2 Connect Up!
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
@@ -139,7 +139,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 5 Nested Conditionals
+### Step 5 Nested Conditionals
 Coding: Complete the code
 -------------------------------------
 Using the scheme from the previous step, add 'Water low' and 'Water high' warnings.
@@ -164,7 +164,7 @@ basic.forever(function () {
 
 ```
 
-## Step 9 Test It
+#### Step 9 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens. You may need to tweak the ranges so that the code works consistently.<br>
