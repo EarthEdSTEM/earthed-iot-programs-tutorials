@@ -4,13 +4,13 @@
 ----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
 ----------------------------------------------------------------->
 
-## Activity 1 - Set up the Water Level Sensor @showdialog
+## Step 1 - Set up the Water Level Sensor @showdialog
 ---------------------------------------------
 In this tutorial, we will use the water level sensor to measure water depth. By using nested conditional statements, we will also output messages to an OLED display.
 ![](https://github.com/EarthEdSTEM/earthed-iot-programs-tutorials/blob/master/Images/T_Water_Level_Sensor/Water_Level_Banner.gif)
 Measuring water level using the Water Level Sensor
 
-### Step 1 -Collect the parts. @unplugged
+## Step 2 -Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
@@ -18,7 +18,7 @@ For this tutorial, you will need these parts:<br>
 ![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Water level sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Parts_List.png)
 <br>
 
-### Step 2 Connect Up!
+## Step 3 Connect Up!
 Physical connections
 --------------------
 1. Plug the micro:bit into the iot:bit sheild.
@@ -26,7 +26,7 @@ Physical connections
 3. Connect the other end of the wire to the water level sensor.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/IoT_Water_Level_Sensor.png)
 
-### Step 3 Prepare to Code!
+## Step 4 Prepare to Code!
 Delete unused blocks
 --------------------
 **Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
@@ -34,7 +34,7 @@ Delete unused blocks
 2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
-### Step 4 Add the Extension @unplugged
+## Step 3 Add the Extension @unplugged
 Coding: Add the Smart Science Extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
@@ -43,7 +43,7 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
-### Step 5 Measure the Water Level
+## Step 4 Measure the Water Level
 Coding: Measure and display the Water Level
 ----------------------------------------
 The ``||Basic: Number||`` block displays numbers on the LED array on the front of the micro:bit computer. Use Number if you need to perform a mathematical function on a numeric value. 
@@ -55,30 +55,23 @@ basic.forever(function () {
     basic.showNumber(pins.analogReadPin(AnalogPin.P1))
 })
 ```
-### Step 6 Test It
+## Step 5 Test It
 Test it! Debug it!
 ------------------
 Time to test this section of code. Download the code to the micro: bit and try it out. Observe what happens.<br>
 
-
-
-
-<!---------------------------------------------------------------
-----Water Level Sensor TUTORIAL Activity 2 -  Incomplete --------
------------------------------------------------------------------>
-
-## Activity 2 - Collect and display the data @showdialog
+## Step 1 - Collect and display the data @showdialog
 ---------------------------------------------
-In this section of the tutorial, we will use nested conditional statements to determine what information is outputed to the OLED display.
+You may have noticed that the numbers that were displayed were hard to understand. In this next section of the tutorial, we will improve the user experience by using nested conditional statements to simplify the information that is outputed to the OLED display.
 
-### Step 1 -Collect the parts. @unplugged
+## Step 2 -Collect the parts. @unplugged
 Collect the parts
 -----------------
 1.Leave the water level sensor and micro:bit connected to the SensorBit.
 2.Attach the OLED display making sure the 'G' Pin is matched to the 'G' label on the I2C connector on the micro:bit.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_OLED/OLED_Connections.png)
 
-### Step 2 Nested Conditionals
+## Step 3 Nested Conditionals
 Coding: Create a conditional statement
 -------------------------------------
 Conditional statements allow a question or query to be made, with actions taken based on the result.
@@ -95,7 +88,7 @@ basic.forever(function () {
 })
 ```
 
-### Step 3 Nested Conditionals
+## Step 4 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
@@ -115,7 +108,7 @@ basic.forever(function () {
 })
 
 ```
-### Step 4 Nested Conditionals
+## Step 5 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
@@ -139,7 +132,7 @@ basic.forever(function () {
     }
 })
 ```
-### Step 5 Nested Conditionals
+## Step 6 Nested Conditionals
 Coding: Complete the code
 -------------------------------------
 Using the scheme from the previous step, add 'Water low' and 'Water high' warnings.
@@ -164,7 +157,7 @@ basic.forever(function () {
 
 ```
 
-#### Step 9 Test It
+#### Step 7 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens. You may need to tweak the ranges so that the code works consistently.<br>
