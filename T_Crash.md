@@ -6,7 +6,7 @@
 
 ## Step 1 Using the Crash Sensor as an input  @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/Crash_Sensor_Banner.gif)
 Using the Contact Sensor as an input
 ------------------------------------
 

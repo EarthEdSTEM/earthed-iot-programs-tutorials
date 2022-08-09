@@ -6,7 +6,7 @@
 
 ## Step 1 Measuring Distance @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/Ultrasonic_Banner.gif)
 Measuring distance using the Ultrasonic Sensor
 -------------------------------------------
 
