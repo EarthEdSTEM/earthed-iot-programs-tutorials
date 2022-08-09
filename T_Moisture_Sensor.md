@@ -6,7 +6,7 @@
 
 ## Step 1 Sensing Moisture @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/Soil_Moisture_Banner.gif)
 Sensing a soil moisture using the Soil Moisture sensor
 -------------------------------------------
 
@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Soil moisture sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Soil moisture sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Soil moisture sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -26,7 +26,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the soil moisture sensor to Pin 1 on the iot:bit sheild. 
 3. Connect the other end of the wire to the soil moisture sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
