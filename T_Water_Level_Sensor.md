@@ -4,11 +4,12 @@
 ----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
 ----------------------------------------------------------------->
 
-## Step 1 - Set up the Water Level Sensor @showdialog
----------------------------------------------
-In this tutorial, we will use the water level sensor to measure water depth. By using nested conditional statements, we will also output messages to an OLED display.
+## Step 1 Set up the Water Level Sensor @showdialog
+
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Water_Level_Sensor/Water_Level_Banner.gif)
 Measuring water level using the Water Level Sensor
+-----------------------------------------------------
+In this tutorial, we will use the water level sensor to measure water depth. By using nested conditional statements, we will also output messages to an OLED display.
 
 ## Step 2 -Collect the parts. @unplugged
 Collect the parts
