@@ -40,19 +40,19 @@ Delete unused blocks
 ## Step 5 Create Variables (Setting the Environment)
 Coding: creating variables
 --------------------------
-Variables are containers that hold a value. For this task, we will use the values 1 for 'true' and 0 for 'False'.
-We will start by creating a new variable, adding it and then setting it to 'false' by entering '0'.
+Variables are containers that hold a value. For this task we will use the values 1 for 'true' and 0 for 'False'.
+We will start by creating a new variable, then add it to a button press and set it to 'false' by entering '0'.
 1. Click ``||Variables: Make a Variable...||`` to create a variable and call it ButtonAPress.
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
-3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to '0' (for false).
-Now, each time the program starts, the value of ButtonAPress will be '0'.
+3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to **'0'** (for false).
+Now, each time the program starts, the value of **'ButtonAPress'** will be '0'.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Create_Variable.png)
 
 
 ## Step 6 Add a Conditional Block
-Coding: add an If block
+Coding: Add an 'if' block
 -----------------------
-The switch for turning on the LED will be the A button on the micro:bit. We will use the 'If...then' Logic Block to check if the A button is pressed and if the LED is off. 
+The physical switch for turning on the LED will be the A button on the micro:bit. We will use the 'If...then' Logic Block to check if the A button is pressed and if the LED is off. 
 If both are true, then the LED is set to on.
 1. Place a ``||logic:if||`` block from the Logic menu into the ``||basic.forever||`` block.
 
@@ -65,14 +65,13 @@ basic.forever(function () {
 ```
 
 ## Step 7 Add a Conditional Block
-Coding: Creating the Boolean for 'On'
+Coding: Creating the boolean for 'On'
 -----------------------------------------------------
-This section asks the question: "Is the A button pressed and the LED switched **off**?" by using an ``||logic:and||`` boolean. If both conditions are True
-then the Pin 2 is set to '1' and powers up. To code it:
-1. Place a Boolean ``||logic:and||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
-**Note that the placeholder has pointed ends. Only blocks with pointed ends can fit in the placeholder. The ``||logic:and||`` block has two placeholders with rounded ends for adding variables and values.
-2. Place a Comparison ``||logic:equals||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. Add a ``||variables:ButtonAPress||`` and a value of 0.
-3. Place a ``||input: button A is pressed||`` input into the ``||logic:and||``.
+This section asks the question: "Is the A button pressed and the LED switched **off**?" by using an ``||logic: and ||`` boolean. If both conditions are **True**
+then Pin 2 is set to '1' and powers up. To code it:
+1. Place a Boolean ``||logic: and ||`` block from the Logic Menu into the placeholder at the top of the ``||logic: if ||`` block.
+2. Place a Comparison ``||logic: equals ||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if ||`` block. Add a ``||variables: ButtonAPress ||`` with a value of 0.
+3. Place a ``||input: button A is pressed ||`` input into the ``|| logic: and ||``.
 
 ```blocks
 let ButtonAPress = 0
@@ -84,10 +83,10 @@ basic.forever(function () {
 ```
 
 ## Step 8 Add a Conditional Block
-Coding: If True....Then switch on!
+Coding: If true....then switch on!
 ----------------------------------
 The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 2 then pause, allowing the user to remove their finger from Button A.
-1. Add a ``||pins:digital write pin||`` block to the ``||logic:if||`` and set it to 'P2' and 1.
+1. Add a ``||pins:digital write pin||`` block to the ``||logic:if||`` and set it to 'P2' and '1'.
 2. Add a ``||control:waitMicros||`` and set it to 240 milliseconds. this will allow time for the button to be released.
 3. Set the ButtonAPressed variable to 1 (True) to indicate that Button A has been pressed.
 
