@@ -10,7 +10,7 @@
 Measuring distance using the Ultrasonic Sensor
 -------------------------------------------
 
-In this tutorial, we will use the Ultrasonic sensor to measure distance. The values for these readings are in centimetres, and will be stored in a variable and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the Ultrasonic sensor readings.
+In this tutorial, we will use the Ultrasonic sensor to measure distance. The values for these readings are in centimetres - they will be stored in a variable and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the Ultrasonic sensor readings.
 
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
@@ -39,8 +39,9 @@ Delete unused blocks
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables
 --------------------------
-When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a distance value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Distance.
+When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> 
+Variables are containers that hold a value. For this task, we will store a distance value.
+1. Click ``||Variables: Make a Variable...||`` to create a variable and call it **Distance**.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Distance to||`` block inside the ``||Basic:on Start||`` block.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Create_Variable.png)
 
@@ -51,10 +52,10 @@ Distance = 0
 ## Step 6 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
-2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
-3. Type the word 'Distance: ' in the first placeholder. Join is used to combine two string values.<br>
+The ``||Basic: Show string||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
+1. Place a ``||Basic: Show string||`` block inside the ``||basic:forever||`` block. 
+2. Click on ``||Advanced||``, then ``||Text: Text||`` and select the ``||Text: Join||`` block. **Join** is used to combine two string values to create a sentence.
+3. Type the word **'Distance: '** in the first placeholder.<br>
 ** Note:This section is only needed if you wish to display the Distance value on the LED array on the micro:bit.
 ```blocks
 basic.forever(function () {
@@ -63,7 +64,7 @@ basic.forever(function () {
 ```
 
 ## Step 7 Add the Extension @unplugged
-Coding: Add the Smart Science Extension
+Coding: Add the Environment-and-Science-iot extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
 <br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
@@ -86,12 +87,12 @@ basic.forever(function () {
     Distance = Environment.sonarbit_distance(Environment.Distance_Unit.Distance_Unit_cm, DigitalPin.P2)
 })
 ```
-## Step 10 Join Command
+## Step 9 Join Command
 Coding: Combining two string elements
 -------------------------------------
-1. Make sure that the first placeholder on the ``||Advanced:Join||`` block says "Light Level: ".
-2. Drag a ``||Variables:Distance||`` variable block and put it in the second placeholder on the ``||Advanced:Join||`` block.
-3. Click the '+' symbol on the ``||Advanced:Join||`` block and add the text ' cm' to the new placeholder.
+1. Make sure that the first placeholder on the ``|| Text: Join ||`` block says "Light Level: ".
+2. Drag a ``|| Variables: Distance ||`` variable block and put it in the second placeholder on the ``|| Text: Join ||`` block.
+3. Click the '+' symbol on the ``|| Text: Join ||`` block and add the text **' cm'** to the new placeholder.
 
 ```blocks
 Distance = 0
@@ -101,7 +102,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 9 Test It
+## Step 10 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>

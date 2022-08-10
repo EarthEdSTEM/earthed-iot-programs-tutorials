@@ -36,7 +36,7 @@ Delete unused blocks
 ![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 3 Add the Extension @unplugged
-Coding: Add the Smart Science Extension
+Coding: Add the Environment-and-Science-iot extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
 <br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
@@ -45,7 +45,7 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
 ## Step 4 Measure the Water Level
-Coding: Measure and display the Water Level
+Coding: Measure and display the water level
 ----------------------------------------
 The ``||Basic: Number||`` block displays numbers on the LED array on the front of the micro:bit computer. Use Number if you need to perform a mathematical function on a numeric value. 
 1. Place a ``||Basic: Number||`` block inside the ``||basic:forever||`` block. 
