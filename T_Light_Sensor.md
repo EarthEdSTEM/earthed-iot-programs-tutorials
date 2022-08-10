@@ -6,7 +6,7 @@
 
 ## Step 1 Sensing Light @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Light_Sensor/Light_Sensor_Banner.gif)
 Measuring light using the Light Sensor
 -------------------------------------------
 
