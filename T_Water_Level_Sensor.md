@@ -61,24 +61,25 @@ Test it! Debug it!
 ------------------
 Time to test this section of code. Download the code to the micro: bit and try it out. Observe what happens.<br>
 
-## Step 1 - Collect and display the data @showdialog
+## Step 6 - Collect and display the data @showdialog
+Make the user experience better
 ---------------------------------------------
 You may have noticed that the numbers that were displayed were hard to understand. In this next section of the tutorial, we will improve the user experience by using nested conditional statements to simplify the information that is outputed to the OLED display.
 
-## Step 2 -Collect the parts. @unplugged
+## Step 7 -Collect the parts. @unplugged
 Collect the parts
 -----------------
 1.Leave the water level sensor and micro:bit connected to the SensorBit.
 2.Attach the OLED display making sure the 'G' Pin is matched to the 'G' label on the I2C connector on the micro:bit.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_OLED/OLED_Connections.png)
 
-## Step 3 Nested Conditionals
+## Step 8 Nested Conditionals
 Coding: Create a conditional statement
 -------------------------------------
 Conditional statements allow a question or query to be made, with actions taken based on the result.
-1. Place a ``||Logic:if||`` block in the ``||Basic:Forever||`` block under the existing ``||Basic: Number||`` block.
-2. Drag a ``||Logic: <||`` (less than) block from the ``||Logic||`` menu into the placeholder in the ``||Logic:if||`` block.
-3. Place a ``||Pins:analogReadPin||`` block into the first placeholder on the ``||Logic: >||`` block.
+1. Place a ``|| Logic: if ||`` block in the ``|| Basic: Forever ||`` block under the existing ``|| Basic: Number ||`` block.
+2. Drag a ``|| Logic: < ||`` (less than) block from the ``|| Logic: Logic ||`` menu into the placeholder in the ``|| Logic :if ||`` block.
+3. Place a ``|| Pins: analogReadPin ||`` block into the first placeholder on the ``|| Logic: > ||`` block.
 4. Enter the value 300 into the second placeholder.
 
  ```blocks
@@ -89,7 +90,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 4 Nested Conditionals
+## Step 9 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
@@ -109,7 +110,7 @@ basic.forever(function () {
 })
 
 ```
-## Step 5 Nested Conditionals
+## Step 10 Nested Conditionals
 Coding: Create a nested conditional statement
 -------------------------------------
 Nesting is when one command is placed inside of another. Here, we will put an 'If' inside an 'If'!
@@ -133,7 +134,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 6 Nested Conditionals
+## Step 11 Nested Conditionals
 Coding: Complete the code
 -------------------------------------
 Using the scheme from the previous step, add 'Water low' and 'Water high' warnings.
@@ -158,7 +159,7 @@ basic.forever(function () {
 
 ```
 
-#### Step 7 Test It
+#### Step 12 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens. You may need to tweak the ranges so that the code works consistently.<br>
