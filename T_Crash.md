@@ -44,11 +44,11 @@ Delete unused blocks
 Coding: creating variables
 --------------------------
 Variables are containers that hold a value. For this task, we will use the values 1 for 'true' and 0 for 'False'.
-We will start by creating a new variable, adding it and then setting it to 'false' by entering '0'.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it CrashPressed.
+We will start by creating a new variable, adding it to the **Start** block, then setting it to 'false' by entering '0'.
+1. Click ``||Variables: Make a Variable...||`` to create a variable and call it **CrashPressed**.
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set CrashPressed to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set CrashPressed to||`` block is set to '0' (for false).
-Now, each time the program starts, the value of CrashPressed will be '0'.
+Now, each time the program starts, the value of **CrashPressed** will be '0'.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Create_Variable.png)
 
 ```blocks
@@ -56,7 +56,7 @@ let CrashPressed = 0
 ```
 
 ## Step 6 Add a Conditional Block
-Coding: add an If block
+Coding: add an if block
 -----------------------
 The switch for turning on the LEDs will be the Crash Sensor. We will use the 'If...then' Logic Block to check if the Crash Sensor is pressed and if the LEDs are off. 
 
@@ -87,7 +87,6 @@ Coding: Creating the Boolean for 'On'
 This section asks the question: "Is the Crash Sensor pressed and the LED switched **off**?" by using an ``||logic:and||`` boolean. If both conditions are True
 then Pins 3,4 and 5 are set to '1' and power up. To code it:
 1. Place a Boolean ``||logic:and||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
-**Note: The ``||logic:and||`` block has two placeholders with rounded ends for adding variables and values.
 2. Place a ``||Smart Home: Crash sensor pressed||`` block into the first placeholder of the  ``||logic:and||`` block. 
 3. Place a Comparison ``||logic:equals||`` block from the Logic Menu into the second placeholder of ``||logic:and||`` block. 
 4. Add a ``||variables:CrashPressed||`` to the first placeholder of the ``||logic:equals||`` block and a value of 0 to the second. 
@@ -105,7 +104,7 @@ basic.forever(function () {
 ## Step 9 Add a Conditional Block
 Coding: If True....Then switch on!
 ----------------------------------
-The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 3 then pause before enabling pin 4.
+The **'if'** block checks if a condition is **'true'** and executes commands if it is. Here, we enable Pin 3 then pause before enabling pin 4.
 1. Set the CrashPressed variable to 1 (True) to indicate that Button A has been pressed.
 2. Add a ``||pins:digital write pin||`` block to the ``||logic:if||`` and set it to 'P3' and 1.
 3. Add a ``||control:waitMicros||`` and set it to 500 milliseconds. This creates a sequence for the LEDs.
