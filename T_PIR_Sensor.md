@@ -22,13 +22,13 @@ For this tutorial, you will need these parts: <br>
 <br>
 
 ## Step 3 - Connect Up!
-Connect the Parts Together
+Connect the parts together
 --------------------------
 1. Plug the micro: bit into the iot:bit sheild.
 2. Connect the wire to Pin 1 on the iot:bit sheild.
 3. Connect the other end of the wire to the PIR sensor.
 4. Connect the LED to Pin 2 using the same method.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_PIR_Sensor_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_PIR_Sensor/IoT_Soil_Moisture_Sensor_Connections.png)
 
 
 ## Step 4 - Prepare to Code!
@@ -41,22 +41,22 @@ Delete unused blocks if needed
 
 
 ## Step 5 Add the Extension @unplugged
-Coding: Add the Smart Science Extension
+Coding: Add the SmartHome-Kit extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
 <br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
-1. Go to the ``||Extensions||`` menu and search for the SmartHome-Kit extension. 
+1. Go to the ``||Extensions||`` menu and search for the **SmartHome-Kit** extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
 
 
 ## Step 6 Setting up the If...Then...Else
-Coding: Setting up the If...Then...Else
+Coding: Setting up the if...then...else
 --------------------------
-If...Then...Else statements are a type of conditional statement. They are used to ask a question then act according to the response.
+if...then...else statements are a type of conditional statement. They are used to ask a question then act according to the response.
 1. Click the ``|| Logic: if ||`` block in the ``|| Logic ||`` menu and place it in the ``|| Basic: forever ||`` block.
-2. Go to the  ``|| Logic: if ||`` block you just created and click the 'Else' plus sign.<br>
-This creates the If...Then...Else statement.
+2. Go to the  ``|| Logic: if ||`` block you just created and click the **'+'** button to add an ``|| Logic: else ||`` section.<br>
+This creates the if...then...else statement.
 
 ```blocks
 if (true) {
@@ -69,12 +69,12 @@ basic.forever(function () {
 })
 ```
 
-## Step 6 Ask the question
+## Step 7 Ask the question
 Coding: Ask the question
 --------------------------
 Next, we will set up the query. We will ask: **"Is the PIR sensor detecting movement?"**
-1. Navigate to the ```|| SmartHome ||``` menu. 
-2. Select the ```|| SmartHome: PIR sensor detects motion ||``` block and drag it into the place holder in the ``|| Logic: if ||`` block.
+1. Navigate to the ``|| SmartHome ||`` menu. 
+2. Select the ``|| SmartHome: PIR sensor detects motion ||`` block and drag it into the place holder in the ``|| Logic: if ||`` block.
 3. Ensure that the pin number is set to **Pin 1**.
 
 ```blocks
@@ -88,10 +88,10 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 Set the Response
+## Step 8 Set the Response
 Coding: Set the response
 --------------------------
-Once the 'If' is set then we need to state what happens. **If** motion is true, **then** turn on LED at Pin 2.
+Once the ``|| Logic: if ||`` is set then we need to state what happens. **If** motion is true, **then** turn on LED at Pin 2.
 1. Navigate to the ``|| SmartHome ||`` menu. 
 2. Select the ``|| SmartHome: Toggle LED to ||`` block and drag it into the ``|| Logic: if ||`` block.
 3. Ensure that the pin number is set to **Pin 2** and that the toggle is set to **on**.
@@ -108,10 +108,10 @@ basic.forever(function () {
 	
 })
 ```
-## Step 7 What Else?
+## Step 9 What Else?
 Coding: Use the Else command
 --------------------------
-The **Else** command states what happens if the condition is not true. **If** motion is not true, turn off LED at Pin 2.
+The **else** command states what happens if the condition is not true. **If** motion is not true, turn off LED at Pin 2.
 1. Navigate to the ``|| SmartHome ||`` menu. 
 2. Select the ``|| SmartHome: Toggle LED to ||`` block and drag it into the ``|| Logic: else ||`` section of the ``|| Logic: If ||`` block.
 3. Ensure that the ``|| SmartHome: Toggle LED to ||`` block is set to Pin 2 and that the toggle is set to **off**.
@@ -128,7 +128,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 8 - Test It
+## Step 10 - Test It
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro:bit and try it out. Observe what happens and adjust the values as needed.<br>
