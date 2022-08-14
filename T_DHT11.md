@@ -40,23 +40,31 @@ Delete unused blocks
 Coding: Creating variables
 --------------------------
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a temperature value and a humidity value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it Temperature.
-2. Click ``||Variables: Make a Variable...||`` to create a variable and call it Humdity.
-3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set Temperature to||`` block inside the ``||Basic:on Start||`` block.
-4. Repeat for Humidity
+1. Click ``||Variables: Make a variable...||`` to create a variable and call it 'Temperature'.
+2. Click ``||Variables: Make a variable...||`` to create a variable and call it 'Humidity'.
+3. Go to ``||Variables: variables||`` and place the ``||variables:Set Temperature to||`` block inside the ``||Basic:on start||`` block. Enter '0' into the placeholder.
+4. Repeat step 3, changing 'Temperature' to 'Humidity' using the down arrow symbol on the block once added to the ``||basic:forever||`` block. Enter '0' into the placeholder.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/IoT_DHT11_Create_Variable.png)
+
+```blocks
+let Humidity = 0
+let Temperature = 0
+basic.forever(function () {
+	
+})
+```
 
 ## Step 6 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
-1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Temperature: ' in the placeholder.
-2. Place a second ``||Basic: String||`` block inside the ``||basic:forever||`` block. Type the word 'Humidity: ' in the placeholder.
+The ``||Basic: show string||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
+1. Place a ``||Basic: show string||`` block inside the ``||basic:forever||`` block. Type the word 'Temperature: ' in the placeholder.
+2. Place a second ``||Basic: show string||`` block inside the ``||basic:forever||`` block. Type the word 'Humidity: ' in the placeholder.
 
 ```blocks
 basic.forever(function () {
-    basic.showString("Temperature:")
-    basic.showString("Humidity:")
+    basic.showString("Temperature: ")
+    basic.showString("Humidity: ")
 })
 ```
 
@@ -73,14 +81,14 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 Coding: Add the DHT11 sensor readings
 -------------------------------------
 While the DHT11 sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set Temperature to||`` block above the Temperature string block you made previously.
+1. Place a ``||Variables:set Temperature to||`` block above the 'Temperature' string block you made previously.
 2. Click on the ``||Octopus||`` menu and then click ``||...More||``.
-3. Drag the ``||Value of dht11 temperature||`` block and put it in the ``||Variables:Set Temperature to ||`` placeholder.
+3. Drag the ``||value of dht11 temperature||`` block and put it in the ``||Variables:set Temperature to ||`` placeholder.
 <br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
 
-4. Place a new ``||Basic: String||`` block underneath the Temperature string block.
-5. Drag a ``||Variables:Temperature||`` variable block and put it in the ``||Basic: String||`` placeholder.
-6. Repeat to for humidity
+4. Place a new ``||Basic: show string||`` block underneath the 'Temperature' string block.
+5. Drag a ``||Variables:temperature||`` variable block and put it in the ``||Basic: show string||`` placeholder.
+6. Repeat to for 'Humidity'.
 
 ```blocks
 let Temperature = 0
