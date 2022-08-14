@@ -47,8 +47,8 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 ## Step 6 Initialise the OLED Display
 Coding: Initialise the OLED display
 --------------------------
-Before it can be used, the OLED needs to be initialised - the software needs to be told that it is there.<br>
-1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the ``||Start||`` block.
+Before it can be used, the OLED needs to be initialised. In other words, the software needs to be told that it is there.<br>
+1. Go to the ``||OLED||`` menu and drag the ``||OLED: Initialise||`` block into the ``||Basic:Start||`` block.
 
 ```blocks
 OLED.init(128, 64)
@@ -59,7 +59,7 @@ Coding: Displaying text on the micro:bit
 ----------------------------------------
 In coding, a line of text is called a string. Strings don't have a numerical value even if they contain a numerical digit. Here we will display a string on the OLED using a 'Show String' command.
 1. In the Forever block, go to the ``||OLED||`` menu and drag a ``||OLED:Show String||`` block into it. 
-2. Type 'Hello world' into the place holder.
+2. Type 'Hello World' into the place holder.
 
 ```blocks
 OLED.init(128, 64)
