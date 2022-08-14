@@ -6,7 +6,7 @@
 
 ## Step 1 Taking a Temperature @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/EarthEd_Horizontal_Logo.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/DHT11_Banner.gif)
 Taking a Temperature using the DHT11 sensor
 -------------------------------------------
 
@@ -17,7 +17,7 @@ Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Parts_List.png)
+![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x DHT11 sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/IoT_DHT11_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
@@ -26,7 +26,7 @@ Physical connections
 1. Plug the micro:bit into the iot:bit sheild.
 2. Use the wire to connect the DHT11 to Pin 2 (or other pin) on the iot:bit sheild. 
 3. Connect the other end of the wire to the DHT11 sensor.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/IoT_DHT11_Connections.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/IoT_DHT11_Connections.png)
 
 ## Step 4 Prepare to Code!
 Delete unused blocks
