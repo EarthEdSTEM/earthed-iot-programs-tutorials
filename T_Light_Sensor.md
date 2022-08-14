@@ -40,7 +40,7 @@ Delete unused blocks
 Coding: Creating variables
 --------------------------
 When creating new code, it is good practice to 'declare' the variables you will use. This is called setting the environment.<br> Variables are containers that hold a value. For this task, we will store a light level value.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it LightValue.
+1. Click ``||Variables: Make a Variable...||`` to create a variable and call it 'LightValue'.
 3. Go to ``||Variables: Variables||`` and place the ``||Variables:Set LightValue to||`` block inside the ``||Basic:on Start||`` block.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Light_Sensor/IoT_Light_Sensor_Create_Variable.png)
 
@@ -53,7 +53,7 @@ Coding: Displaying text on the micro:bit
 ----------------------------------------
 The ``||Basic: String||`` block displays text on the LED array on the front of the micro:bit computer. In coding, strings are lines of text. 
 1. Place a ``||Basic: String||`` block inside the ``||basic:forever||`` block. 
-2. 2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
+2. Click on ``||Advanced||``, then ``||Advanced:Text||`` and select the ``||Advanced:Join||`` block.
 3. Type the word 'Light Level: ' in the first placeholder. Join is used to combine two string values.<br>
 ** Note:This section is only needed if you wish to display the light value on the LED array on the micro:bit.
 ```blocks
@@ -86,7 +86,7 @@ basic.forever(function () {
     LightValue = Environment.ReadLightIntensity(AnalogPin.P2)
 })
 ```
-## Step 10 Join Command
+## Step 9 Join Command
 Coding: Combining two string elements
 -------------------------------------
 1. Make sure that the first placeholder on the ``||Advanced:Join||`` block says "Light Level: ".
@@ -100,7 +100,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 9 Test It
+## Step 10 Test It
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
