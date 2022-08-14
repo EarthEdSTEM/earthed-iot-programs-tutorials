@@ -7,7 +7,7 @@
 ## Step 1 Taking a Temperature @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/DHT11_Banner.gif)
-Taking a Temperature using the DHT11 sensor
+Measuring temperature and humidity using the DHT11 sensor
 -------------------------------------------
 
 In this tutorial, we will use the DHT11 sensor to take temperature and humidity readings. The values for these readings will be stored and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the DHT11 sensor readings.  Extensions only need to be added once.
