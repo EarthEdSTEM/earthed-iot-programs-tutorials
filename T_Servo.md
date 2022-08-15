@@ -11,7 +11,7 @@ Control a Servo Motor
 ---------------------------------
 
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) to control a servo motor. A servo is a type of motor that can rotate to a given position then hold it. 
-By using variables, inputs obtained from users or sensors can be stored and used to control when the servo moves and by how far.
+By using variables, inputs obtained from users or sensors can be stored and used to control the servo.
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
