@@ -1,7 +1,7 @@
 # Water Level Sensor Tutorial
 
 <!---------------------------------------------------------------
-----Water Level Sensor TUTORIAL Activity 1 -  Incomplete --------
+----Water Level Sensor TUTORIAL Activity 1 -  Complete --------
 ----------------------------------------------------------------->
 
 ## Step 1 Set up the Water Level Sensor @showdialog

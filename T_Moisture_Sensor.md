@@ -1,7 +1,7 @@
 # Moisture Sensor Tutorial
 
 <!---------------------------------------------------------------
-------------Moisture Sensor TUTORIAL------------INComplete-----
+------------Moisture Sensor TUTORIAL------------Complete-----
 ----------------------------------------------------------------->
 
 ## Step 1 Sensing moisture @showdialog
