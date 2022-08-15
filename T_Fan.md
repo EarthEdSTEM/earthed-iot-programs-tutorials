@@ -121,7 +121,9 @@ To use the relay:
 ## Step 10 - Optional Relay
 Optional relay code
 ------------------
-The
+The relay is activation code is structured in a similar way to the previous fan code. 
+A button press or other input is used to set the FanOn variable to true, which then sends a signal to a pin.
+This time, we are using pin 2 instead of pin 16.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     FanOn = 1
