@@ -6,7 +6,7 @@
 
 ## Step 1 Sensing moisture @showdialog
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/Soil_Moisture_Banner.gif)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/Soil_Moisture_Sensor_Banner.gif)
 Sensing a soil moisture using the Soil Moisture sensor
 -------------------------------------------
 
