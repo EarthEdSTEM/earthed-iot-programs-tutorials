@@ -42,7 +42,7 @@ basic.forever(function () {
 Pair and Upload your code
 -------------------------
 Clicking ``|Download|`` opens a dialogue box. From here, you can download the file to your computer and then transfer it (upload) using File Explorer, or click ``|Pair|``. If it is already attached by USB, ``|Pair|`` sends your code directly to the memory in the micro:bit.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/PairMicrobit.png)
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/PairMicrobit.png)
 
 **[Need more help connecting? Click here.](https://www.youtube.com/watch?v=qSjMDG84bMY)**
 
