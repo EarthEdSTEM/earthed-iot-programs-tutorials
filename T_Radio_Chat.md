@@ -16,12 +16,14 @@ In this tutorial we will connect two micro:bit computers and send 'Chat' message
 Collect the parts
 -----------------
 For this tutorial, you will need 2x micro:bit computers, connected to two computers via USB - one for you and one for a partner.<br>
-<br>
+Both you and your partner will need to create the following code.<br>
 
 ## Step 3 - Create the code
 Coding: Set the radio group
 --------------------------
-This code begins by setting the radio group. Any micro:bit on this radio group can communicate if they have the right coding. 
+This code begins by setting the radio group. Any micro:bit on this radio group can communicate if they have the right coding, allowing for larger groups.<br>
+Place a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
+The number in the place holder needs to be the same as the one on your partner's computer.
 
 ```blocks
 radio.setGroup(1)
@@ -47,6 +49,7 @@ Coding: Receive a message
 1. Add a ``||radio: on radio received||`` block to the work space.
 2. Add a ``||Basic: Show string||`` block **inside** the ``||radio: on radio received||`` block.
 3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder and **place** it into the placeholder on the ``||Basic: Show string||`` block.
+
 ```blocks
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
