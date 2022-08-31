@@ -1,7 +1,7 @@
 # T_Radio_Chat_Tutorial
 
 <!---------------------------------------------------------------
-------------------------- Radio Chat TUTORIAL-----InComplete-----
+------------------------- Radio Chat TUTORIAL-----Complete-----
 ----------------------------------------------------------------->
 
 ## Step 1 About the Radio @showdialog
