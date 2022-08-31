@@ -59,5 +59,10 @@ radio.onReceivedString(function (receivedString) {
 ## Step 6 - Extending further
 Extending further
 --------------------------
-In this example we used a ``||Input: on Button A pressed||`` block as the trigger input for the radio event. A trigger could be another input could be used. Eg. A computer senses a high body temperature and tells a security computer to make an automated announcement. THe security computer then tells a traffic flow computer to shut transit gates.<br>
-What ideas can you come up with?
+In this example we used a ``||Input: on Button A pressed||`` block as the trigger input for the radio event. A trigger could be another input could be used. Eg. A computer senses a high body temperature and tells a security computer to make an automated announcement. The security computer then tells a traffic flow computer to shut transit gates.<br>
+What ideas can you come up with?<br>
+
+** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
+
+
+<script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
