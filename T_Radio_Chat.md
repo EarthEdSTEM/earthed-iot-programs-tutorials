@@ -4,6 +4,7 @@
 ------------------------- Radio Chat TUTORIAL-----Complete-----
 ----------------------------------------------------------------->
 ## Activity 1 - Radio Chat
+----------------------------
 ### Step 1 About the Radio @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Radio_Chat/Radio_Chat_Banner.gif)
@@ -56,6 +57,7 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 ## Activity 2 - Trigger an event on another device
+----------------------------
 ### Step 6 - Extending further
 Extending further
 --------------------------
