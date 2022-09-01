@@ -62,7 +62,121 @@ In this example we used a ``||Input: on Button A pressed||`` block as the trigge
 A trigger could be another input could be used. 
 Eg. A computer senses a high body temperature and tells a security computer to make an automated announcement. 
 The security computer then tells a traffic flow computer to shut transit gates.<br>
-What ideas can you come up with?<br>
+What ideas can you come up with? You can exit here or move on to more advanced ideas.<br>
+
+## Step 7 - Extending further
+Extending further
+--------------------------
+In this section, we will use one micro:bit to switch on a fan attached to a second micro:bit.
+You will need a partner and two computers,  two micro:bit computers, an IoTBit board, a fan and a connecting wire.
+
+## Step 8 - Extending further
+Connections
+--------------------------
+Connect one micro:bit to a computer via USB.<br>
+Connect the other micro:bit to a computer via USB, place it into the IOTBit board, then attach the fan to Pin 16. 
+
+## Step 9 - Create the code for Computer One
+Coding: Set the radio group
+--------------------------
+**On computer 1**<br>
+Place a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
+The number in the place holder needs to be the same as the one on your partner's computer.<br>
+**Repeat this step on Computer Two**
+```blocks
+radio.setGroup(1)
+```
+
+## Step 10 - Create the code for Computer One
+Coding: Set micro:bit One to send
+--------------------------
+**On computer 1**<br>
+1. Use ``||Input: on Button A pressed||`` block to send a message. Here, pressing Button A will send an 'On' command. 
+2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. This command sends text over the micro:bit radio.
+3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
+4. Type the word **'On'** into each place holder.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("On")
+    basic.showString("On")
+})
+```
+
+## Step 11 - Create the code for Computer One
+Coding: Set micro:bit One to send continued
+--------------------------
+**On computer 1**<br>
+1. Use ``||Input: on Button B pressed||`` block to send a message. Here, pressing Button B will send an 'Off' command. Click the down arrow on the ``||Input: on Button A pressed||`` to access Button B.
+2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button B pressed||`` block.
+3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
+4. Type the word **'Off'** into each place holder.
+
+```blocks
+input.onButtonPressed(Button.B, function () {
+    radio.sendString("Off")
+    basic.showString("Off")
+})
+```
+## Step 12 - Create the code for Computer One
+Coding: Set micro:bit One to send continued
+--------------------------
+**On computer 1**<br>
+1. Use ``||Input: on Button A+B pressed||`` block to send a message. Here, pressing **both Buttons** will send a 'Pulse' command. 
+2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A+B pressed||`` block.
+3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
+4. Type the word **'Off'** into each place holder.
+
+```blocks
+input.onButtonPressed(Button.AB, function () {
+    radio.sendString("Pulse")
+    basic.showString("Pulse")
+})
+```
+## Step 13 - Create the code for Computer One
+Coding: Set micro:bit One to send continued
+--------------------------
+**On computer 2**<br>
+1. Check that the radio group is the same as your partner's.
+2. Check which Pin the fan is connected to on the IoTBit board.
+3. Place an  ``||Logic: If||`` block into the ``||Basic: Forever||`` block.
+
+## Step 14 - Create the code for Computer One
+Coding: Receive a message
+--------------------------
+**On computer 2**<br>
+1. Add a ``||radio: on radio received||`` block to the work space.
+2. Add a ``||Basic: Show string||`` block **inside** the ``||radio: on radio received||`` block.
+3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder and **place** it into the placeholder on the ``||Basic: Show string||`` block.
+
+```blocks
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
+```
+
+```blocks
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "On") {
+        smarthome.motorFan(AnalogPin.P2, true)
+    } else if (receivedString == "Off") {
+        smarthome.motorFan(AnalogPin.P2, false)
+    } else {
+        if (receivedString == "Pulse") {
+            for (let index = 0; index < 4; index++) {
+                smarthome.motorFan(AnalogPin.P2, true)
+                basic.pause(500)
+                smarthome.motorFan(AnalogPin.P2, false)
+                basic.pause(500)
+            }
+        }
+    }
+})
+
+radio.setGroup(1)
+```
+
+
 
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
 
