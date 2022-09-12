@@ -8,7 +8,7 @@
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Radio_Chat/Radio_Chat_Banner.gif)
 -------------------------------------------
-One of the fundamental ideas behind IoT, is the connection between multiple computers. Micro:bits can communicate using short range radio signals. The Radio menu contains commands for sending and recieving data.<br>
+One of the fundamental ideas behind IoT, is the connection between multiple computers. Micro:bits can communicate using short range radio signals. The Radio menu contains commands for sending and receiving data.<br>
 In this tutorial we will connect two micro:bit computers and send 'Chat' messages between them. For IoT projects, the goal would be to share data.
  
 
