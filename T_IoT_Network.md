@@ -23,46 +23,32 @@ In the image above, a sensor collects data and sends it to the Gateway. From the
 The 'Back End' is the software that is used to process the data on the server. This is used to interact with the user interface, collect information, sort it and prepare responses which are sent back to the IoT devices on the system.
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT%20System.png)
 
-### Step 3 IoT Network Tutorial Goals
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+### IoT Network Tutorial Goals
 Tutorial Goals
 -----------------
-In this tutorial, we will aim to simulate an IoT System.
+In this tutorial, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
 
-## Set the first sensor  @showdialog
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
-Set the first sensor
-
-### Step 1 What you will need
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+### What you will need
 What you will need
 -----------------
 This tutorial requires a micro:bit computer and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
-In addition, you will devices and connectors, depending on how you configure your system.<br>
+In addition, you will need devices and connectors, depending on how you configure your system.<br>
 
-### Step 2 IoT First Link
+## Code an Actuator Device  @showdialog
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
-First Link
------------------
-Begin with the code from the Chat Tutorial.
-```blocks
-radio.onReceivedString(function (receivedString) {
-    if (receivedString == "On") {
-        smarthome.motorFan(AnalogPin.P2, true)
-    } else if (receivedString == "Off") {
-        smarthome.motorFan(AnalogPin.P2, false)
-    } else {
-        if (receivedString == "Pulse") {
-            for (let index = 0; index < 4; index++) {
-                smarthome.motorFan(AnalogPin.P2, true)
-                basic.pause(500)
-                smarthome.motorFan(AnalogPin.P2, false)
-                basic.pause(500)
-            }
-        }
-    }
-})
+Code an Actuator Device
+---------------------
+We will start by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted. 
 
+### Step 1 Connections
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+Connections
+-----------------
+Connect the components and then set the Radio Group. Each device that you want to communicate with, needs to be in the same Radio Group.
+1. Connect one micro:bit, one battery pack and one connector wire.
+2. Drag a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
+3. Set the **Radio Group to 1**
+```blocks
 radio.setGroup(1)
 ```
 
