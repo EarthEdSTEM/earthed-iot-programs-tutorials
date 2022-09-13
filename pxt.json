@@ -1,6 +1,6 @@
 {
     "name": "EarthEd IoT Programs Tutorials",
-    "version": "1.8.10",
+    "version": "1.8.11",
     "description": "",
     "dependencies": {
         "core": "*",
