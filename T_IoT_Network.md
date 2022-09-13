@@ -15,7 +15,7 @@ In an IoT system such as a smart home, a series of devices interact with each ot
 
 **This is an advanced tutorial and relies on skills learnt in previous tutorials.**<br>
 
-### Introduction @sunplugged
+### Introduction @unplugged
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT%20System.png)
 About IoT Systems
