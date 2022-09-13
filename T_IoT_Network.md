@@ -41,7 +41,6 @@ Code an Actuator Device
 We will start by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted. 
 
 ### Step 1 Connections
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Connections
 -----------------
 Connect the components and then set the Radio Group. Each device that you want to communicate with, needs to be in the same Radio Group.
@@ -50,6 +49,36 @@ Connect the components and then set the Radio Group. Each device that you want t
 3. Set the **Radio Group to 1**
 ```blocks
 radio.setGroup(1)
+```
+### Step 2 Receive a String via Radio
+Receive a String via Radio
+-----------------
+For this tutorial, the trigger to turn on the fan will be received via the radio on the micro:bit.
+1. **Drag** a ``||radio: on radio received receivedString||`` block on to the desktop. This is a function block like Forever.
+2. Place a ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||``
+```blocks
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "FanOn") {
+        pins.digitalWritePin(DigitalPin.P2, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P2, 0)
+    }
+})
+```
+### Step 3 Receive a String via Radio cont.
+Receive a String via Radio cont.
+-----------------
+1. Place a 
+2. **Drag** the ``||radio: receivedString||`` block from. This is a function block like Forever.
+2. Place a ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||``
+```blocks
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "FanOn") {
+        pins.digitalWritePin(DigitalPin.P2, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P2, 0)
+    }
+})
 ```
 
 <br>**Under construction**<br><br>
