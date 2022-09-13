@@ -5,7 +5,8 @@
 ----------------------------------------------------------------->
 ### @activities true
 
-## Introduction @showdialog
+## Introduction
+### Introduction @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 About IoT
@@ -14,7 +15,7 @@ In an IoT system such as a smart home, a series of devices interact with each ot
 
 **This is an advanced tutorial and relies on skills learnt in previous tutorials.**<br>
 
-## Step 2 IoT Network Tutorial @showdialog
+### Introduction @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT%20System.png)
 About IoT Systems
@@ -23,20 +24,24 @@ At the centre of an IoT system is the Gateway. This device connects IoT devices 
 In the image above, a sensor collects data and sends it to the Gateway. From the Gateway, the data is sent to a server. This server is sometimes refered to as 'The Cloud', but really, it is just a big computer with lots of storage space. <br>
 The 'Back End' is the software that is used to process the data on the server. This is used to interact with the user interface, collect information, sort it and prepare responses which are sent back to the IoT devices on the system.
 
-## Step 3 IoT Network Tutorial Goals
+### Step 3 IoT Network Tutorial Goals
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Tutorial Goals
 -----------------
 In this tutorial, we will aim to simulate an IoT System.
 
-## Step 4 What you will need
+## Set the first sensor  @showdialog
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+Set the first sensor
+
+### Step 1 What you will need
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 What you will need
 -----------------
 This tutorial requires a micro:bit computer and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will devices and connectors, depending on how you configure your system.<br>
 
-## Step 5 IoT First Link
+### Step 2 IoT First Link
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 First Link
 -----------------
