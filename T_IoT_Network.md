@@ -3,8 +3,9 @@
 <!---------------------------------------------------------------  
 -------------------IoT_Network_Tutorial------InComplete----------
 ----------------------------------------------------------------->
+### @activities true
 
-## Step 1 IoT Network Tutorial @showdialog
+## Introduction @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 About IoT
@@ -35,18 +36,26 @@ What you will need
 This tutorial requires a micro:bit computer and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will devices and connectors, depending on how you configure your system.<br>
 
-## Step 5 IoT First Link @unplugged
+## Step 5 IoT First Link
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 First Link
 -----------------
-Use two micro:bits. **Decide** which micro:bit will be your **Gateway** and which will be the **IoT device**.<br>
-Apply the the block code (including setting the radio group) from the Chat Tutorial to the IoT device shown below to the IoT device (here it will be a fan):
+Begin with the code from the Chat Tutorial.
 ```blocks
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "On") {
         smarthome.motorFan(AnalogPin.P2, true)
     } else if (receivedString == "Off") {
         smarthome.motorFan(AnalogPin.P2, false)
+    } else {
+        if (receivedString == "Pulse") {
+            for (let index = 0; index < 4; index++) {
+                smarthome.motorFan(AnalogPin.P2, true)
+                basic.pause(500)
+                smarthome.motorFan(AnalogPin.P2, false)
+                basic.pause(500)
+            }
+        }
     }
 })
 
