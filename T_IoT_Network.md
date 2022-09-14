@@ -38,7 +38,9 @@ In addition, you will need devices and connectors, depending on how you configur
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Code an Actuator Device
 ---------------------
-We will start by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted. 
+Each section requires its own micro:bit computer and MakeCode file.
+We will start by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted.<br>
+ 
 
 ### Step 1 Connections
 Connections
