@@ -27,7 +27,8 @@
         "T_Moisture_Sensor.md",
         "T_Crash.md",
         "T_Radio_Chat.md",
-        "T_IoT_Network.md"
+        "T_IoT_Network.md",
+        "T_IoT_Network_2.md"
     ],
     "testFiles": [
         "test.ts"
