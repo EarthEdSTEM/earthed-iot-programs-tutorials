@@ -111,7 +111,7 @@ Save and Download
 -----------------
 This is the end of this section. Before you move on to code the Gateway:<br>
 1. **Download your work to your micro:bit**<br>
-2. **[Click this link to continue to the next section](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F%23tutorial%3Agithub%3Aearthedstem%2Fearthed-iot-programs-tutorials%2FT_IoT_Network_1&sa=D&sntz=1&usg=AOvVaw3jaYNJlZTmHx4bGHfEZMW-)**<br>
+2. **[Click this link to continue to the next section](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F%23tutorial%3Agithub%3Aearthedstem%2Fearthed-iot-programs-tutorials%2FT_IoT_Network_2&sa=D&sntz=1&usg=AOvVaw3jaYNJlZTmHx4bGHfEZMW-)**<br>
 <br>[- Click here to return to the Home menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)<br>
  
 
