@@ -85,7 +85,7 @@ radio.onReceivedString(function (receivedString) {
 
 <br>**Download your work to your micro:bit**<br><br>
 <br><br>
-** [- Click here to continue to the next section](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
+** [- Click here to continue to the next section](https://www.google.com/url?q=https%3A%2F%2Fmakecode.microbit.org%2F%23tutorial%3Agithub%3Aearthedstem%2Fearthed-iot-programs-tutorials%2FT_IoT_Network&sa=D&sntz=1&usg=AOvVaw3jaYNJlZTmHx4bGHfEZMW-)**<br>
 [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)<br>
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
