@@ -26,20 +26,20 @@ The 'Back End' is the software that is used to process the data on the server. T
 ### IoT Network Tutorial Goals
 Tutorial Goals
 -----------------
-In this tutorial, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
+In this set of tutorials, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
 
 ### What you will need
 What you will need
 -----------------
-This tutorial requires a micro:bit computer and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
+This set of tutorials require a micro:bit computer and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will need devices and connectors, depending on how you configure your system.<br>
 
-## Code an Actuator Device  @showdialog
+## Section 1 - Code an Actuator Device  @showdialog
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Code an Actuator Device
 ---------------------
 Each section requires its own micro:bit computer and MakeCode file.
-We will start by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted.<br>
+We will start this section by preparing an actuator device. For this example it will be a fan, but ither devices can be subsituted.<br>
  
 
 ### Step 1 Connections
@@ -83,8 +83,10 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-<br>**Under construction**<br><br>
-** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
+<br>**Download your work to your micro:bit**<br><br>
+<br><br>
+** [- Click here to continue to the next section](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
+[- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)<br>
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
 
