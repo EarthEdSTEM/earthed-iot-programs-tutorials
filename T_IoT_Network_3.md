@@ -79,13 +79,23 @@ basic.forever(function () {
 })
 ```
 
-### Step 5 Save and download
-Save and download
+### Step 5 Download to the micro:bit
+Download to the micro:bit
 -----------------
-This is the end of this section. Before you move on to code the Gateway:<br>
 1. **Download your work to your micro:bit**<br>
-2. **[Click this link to continue to the next section](https://makecode.microbit.org/#tutorial:github:earthedstem/earthed-iot-programs-tutorials/T_IoT_Network_2)**<br>
-<br>[- Click here to return to the Home menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)<br>
+
+## Where to next?
+Where to next?
+-----------------
+Now that each of the micro:bit computers have been coded and connected, its time to test your work.<br>
+Extensions:
+* Are the results as you expected? How could you improve your system?
+* How could you expand the network to include more devices?
+* Could you use variables to control multiple radio groups?
+* Could you use an internet connection to control remote devices?
+
+**This is the end of this tutorial sequence.**<br>
+[Click here to return to the Home menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)<br>
  
 
 <script src="https://makecode.com/gh-pages-embed.js" > </script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{ { site.github.repository_name } } ");</script>
