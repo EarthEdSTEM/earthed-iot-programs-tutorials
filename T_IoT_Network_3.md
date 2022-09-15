@@ -8,7 +8,7 @@
 ## Introduction
 ### Introduction @unplugged
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner.png)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P1.png)
 About this section
 -----------------
 In the previous section, we created code to simulate an IoT gateway. In this section, we will code a sensor.<br>
@@ -18,7 +18,7 @@ Connect and pair the micro:bit you intend to use as the Gateway.<br>
 
 
 ## Section 1 - Code a sensor device  @showdialog
-https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P2.png
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P3.png)
 Code a sensor device
 ---------------------
 In this system, the Gateway 'listens' for signals from the other devices and then transmits signals accordingly. 
