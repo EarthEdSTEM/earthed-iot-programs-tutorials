@@ -1,4 +1,4 @@
-# T_IoT_Network
+# IoT Network Tutorial
 
 <!---------------------------------------------------------------  
 ---------Section 1 of IoT_Network_Tutorial----InComplete----------
@@ -6,7 +6,7 @@
 ### @activities true
 
 ## Introduction
-### Introduction @showdialog
+### Introduction
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 About IoT
@@ -18,24 +18,24 @@ In an IoT system such as a smart home, a series of devices interact with each ot
 ### Introduction @unplugged
 About IoT systems
 -----------------
-At the centre of an IoT system is the Gateway. This device connects IoT devices and sensors to cloud-based computing and data processing. An example of this that you might see in a home is an Alexa or Google Hub.<br>
-In the image above, a sensor collects data and sends it to the Gateway. From the Gateway, the data is sent to a server. This server is sometimes refered to as 'The Cloud', but really, it is just a big computer with lots of storage space. <br>
+At the centre of an IoT system is the Gateway. This device connects IoT devices and sensors to cloud-based computing and data processing. An example of this is an Alexa or Google Hub.<br>
+In the image below, a sensor collects data and sends it to the Gateway. From the Gateway, the data is sent to a server. This server is sometimes refered to as 'The Cloud', but really, it is just a big computer with lots of storage space. <br>
 The 'Back End' is the software that is used to process the data on the server. This is used to interact with the user interface, collect information, sort it and prepare responses which are sent back to the IoT devices on the system.
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT%20System.png)
 
-### IoT network tutorial goals
+### IoT network tutorial goals @unplugged
 Tutorial goals
 -----------------
 In this set of tutorials, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
 
-### What you will need
+### What you will need @unplugged
 What you will need
 -----------------
 This set of tutorials require a micro:bit computer, IoT:Bit sheild and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will need devices and connectors, depending on how you configure your system.<br>
 There are three parts to this tutorial. Each part will create a new file, which can be accessed later.
 
-## Section 1 - Code an actuator device  @showdialog
+## Section 1 - Code an actuator device
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Code an actuator device
 ---------------------
@@ -47,7 +47,7 @@ We will start this section by preparing an actuator device. For this example it 
 Connections
 -----------------
 Connect the components and then set the Radio Group. Each device that you want to communicate with, needs to be in the same Radio Group.
-1. Connect one micro:bit, one battery pack and one connector wire.
+1. Connect one micro:bit, one Sensor:Bit, one battery pack and one connector wire.
 2. Drag a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
 3. Set the **Radio Group to 1**. This number can be changed if you are getting interferance, so longer as other devices in your system are matched
 
