@@ -1,7 +1,7 @@
-# T_IoT_Network_3
+# IoT Network Tutorial Part 3
 
 <!---------------------------------------------------------------  
--------Section 2 of IoT_Network_Tutorial------InComplete--------
+-------Section 3 of IoT_Network_Tutorial------InComplete--------
 ----------------------------------------------------------------->
 ### @activities true
 
