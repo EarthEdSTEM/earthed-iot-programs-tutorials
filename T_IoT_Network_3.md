@@ -11,9 +11,9 @@
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 About this section
 -----------------
-In the previous section, we created code to simulate an IoT gateway device (in this case a fan). In this section, we will code a sensor.<br>
+In the previous section, we created code to simulate an IoT gateway. In this section, we will code a sensor.<br>
 If you haven't done so already, disconnect the previous micro:bit from your computer.<br>
-Connect and pair the micro:bit you intend to use as the Gateway.
+Connect and pair the micro:bit you intend to use as the Gateway.<br>
 **This is the third and final part of this tutorial sequence.**<br>
 
 
@@ -85,6 +85,7 @@ Download to the micro:bit
 1. **Download your work to your micro:bit**<br>
 
 ## Where to next?
+### Where to next? @unplugged
 Where to next?
 -----------------
 Now that each of the micro:bit computers have been coded and connected, its time to test your work.<br>

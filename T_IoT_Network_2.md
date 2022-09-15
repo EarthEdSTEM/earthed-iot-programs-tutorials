@@ -1,4 +1,4 @@
-# T_IoT_Network_2
+# IoT Network Tutorial Part 2
 
 <!---------------------------------------------------------------  
 -------Section 2 of IoT_Network_Tutorial------InComplete--------
@@ -16,7 +16,7 @@ If you haven't done so already, disconnect the previous micro:bit from your comp
 Connect and pair the micro:bit you intend to use as the Gateway.
 **This is part two of this tutorial sequence.**<br>
 
-## Section 1 - Code the gateway device  @showdialog
+## Section 1 - Code the gateway device
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
 Code the gateway device
 ---------------------
