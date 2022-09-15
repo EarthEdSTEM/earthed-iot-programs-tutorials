@@ -6,7 +6,7 @@
 ### @activities true
 
 ## Introduction
-### Introduction
+### Introduction @unplugged
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P1.png)
 About IoT
