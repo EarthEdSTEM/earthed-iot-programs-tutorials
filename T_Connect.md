@@ -16,7 +16,7 @@ In this tutorial, you will learn how to plug your micr:bit into your computer an
 Plug in your micro:bit to connect and download!
 -----------------------------------------------
 
-You will need a USB cable, micro:bit comuter and a PC computer to complte this task. Make sure you have removed the micro:bit computer from the IOT sheild.
+You will need a USB cable, micro:bit computer and a PC computer to complte this task. Make sure you have removed the micro:bit computer from the IOT sheild.
 
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/USB_Connection.png)
 

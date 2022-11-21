@@ -17,7 +17,7 @@ Booleans work by comparing, adding or subtracting two values. This is a more adv
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
+1x micro:bit, 1x GPIO sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
 ![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Parts_List.png)
 <br>
 
