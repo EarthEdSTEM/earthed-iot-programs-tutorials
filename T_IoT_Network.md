@@ -6,9 +6,9 @@
 ### @activities true
 
 ## Introduction
-### Introduction
+### Introduction @unplugged
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P1.png)
 About IoT
 -----------------
 In an IoT system such as a smart home, a series of devices interact with each other to automate everyday tasks. Often in such a system, a 'cloud' based server is used to process the data that is being received and to allow multiple devices to interact with each other.<br>
@@ -27,16 +27,13 @@ The 'Back End' is the software that is used to process the data on the server. T
 Tutorial goals
 -----------------
 In this set of tutorials, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
-
-### What you will need @unplugged
-What you will need
------------------
+<br>
 This set of tutorials require a micro:bit computer, IoT:Bit sheild and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will need devices and connectors, depending on how you configure your system.<br>
 There are three parts to this tutorial. Each part will create a new file, which can be accessed later.
 
 ## Section 1 - Code an actuator device
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/Fan_Banner.gif)
 Code an actuator device
 ---------------------
 Each section requires its own micro:bit computer and MakeCode file.

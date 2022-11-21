@@ -8,7 +8,7 @@
 ## Introduction
 ### Introduction @unplugged
 
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P1.png)
 About this section
 -----------------
 In the previous section, we created an IoT actuator device (in this case a fan). In this section, we will create code to simulate the Gateway. In an IoT system, the gateway would be connected to the internet.<br>
@@ -17,7 +17,7 @@ Connect and pair the micro:bit you intend to use as the Gateway.
 **This is part two of this tutorial sequence.**<br>
 
 ## Section 1 - Code the gateway device
-![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT_Network_Banner.gif)
+![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/T_IoT_Network_Banner_P2.png)
 Code the gateway device
 ---------------------
 The Gateway device transmits and receives data between the IoT control and actuator devices and the server or 'Cloud'. 
