@@ -1,8 +1,8 @@
 # micro:bit Connection Tutorial 
 
-<!---------------------------------------------------------------  
--------------------------TEST and CONNECT------Complete----------
------------------------------------------------------------------>
+<!---Test and Connect Tutorial------------------------------Complete----
+-----Connect a micro:bit to a pc, create simple code and download it----
+-----Easy--------------------------------------------------------------->
 
 ## Step 1 Introduction @showdialog
 
@@ -10,17 +10,20 @@
 Welcome
 ----------------------------------------------
 
-In this tutorial, you will learn how to plug your micro:bit into your computer and download code. You will also learn how to display shapes on the micro:bit LED array to demonstrate downloading code.
+In this tutorial, you will learn how to plug your micro:bit into your computer and download code. 
+You will also learn how to display graphics on the micro:bit LED array and to download code.
 
 ## Step 2 Plug and Connect @unplugged
 Plug in your micro:bit to connect and download!
 -----------------------------------------------
 
-You will need a USB cable, micro:bit computer and a PC computer to complete this task. Make sure you have removed the micro:bit computer from the sensor:bit sheild. A shield is an 'add-on' board that is used to give a computer like a micro:bit more functions.
+You will need a USB cable, micro:bit computer and a PC computer to complete this task. 
+Make sure you have removed the micro:bit computer from the GPIO sheild (the board with the long blue connector).
+A shield is an 'add-on' board that is used to give a computer like a micro:bit more functions.
 
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/USB_Connection.png)
 
-Connect the micro:bit to your your computer using the USB cable.
+Next, connect the micro:bit to your your computer using the USB cable.
 Need to know how to connect your micro:bit to your computer? **[Watch this video](https://www.youtube.com/watch?v=qSjMDG84bMY)**<br>
 
 ## Step 3 Simple Code @fullscreen
