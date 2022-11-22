@@ -72,11 +72,11 @@ input.onButtonPressed(Button.B, function () {
 ## Step 7 - Add the Fan Control Command
 Coding: Add the fan control command 'if' block
 -------------------------------------
-This section adds an 'if' command then uses an 'equals' block to ask if 'FanOn' is true (1). 
+This section adds the logic command 'if' to the workspace then uses an 'equals' block to ask if 'FanOn' is true (1). 
 The logic command 'Equals' has two sides where two values can be added and compared.<br>
-1. Place an ``||Basic: if||`` block inside the ``||Basic: forever||`` block.
+1. Go to the Logic menu and place an ``||Logic: if||`` block inside the ``||Basic: forever||`` block.
 2. Go to the Logic Menu and drag a ``||Logic: =||`` block in to the placeholder on the ``||Basic: forever||`` block.
-3. Place a ``||Variables: FanOn||`` variable into the first placeholder of the ``||Logic: =||`` block.
+3. Go to the Variables Menu and place a ``||Variables: FanOn||`` variable into the first placeholder of the ``||Logic: =||`` block.
 4. Change the value of the second placeholder in the ``||Logic: =||`` block to **1**.
 
 ```blocks
@@ -91,11 +91,14 @@ basic.forever(function () {
 ## Step 8 - Add the Fan Control Command
 Coding: Add the Fan Control Command
 -------------------------------------
-
+This section uses the 'Pins' command to control power to the output pins. 
+The fan should be connected to Pin 16 since this pin has the higher voltage output needed to spin the fan.
 1. Place a ``||Pins: digital write pin||`` block from the ``||Pins: pins||`` menu into the ``||Basic: forever||`` block. Set the Pin to **'16'**.
 2. Add a ``||Variables: FanOn||`` block into the value box to replace the '0'.<br>
 When FanOn is "1" (true), power is sent to Pin 16. When '0', no power is sent.<br>
-** Note: The Pin value on the ``||Pins: digital write pin||`` block can be changed, but needs to match the pin number that the fan is attached to. This is useful when more than one device or sensor is attached to the iot:bit sheild<br>
+** Note: The pin value on the ``||Pins: digital write pin||`` block can be changed, 
+but needs to match the pin number that the input/output device (such as the fan or a sensor) is attached to. 
+This is useful when more than one device or sensor is attached to the GPIO sheild<br>
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -125,10 +128,21 @@ To use the relay:
 4. Attach the high voltage fan circuit to the relay as shown in the diagram.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Relay_Connections.png)
 
-## Step 10 - Optional Relay
+## Step 10 - Test It
+Test It! Debug it!
+------------------
+Time to test your code. Download the code to the micro:bit and try it out. 
+One thing to note is that the voltage from the GPIO shield may not be enough to start the motor. 
+I you press Button A and nothing happens, try troubleshooting by tapping the fan with your finger to see if it starts.<br>
+Another way to fix this problem is to use a relay. **See the optional relay task in the next step.*<br>
+
+## Step 11 - Optional Relay
 Optional relay code
 ------------------
-The relay is activation code is structured in a similar way to the previous fan code. 
+A relay is a type of switch that uses an input circuit (often low voltage) to activate a second circuit.
+This can be seen in a car's headlights. The switch on the dash board doesn't need much power, but is connected to a headlight circuit which needs quite a lot of power.
+In the 
+The relay's activation code is structured in a similar way to the previous fan code. 
 A button press or other input is used to set the FanOn variable to true, which then sends a signal to a pin.
 This time, we are using pin 2 instead of pin 16.
 ```blocks
@@ -147,11 +161,11 @@ basic.forever(function () {
 })
 
 ```
-## Step 11 - Test It
+## Step 12 - Test It
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro:bit and try it out. Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+How could you integrate the other sensors into your code to trigger the fan in a different way?<br><br>
 
 
 Congratulations! You have finished this tutorial.
