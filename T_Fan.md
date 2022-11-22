@@ -116,19 +116,8 @@ basic.forever(function () {
 })
 
 ```
-## Step 9 - Optional Relay  @showdialog
-Optional relay
-------------------
-The voltage from the IoT:Bit is three volts and may not be enough to start the motor. Check by turning the fan. One way to solve this, is by using a relay.<br>
-A relay is an electronic switch. A low voltage signal triggers the switch which allows a higher voltage or current to pass through an attached circuit.
-To use the relay:
-1. Plug the micro:bit into the iot:bit sheild.
-2. Connect the wire to Pin 2 on the iot:bit sheild. 
-3. Attach the main wire from Pin 2 to the plug on the relay. 
-4. Attach the high voltage fan circuit to the relay as shown in the diagram.
-![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Relay_Connections.png)
 
-## Step 10 - Test It
+## Step 9 - Test It
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro:bit and try it out. 
@@ -136,12 +125,20 @@ One thing to note is that the voltage from the GPIO shield may not be enough to 
 I you press Button A and nothing happens, try troubleshooting by tapping the fan with your finger to see if it starts.<br>
 Another way to fix this problem is to use a relay. **See the optional relay task in the next step.*<br>
 
-## Step 11 - Optional Relay
-Optional relay code
+## Step 10 - Optional Relay  @showdialog
+Optional relay connections
 ------------------
 A relay is a type of switch that uses an input circuit (often low voltage) to activate a second circuit.
 This can be seen in a car's headlights. The switch on the dash board doesn't need much power, but is connected to a headlight circuit which needs quite a lot of power.
-In the 
+1. Plug the micro:bit into the iot:bit sheild.
+2. Connect the wire to Pin 2 on the iot:bit sheild. 
+3. Attach the main wire from Pin 2 to the plug on the relay. 
+4. Attach the high voltage fan circuit to the relay as shown in the diagram.
+![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Relay_Connections.png)
+
+## Step 11 - Optional Relay  @showdialog
+Optional relay code
+------------------
 The relay's activation code is structured in a similar way to the previous fan code. 
 A button press or other input is used to set the FanOn variable to true, which then sends a signal to a pin.
 This time, we are using pin 2 instead of pin 16.
