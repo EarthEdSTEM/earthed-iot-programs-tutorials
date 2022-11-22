@@ -1,6 +1,6 @@
 # Fan Tutorial
-<!---------------------------------------------------------------
------------------------ FAN TUTORIAL-----------Complete----------
+<!----Fan Tutorial-----------------------------------Complete----
+------Connect a fan and use IO pins to control it----------------
 ----------------------------------------------------------------->
 
 
@@ -10,37 +10,40 @@
 Control a Fan
 ---------------------------------
 
-In this tutorial we will use input commands and output pins, to activate a fan. The pins can be switched between active (having power) or not active (not having power) states. Pins can also receive signals from sensors.
+In this tutorial we will use input commands and the input/output pins, to make a fan motor spin. 
+The pins can be switched between active (having power) or not active (not having power) states. 
+Pins can also be connected to sensors to receive data signals.
 
 ## Step 2 - Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan <br><br>
-![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Parts_List.png)
+1x micro:bit, 1x GPIO sheild, 1x Connector Wire, 1x Fan <br><br>
+![Parts Needed: 1x GPIO sheild, 1x micro:bit, 1x Connector Wire, 1x Fan](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
 Connect the Parts Together
 --------------------------
-1. Plug the micro:bit into the iot:bit sheild.
-2. Connect the wire to Pin 2 on the iot:bit sheild.
+1. Plug the micro:bit into the GPIO sheild.
+2. Connect the wire to Pin 2 on the GPIO sheild.
 3. Connect the other end of the wire to the Fan.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Connections.png)
 
 ## Step 4 - Prepare to Code!
-Delete unused blocks if needed
+How to delete blocks
 ------------------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. If starting fresh, clear the previous blocks by dragging them to the menu bar where a 'bin' will appear.
-2. Place a ``||basic: forever||`` block and a ``||on start||`` onto the work space.
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
 ![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 - Set the Environment
 Coding: Creating Variables
 --------------------------
-Setting up the environment means getting things ready for the program. In this case, we will set up the variables we will use. Variables are containers that hold a value.
-1. Click ``|| Variables: make a variable...||`` to create a variable and call it **'FanOn'**.
+Setting up the environment means getting things ready for the program. 
+In this case, we will set up a variable called 'FanOn' and set its value to zero. Variables are containers that hold a value.
+1. Go to the Variables Menu and click ``|| Variables: make a variable...||`` to create the variable and call it **'FanOn'**.
 2. Go to ``|| Variables: Variables ||`` and place the ``|| Variables: Set FanOn to||`` block inside the ``|| Basic: on start ||`` block.
 3. Check that the value of the ``|| Variables: set FanOn to||`` is set to **'0'**. This will ensure that the fan doesn't run until it is switched on.
 ![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/IoT_Fan_Create_Variables.png)
@@ -48,10 +51,13 @@ Setting up the environment means getting things ready for the program. In this c
 ## Step 6 - Add some inputs
 Coding: Add Inputs to Trigger the Fan
 ---------------------------------------
-For this tutorial, we will use Buttons A and B on the Microbit as user inputs to trigger the fan. Pressing a button will store either a '1' for true or a '0' for false.
+For this tutorial, we will use Buttons 'A and 'B' on the micro:bit as user inputs to trigger the fan. 
+When a user presses the 'A' button, a '1' (true) value will be stored in the 'FanOn' variable.
+When a user presses the 'B' button, a '0' (false) value will be stored in the 'FanOn' variable.
+Using the variable in this way lets us create a switch.
 1. Place an ``||Input: if button A pressed||`` block from the ``||Input: Input||`` menu onto the workspace.
 2. Go to ``||Variables: Variables||`` and place a ``||Variables: set FanOn to||`` block in the ``||Input: if button A pressed||`` block.
-3. Replace the value '0' with a **'1'**. This sets the 'FanOn' variable to 'True' to turn the fan on.
+3. Replace the value **'0'** with a **'1'**. This sets the 'FanOn' variable to 'True' to turn the fan on.
 4. Repeat steps 1 - 3 to create an input for Button B, leaving the value as **'0'** for 'False'.
 
 ```blocks
@@ -66,9 +72,10 @@ input.onButtonPressed(Button.B, function () {
 ## Step 7 - Add the Fan Control Command
 Coding: Add the fan control command 'if' block
 -------------------------------------
-This section adds an 'if' command to ask if the FanOn is true. <br>
-1. Place a ``||Basic: if||`` block inside the ``||Basic: forever||`` block.
-2. Drag a ``||Logic: =||`` block in to the placeholder on the ``||Basic: forever||`` block.
+This section adds an 'if' command then uses an 'equals' block to ask if 'FanOn' is true (1). 
+The logic command 'Equals' has two sides where two values can be added and compared.<br>
+1. Place an ``||Basic: if||`` block inside the ``||Basic: forever||`` block.
+2. Go to the Logic Menu and drag a ``||Logic: =||`` block in to the placeholder on the ``||Basic: forever||`` block.
 3. Place a ``||Variables: FanOn||`` variable into the first placeholder of the ``||Logic: =||`` block.
 4. Change the value of the second placeholder in the ``||Logic: =||`` block to **1**.
 
@@ -85,8 +92,8 @@ basic.forever(function () {
 Coding: Add the Fan Control Command
 -------------------------------------
 
-3. Place a ``||Pins: digital write pin||`` block from the ``||Pins: pins||`` menu into the ``||Basic: forever||`` block. Set the Pin to **'16'**.
-4. Add a ``||Variables: FanOn||`` block into the value box to replace the '0'.<br>
+1. Place a ``||Pins: digital write pin||`` block from the ``||Pins: pins||`` menu into the ``||Basic: forever||`` block. Set the Pin to **'16'**.
+2. Add a ``||Variables: FanOn||`` block into the value box to replace the '0'.<br>
 When FanOn is "1" (true), power is sent to Pin 16. When '0', no power is sent.<br>
 ** Note: The Pin value on the ``||Pins: digital write pin||`` block can be changed, but needs to match the pin number that the fan is attached to. This is useful when more than one device or sensor is attached to the iot:bit sheild<br>
 

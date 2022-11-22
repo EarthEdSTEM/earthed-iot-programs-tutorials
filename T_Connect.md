@@ -18,7 +18,7 @@ Plug in your micro:bit to connect and download!
 -----------------------------------------------
 
 You will need a USB cable, micro:bit computer and a PC computer to complete this task. 
-Make sure you have removed the micro:bit computer from the GPIO sheild (the board with the long blue connector).
+Make sure you have removed the micro:bit computer from the GPIO shield (the white board with the long blue or grey connector).
 A shield is an 'add-on' board that is used to give a computer like a micro:bit more functions.
 
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/USB_Connection.png)
