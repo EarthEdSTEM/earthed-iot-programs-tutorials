@@ -11,7 +11,8 @@ Making an LED shine
 -----------------
 
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) to control a Light Emitting Diode (LED).
-Booleans work by comparing, adding or subtracting two values.
+Booleans work by comparing, adding or subtracting two values. We often use booleans in 'if' statements to decide what code to run.
+This process is called branching.
 
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
@@ -68,8 +69,7 @@ basic.forever(function () {
 ## Step 7 Add a Conditional Block
 Coding: Creating the boolean for 'On'
 -----------------------------------------------------
-This section asks the question: "Is the A button pressed and the LED switched **off**?" by using an ``||logic: and ||`` boolean. If both conditions are **True**
-then Pin 2 is set to '1' and powers up. To code it:
+This section asks the question: "Is the A button pressed **and** is the LED switched **off**?" (the ButtonAPress variable = '0') by using an ``||logic: and ||`` boolean. ``||logic: and ||`` booleans only are 'true' if all conditions (values being compared) are met. If 'true', then Pin 2 is set to '1' and is activated. To code it:
 1. Place a Boolean ``||logic: and ||`` block from the Logic Menu into the placeholder at the top of the ``||logic: if ||`` block.
 2. Place a Comparison ``||logic: equals ||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if ||`` block. Add a ``||variables: ButtonAPress ||`` with a value of 0.
 3. Place a ``||input: button A is pressed ||`` input into the ``|| logic: and ||``.
