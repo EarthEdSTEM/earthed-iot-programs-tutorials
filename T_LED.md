@@ -1,13 +1,13 @@
 # LED Tutorial
 
-<!---------------------------------------------------------------
-------------------------- LED TUTORIAL-------Complete------------
+<!----LED Tutorial-----------------------------------Complete----
+------Control an LED---------------------------------------------
 ----------------------------------------------------------------->
 
 ## Step 1 Coding Light Emitting Diodes (LED's) @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/LED_Banner.gif)
-Making a LED shine
+Making an LED shine
 -----------------
 
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) to control a Light Emitting Diode (LED).
@@ -17,43 +17,44 @@ Booleans work by comparing, adding or subtracting two values.
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) <br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector Wire, 1x LED (Red, Green or Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Parts_List.png)
+1x micro:bit, 1x GPIO shield, 1x Connector Wire, 1x LED (Red, Green or Yellow) <br><br>
+![Parts Needed: 1x micro:bit, 1x GPIO shield, 1x Connector Wire, 1x LED (Red, Green or Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
 Physical connections
 --------------------
-1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the LED to Pin 2 on the iot:bit sheild.
+1. Plug the micro:bit into the GPIO shield.
+2. Use the wire to connect the LED to Pin 2 on the GPIO shield.
 3. Connect the other end of the wire to the LED.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Connections.png)
 
 ## Step 4 Prepare to Code!
-Delete unused blocks
---------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. Clear the previous blocks by dragging them to the menu bar.
-2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
+How to delete blocks
+------------------------------
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: creating variables
 --------------------------
-Variables are containers that hold a value. For this task we will use the values 1 for 'true' and 0 for 'False'.
-We will start by creating a new variable, then add it to a button press and set it to 'false' by entering '0'.
-1. Click ``||Variables: Make a Variable...||`` to create a variable and call it ButtonAPress.
+Variables are containers that hold a value. For this task we will use the values 1 for 'true' and 0 for 'false'.
+We will start by creating a new variable, asigning it to a button press and then set it to 'false' by entering '0'.
+1. Click ``||Variables: Make a Variable...||`` to create a variable and call it **ButtonAPress**.
 2. Go to ``||Variables: Variables||`` and place the ``||Variables:Set ButtonAPress to||`` block inside the ``||Basic:on Start||`` block.
 3. Check that the value of the ``||Variables:Set ButtonAPress to||`` block is set to **'0'** (for false).
-Now, each time the program starts, the value of **'ButtonAPress'** will be '0'.
+Now, each time the program starts, the value of 'ButtonAPress' will be '0'.
 ![Making a variable](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Create_Variable.png)
 
 
 ## Step 6 Add a Conditional Block
 Coding: Add an 'if' block
 -----------------------
-The physical switch for turning on the LED will be the A button on the micro:bit. We will use the 'If...then' Logic Block to check if the A button is pressed and if the LED is off. 
-If both are true, then the LED is set to on.
+For this tutorial, there will be one physical switch for turning on the LED. This will be the 'A' button on the micro:bit. 
+We will use the 'If...then' Logic Block to check if the 'A' button is pressed and if the LED is switched off. 
+If both are true, then the LED is switched on.
 1. Place a ``||logic:if||`` block from the Logic menu into the ``||basic.forever||`` block.
 
 ```blocks
@@ -85,7 +86,9 @@ basic.forever(function () {
 ## Step 8 Add a Conditional Block
 Coding: If true....then switch on!
 ----------------------------------
-The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 2 then pause, allowing the user to remove their finger from Button A.
+The 'if' block checks if a condition is 'true' and executes a set of commands if it is. 
+The commands in this 'if' statement start by enabling Pin 2 if the Button is pressed A and the LED is off, 
+followed by the ``||control:waitMicros||`` command, which gives the user time to remove their finger from Button A.
 1. Add a ``||pins:digital write pin||`` block to the ``||logic:if||`` and set it to 'P2' and '1'.
 2. Add a ``||control:waitMicros||`` and set it to 240 milliseconds. this will allow time for the button to be released.
 3. Set the ButtonAPressed variable to 1 (True) to indicate that Button A has been pressed.
@@ -103,9 +106,9 @@ basic.forever(function () {
 ## Step 9 Program Continued
 Coding: Turning the LED off using an else condition
 ---------------------------------------------------
-This section asks the question: "Is the A button pressed and the LED switched **on**?" by using an ``||logic:and||`` boolean. If both conditions are True
-then the Pin 2 is set to '0' and powers down.
-1. Click the 'plus' symbol on the if block to add an 'else' condition.
+This section asks the question: "Is the A button pressed and the LED switched **on**?" by using an ``||logic:and||`` boolean. 
+If both conditions are True then the Pin 2 is set to '0' and powers down.
+1. Click the 'plus' symbol on the if block that was added in the last step to add an 'else' condition.
 2. Add blocks to turn off the LED. Try it yourself or check the Hint to find out how.
 
 ```blocks
