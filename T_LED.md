@@ -106,8 +106,8 @@ basic.forever(function () {
 ## Step 9 Program Continued
 Coding: Turning the LED off using an else condition
 ---------------------------------------------------
-This section asks the question: "Is the A button pressed and the LED switched **on**?" by using an ``||logic:and||`` boolean. 
-If both conditions are True then the Pin 2 is set to '0' and powers down.
+This section asks the question: "Is the A button pressed **and** is the LED switched **on**?" (the ButtonAPress variable = '1'). 
+This is done using another ``||logic:and||`` boolean. If both conditions are True then the Pin 2 is set to '0' and powers down.
 1. Click the 'plus' symbol on the if block that was added in the last step to add an 'else' condition.
 2. Add blocks to turn off the LED. Try it yourself or check the Hint to find out how.
 
@@ -132,7 +132,7 @@ basic.forever(function () {
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+How could you use a boolean operator in another way? What else could it be used for?<br><br>
 
 
 Congratulations! You have finished this tutorial.
