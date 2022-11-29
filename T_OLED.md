@@ -1,7 +1,7 @@
 # OLED Display Tutorial
 
-<!---------------------------------------------------------------
--------------------------T_OLED TUTORIAL-------------Complete----
+<!----T_OLED TUTORIAL--------------------------------Complete----
+------Display text strings on an OLED dissplay-------------------
 ----------------------------------------------------------------->
 
 ## Step 1 Using the OLED @showdialog
@@ -10,7 +10,7 @@
 Displaying information using the OLED Display
 -------------------------------------------
 
-In this tutorial, we will connect the OLED display to the GPIO shield using the I2C connector and display a simple 'string'.
+In this tutorial, we will connect the OLED display to the GPIO shield using the I2C connector and display a text message. In coding, a line of text is called a 'string'.
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
@@ -31,15 +31,15 @@ Physical connections
 How to delete blocks
 ------------------------------
 If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
-You can delete single blocks or groups of blocks, but make sure that you leave 
-a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
+You can delete single or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` and a ``||basic: on start||`` block on the work space.
 ![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Add the Extension @unplugged
 Coding: Add the Smart Science Extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
-<br>The blocks for this tutorial are already present in the menu, however, if you need an extension in your own project will have to do the following:
+<br>The blocks for this tutorial are already present in the menu, however, if you need to add an extension in your own project you will have to do the following:
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
@@ -57,9 +57,9 @@ OLED.init(128, 64)
 ## Step 7 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-In coding, a line of text is called a string. Strings don't have a numerical value even if they contain a numerical digit. Here we will display a string on the OLED using a 'Show String' command.
+In coding, a line of text is called a string. Strings can contain a numerical digits, but don't have a vlaue as a number. Here we will display a string on the OLED using a 'Show String' command.
 1. In the Forever block, go to the ``||OLED||`` menu and drag a ``||OLED:Show String||`` block into it. 
-2. Type 'Hello World' into the place holder.
+2. Type 'Hello World' into the place holder. This message can be changed at any time.
 
 ```blocks
 OLED.init(128, 64)
