@@ -16,25 +16,26 @@ In this tutorial, we will use the soil moisture sensor to trigger a display even
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Soil moisture sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Soil moisture sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Sensor_Parts_List.png)
+1x micro:bit, 1x GPIO shield, 1x Connector wire, 1x Soil moisture sensor<br><br>
+![Parts Needed: 1x micro:bit, 1x GPIO shield, 1x Connector wire, 1x Soil moisture sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect up!
 Physical connections
 --------------------
-1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the soil moisture sensor to Pin 1 on the iot:bit sheild. 
+1. Plug the micro:bit into the GPIO shield.
+2. Use the wire to connect the soil moisture sensor to Pin 1 on the GPIO shield. 
 3. Connect the other end of the wire to the soil moisture sensor.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/IoT_Soil_Moisture_Sensor_Connections.png)
 
 ## Step 4 Prepare to code!
-Delete unused blocks
---------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. Clear the previous blocks by dragging them to the menu bar.
-2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
+Using MakeCode
+------------------------------
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Add the extension @unplugged
 Coding: Add the Environment-and-Science-iot extension
