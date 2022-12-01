@@ -17,26 +17,27 @@ In this tutorial we will use a Passive Infra-Red (PIR) sensor as an input to tri
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x PIR Sensor, 1x LED <br><br>
-![Parts Needed: 1x iot:bit sheild, 1x micro:bit, 1x Connector Wire, 1x PIR Sensor, 1x LED](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_PIR_Sensor/IoT_PIR_Sensor_Parts_List.png)
+1x micro:bit, GPIO shield, 1x Connector Wire, 1x PIR Sensor, 1x LED <br><br>
+![Parts Needed: 1x GPIO shield, 1x micro:bit, 1x Connector Wire, 1x PIR Sensor, 1x LED](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_PIR_Sensor/IoT_PIR_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 - Connect Up!
 Connect the parts together
 --------------------------
-1. Plug the micro: bit into the iot:bit sheild.
-2. Connect the wire to Pin 1 on the iot:bit sheild.
+1. Plug the micro: bit into the GPIO shield.
+2. Connect the wire to Pin 1 on the GPIO shield.
 3. Connect the other end of the wire to the PIR sensor.
 4. Connect the LED to Pin 2 using the same method.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_PIR_Sensor/IoT_Soil_Moisture_Sensor_Connections.png)
 
 
 ## Step 4 - Prepare to Code!
-Delete unused blocks if needed
+Using MakeCode
 ------------------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. If starting fresh, clear the previous blocks by dragging them to the menu bar where a 'bin' will appear.
-2. Place a ``||basic: forever||`` block and a ``||on start||`` onto the work space.
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
 ![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 
@@ -91,11 +92,11 @@ basic.forever(function () {
 ## Step 8 Set the Response
 Coding: Set the response
 --------------------------
-Once the ``|| Logic: if ||`` is set then we need to state what happens. **If** motion is true, **then** turn on LED at Pin 2.
+Once the ``|| Logic: if ||`` is set then we need to state what happens - **If** motion is true, **then** turn on LED at Pin 2.
 1. Navigate to the ``|| SmartHome ||`` menu. 
 2. Select the ``|| SmartHome: Toggle LED to ||`` block and drag it into the ``|| Logic: if ||`` block.
 3. Ensure that the pin number is set to **Pin 2** and that the toggle is set to **on**.
-4. Add a ``|| Basic: pause ||`` below the LED block and set the duration to **1000**
+4. Add a ``|| Basic: pause ||`` below the LED block and set the duration to **1000**. When you have finished this tutorial, try adjusting this pause to see what happens.
 
 ```blocks
 if (smarthome.PIR(DigitalPin.P1)) {
@@ -111,7 +112,7 @@ basic.forever(function () {
 ## Step 9 What Else?
 Coding: Use the Else command
 --------------------------
-The **else** command states what happens if the condition is not true. **If** motion is not true, turn off LED at Pin 2.
+The **else** command states what happens if the condition is not true. If (**else) motion is not true, turn off LED at Pin 2.
 1. Navigate to the ``|| SmartHome ||`` menu. 
 2. Select the ``|| SmartHome: Toggle LED to ||`` block and drag it into the ``|| Logic: else ||`` section of the ``|| Logic: If ||`` block.
 3. Ensure that the ``|| SmartHome: Toggle LED to ||`` block is set to Pin 2 and that the toggle is set to **off**.
@@ -132,7 +133,7 @@ basic.forever(function () {
 Test It! Debug it!
 ------------------
 Time to test your code. Download the code to the micro:bit and try it out. Observe what happens and adjust the values as needed.<br>
-How could you integrate the other sensors into your code to trigger the servo in a different way?<br><br>
+In what ways could a PIR (Passive Infrared motion) detector be used in real life? How could you simulate that use?<br><br>
 
 
 Congratulations! You have finished this tutorial.
