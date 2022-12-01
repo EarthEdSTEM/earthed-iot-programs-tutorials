@@ -10,31 +10,32 @@
 Measuring distance using the Ultrasonic Sensor
 -------------------------------------------
 
-In this tutorial, we will use the Ultrasonic sensor to measure distance. The values for these readings are in centimetres - they will be stored in a variable and then displayed on the micro:bit computer. We will also add an extension to MakeCode, to help us access the Ultrasonic sensor readings.
+In this tutorial, we will use the Ultrasonic sensor to measure distance. Ultrasonic sensors send out sound signals then measure how long they take to bounce off an object and return back. The longer the time, the greater the distance. This is like the sonar on a submarine or how bats use echo location. The values for these readings are in centimetres - they will be stored in a variable and then displayed on the micro:bit computer. The Ultrasonic sensor requires an extension to access readings.
 
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts:<br>
-1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sensorbit:sonar Ultrasonic sensor<br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
+1x micro:bit, 1x GPIO shield, 1x Connector wire, 1x Sensorbit:sonar Ultrasonic sensor<br><br>
+![Parts Needed: 1x micro:bit, 1x GPIO shield, 1x Connector wire, 1x Sonar sensor](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
 Physical connections
 --------------------
-1. Plug the micro:bit into the iot:bit sheild.
-2. Use the wire to connect the Ultrasonic sensor to Pin 2 (or other pin) on the iot:bit sheild. 
+1. Plug the micro:bit into the GPIO shield.
+2. Use the wire to connect the Ultrasonic sensor to Pin 2 (or other pin) on the GPIO shield. 
 3. Connect the other end of the wire to the Ultrasonic sensor.
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Ultrasonic/IoT_Ultrasonic_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
-Delete unused blocks
---------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. Clear the previous blocks by dragging them to the menu bar.
-2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
+Using MakeCode
+------------------------------
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: Creating variables
@@ -76,7 +77,7 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 Coding: Add the Ultrasonic sensor readings
 -------------------------------------
 While the light sensor readings can be added directly to a string block, by placing the values in a variable, they can be used again in other sections of code.
-1. Place a ``||Variables:Set Distance to||`` block above the Distance string block you made previously.
+1. Place a ``||Variables:Set Distance to||`` inside the ``||basic:forever||`` block.
 2. Click on the ``||Octopus||`` menu.
 3. Drag the ``||ultrasonic distance in unit mm at pin 16||`` block and put it in the ``||Variables:Set Distance to ||`` placeholder. Ensure that the pin number matches the pin the sensor is connected to and units are centimetres.
 <br>**Note that the placeholder has rounded ends. Only blocks with rounded ends can fit.
@@ -90,9 +91,10 @@ basic.forever(function () {
 ## Step 9 Join Command
 Coding: Combining two string elements
 -------------------------------------
-1. Make sure that the first placeholder on the ``|| Text: Join ||`` block says "Light Level: ".
-2. Drag a ``|| Variables: Distance ||`` variable block and put it in the second placeholder on the ``|| Text: Join ||`` block.
-3. Click the '+' symbol on the ``|| Text: Join ||`` block and add the text **' cm'** to the new placeholder.
+1. Place a ``||basic:show string||`` block below the ``||Variables:Set Distance to ||`` block in the ``||basic:forever||`` block.
+2. Make sure that the first placeholder on the ``|| Text: Join ||`` block says "Light Level: ".
+3. Drag a ``|| Variables: Distance ||`` variable block and put it in the second placeholder on the ``|| Text: Join ||`` block.
+4. Click the '+' symbol on the ``|| Text: Join ||`` block and add the text **' cm'** to the new placeholder.
 
 ```blocks
 Distance = 0
@@ -106,7 +108,7 @@ basic.forever(function () {
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
+How could you integrate the ULtrasonic sensor into your code to trigger an event or model a real world situation?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
