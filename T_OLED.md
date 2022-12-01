@@ -58,7 +58,7 @@ OLED.init(128, 64)
 ## Step 7 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-In coding, a line of text is called a string. Strings can contain a numerical digits, but don't have a vlaue as a number. Here we will display a string on the OLED using a 'Show String' command.
+In coding, a line of text is called a string. Strings can contain a numerical digits, but don't have a value as a number. Here we will display a string on the OLED using a 'Show String' command.
 1. In the Forever block, go to the ``||OLED||`` menu and drag a ``||OLED:Show String||`` block into it. 
 2. Type 'Hello World' into the place holder. This message can be changed at any time.
 
