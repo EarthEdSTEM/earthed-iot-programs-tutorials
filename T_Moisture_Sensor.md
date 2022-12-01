@@ -99,8 +99,8 @@ basic.forever(function () {
 })
 ```
 
-## Step 9 Add a Nested If Statement
-Coding: Nesting another 'if' @showdialog
+## Step 9 Add a Nested If Statement @showdialog
+Coding: Nesting another 'if'
 -------------------------------------
 In programming it is important to create a structure. The term 'nested' refers to code that performs a specific function that is placed into other code. 
 This often appears like layers of code.
@@ -108,6 +108,7 @@ This often appears like layers of code.
 2. Create another boolean and add it to the new ``|| Logic: if ||`` as per the previous step, except make it a 'Larger than 80' value.
 3. Add an umbrella icon.<br>
 Now, if the value is over 80, an umbrella will be displayed.
+![Image](https://https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Soil_Moisture/nestedif1.jpg)
 
 ```blocks
 basic.forever(function () {
@@ -146,7 +147,7 @@ basic.forever(function () {
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro: bit and try it out. Observe what happens.<br>
-How could you integrate the sensors into your code to trigger the servo or LED lights or both?<br><br>
+How could you integrate this sensor to control an agricultural IoT device?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
