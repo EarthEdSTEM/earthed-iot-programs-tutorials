@@ -32,8 +32,9 @@ Physical connections
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_DHT11/IoT_DHT11_Connections.png)
 
 ## Step 4 Prepare to Code!
-How to delete blocks
+Using MakeCode
 ------------------------------
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
 If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
 You can delete single blocks or groups of blocks, but make sure that you leave 
 a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
@@ -62,7 +63,7 @@ basic.forever(function () {
 ## Step 6 Display Text
 Coding: Displaying text on the micro:bit
 ----------------------------------------
-The ``||Basic: show string||`` block displays text on the front LED array on the micro:bit computer. In coding, strings are lines of text that can be made on letters, numbers or symbols. 
+The ``||Basic: show string||`` block displays text on the front LED array of the micro:bit computer. In coding, strings are lines of text that can be made using letters, numbers or symbols. 
 1. Place a ``||Basic: show string||`` block inside the ``||basic:forever||`` block. Type the word 'Temperature: ' in the placeholder.
 2. Place a second ``||Basic: show string||`` block inside the ``||basic:forever||`` block. Type the word 'Humidity: ' in the placeholder.
 
@@ -77,7 +78,7 @@ basic.forever(function () {
 Coding: Add the Smart Science Extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
-<br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
+<br>The blocks for this tutorial are already present in the menu, however, if you need an extension in your own project will have to do the following:
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
@@ -94,7 +95,7 @@ This way the information can be used again in other sections of code.
 
 4. Place a new ``||Basic: show string||`` block underneath the 'Temperature' string block.
 5. Drag a ``||Variables:temperature||`` variable block and put it in the ``||Basic: show string||`` placeholder.
-6. Repeat to for 'Humidity'.
+6. Repeat these steps to create a 'Humidity' variable.
 
 ```blocks
 let Temperature = 0
@@ -113,7 +114,7 @@ basic.forever(function () {
 Test it! Debug it!
 ------------------
 Time to test your code. Download the code to the micro:bit and try it out. Observe what happens.<br>
-How could you integrate a sensor into your project to trigger a servo, LED light or both?<br><br>
+How could you integrate a sensor into your project to trigger a servo, LED light or other device?<br><br>
 
 Congratulations! You have finished this tutorial.
 ** [- Click here to return to the menu](https://sites.google.com/earthed.vic.edu.au/tutorial-iot/home)**<br>
