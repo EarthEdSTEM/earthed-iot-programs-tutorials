@@ -11,34 +11,34 @@ Using the Contact Sensor as an input
 ------------------------------------
 
 In this tutorial, we will use [variables](https://launchschool.com/books/ruby/read/variables) and [boolean operators](https://www.youtube.com/watch?v=KrR7D58Onzw) in conjunction with the light sensor, to control Light Emitting Diodes (LED).
-Booleans work by comparing, adding or subtracting two values. This is a more advanced tutorial.
-
+Booleans are special conditions that work by comparing, adding or subtracting two values. Booleans are often used in 'if' or 'while' statements. This is a more advanced tutorial.
 ## Step 2 Collect the parts. @unplugged
 Collect the parts
 -----------------
 For this tutorial, you will need these parts: <br>
-1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
-![Parts Needed: 1x micro:bit, 1x iot:bit sheild, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Parts_List.png)
+1x micro:bit, 1x GPIO shield, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) <br><br>
+![Parts Needed: 1x micro:bit, 1x GPIO shield, 4x Connector Wire, 1x Crash Sensor, 3x LED (Red, Green and Yellow) ](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Parts_List.png)
 <br>
 
 ## Step 3 Connect Up!
 Physical connections
 --------------------
-1. Plug the micro:bit into the iot:bit sheild.
-2. Use one wire to connect the Crash Sensor to Pin 2 on the iot:bit sheild.
-3. Use the other wires to connect the LEDs to Pins 3, 4 and 5 on the iot:bit sheild.
+1. Plug the micro:bit into the GPIO shield.
+2. Use one wire to connect the Crash Sensor to Pin 2 on the GPIO shield.
+3. Use the other wires to connect the LEDs to Pins 3, 4 and 5 on the GPIO shield sheild.
 4. Check that the wires are connected to the crash sensor and LEDs in the correct order.
 
 
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Crash_Sensor/IoT_Crash_Sensor_Connections.png)
 
 ## Step 4 Prepare to Code!
-Delete unused blocks
---------------------
-**Skip to Step 5 if you are leaving your old code on the desktop. Otherwise:**
-1. Clear the previous blocks by dragging them to the menu bar.
-2. Place a ``||basic:forever||`` block and a ``||basic: on start||`` onto the work space.
-![Deleting code](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
+Using MakeCode
+------------------------------
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
+If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
+You can delete single blocks or groups of blocks, but make sure that you leave 
+a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
+![Image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Delete_blocks.png)
 
 ## Step 5 Create Variables (Setting the Environment)
 Coding: creating variables
@@ -58,8 +58,7 @@ let CrashPressed = 0
 ## Step 6 Add a Conditional Block
 Coding: add an If block
 -----------------------
-The switch for turning on the LEDs will be the Crash Sensor. We will use the 'If...then' Logic Block to check if the Crash Sensor is pressed and if the LEDs are off. 
-
+The switch for controlling the LEDs will be the Crash Sensor. We will use the 'If...then' Logic Block to check if the Crash Sensor is pressed and if the LEDs are off. 
 1. Place a ``||logic:if||`` block from the Logic menu into the ``||basic.forever||`` block.
 
 ```blocks
@@ -85,9 +84,9 @@ An extension is code that is supplied by a developer to help 'extend' the functi
 ## Step 8 Add a Conditional Block
 Coding: Creating the Boolean for 'On'
 -----------------------------------------------------
-This section asks the question: "Is the Crash Sensor pressed and the LED switched **off**?" by using an ``||logic:and||`` boolean. If both conditions are True
+This section asks the question: "Is the Crash Sensor pressed and the LED switched **off**?" by using an ``||logic:and||`` boolean. If both conditions are 'true'
 then Pins 3,4 and 5 are set to '1' and power up. To code it:
-1. Place a Boolean ``||logic:and||`` block from the Logic Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
+1. Place a Boolean ``||logic:and||`` block from the ``||logic||`` Menu into the placeholder at the top of the ``||logic:if||`` block. <br>
 **Note: The ``||logic:and||`` block has two placeholders with rounded ends for adding variables and values.
 2. Place a ``||Smart Home: Crash sensor pressed||`` block into the first placeholder of the  ``||logic:and||`` block. 
 3. Place a Comparison ``||logic:equals||`` block from the Logic Menu into the second placeholder of ``||logic:and||`` block. 
@@ -106,7 +105,7 @@ basic.forever(function () {
 ## Step 9 Add a Conditional Block
 Coding: If True....Then switch on!
 ----------------------------------
-The 'if' block checks if a condition is 'true' and executes commands if it is. Here, we enable Pin 3 then pause before enabling pin 4.
+The 'if' block checks if a condition is 'true' and executes commands if it is. If the condition is 'true', we enable Pin 3 then pause before enabling pin 4.
 1. Set the CrashPressed variable to 1 (True) to indicate that Button A has been pressed.
 2. Add a ``||pins:digital write pin||`` block to the ``||logic:if||`` and set it to 'P3' and 1.
 3. Add a ``||control:waitMicros||`` and set it to 500 milliseconds. This creates a sequence for the LEDs.
