@@ -70,7 +70,7 @@ Coding: Add a boolean operator
 In the ``|| Logic: If ||`` block there is a place holder. This is used to ask a question by adding values and operators.
 1. Find the ``|| Logic: Less than ||`` block in the ``|| Logic: Logic ||`` menu and drag it into the ``|| Logic: if ||`` placeholder.
 2. Go to the ``|| Extensions:Octopus ||`` menu and find the ``|| Extensions:Value of soil moisture ||`` block. Drag it into the first placeholder in the ``|| Logic: Less than ||`` block.
-3. Enter the number '20' into the second placeholder.<br>
+3. Enter the number '20' into the second placeholder.<br><br>
 The code now asks "Is the soil moisture level less than 20?"
 
 ```blocks
@@ -100,8 +100,10 @@ basic.forever(function () {
 ```
 
 ## Step 9 Add a Nested If Statement
-Coding: Add another 'if'
+Coding: Nesting another 'if' @showdialog
 -------------------------------------
+In programming it is important to create a structure. The term 'nested' refers to code that performs a specific function that is placed into other code. 
+This often appears like layers of code.
 1. In the 'Else' section you created earlier, add an ``|| Logic: if ||`` block.
 2. Create another boolean and add it to the new ``|| Logic: if ||`` as per the previous step, except make it a 'Larger than 80' value.
 3. Add an umbrella icon.<br>
