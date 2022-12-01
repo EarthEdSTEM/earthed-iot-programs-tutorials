@@ -31,8 +31,9 @@ Physical connections
 ![image](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_LED/IoT_LED_Connections.png)
 
 ## Step 4 Prepare to Code!
-How to delete blocks
+Using MakeCode
 ------------------------------
+The software we are using is called MakeCode. In these tutorials, if you see coloured words such as ``||basic: forever||``, this is a commond that can be found and dragged out of a menu. THe corresponds with the menu colour. The commands click together like a jigsaw. 
 If you need to delete blocks, dragging them to the menu bar will cause a 'bin' to appear. 
 You can delete single blocks or groups of blocks, but make sure that you leave 
 a ``||basic: forever||`` block and a ``||basic: on start||`` block on the work space.
