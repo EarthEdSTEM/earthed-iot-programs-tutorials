@@ -28,23 +28,25 @@ Tutorial goals
 -----------------
 In this set of tutorials, we will aim to simulate an IoT System. We will use several micro:bit computers, communicating wirelessly, to trigger an event.
 <br>
-This set of tutorials require a micro:bit computer, IoT:Bit sheild and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
+This set of tutorials require a micro:bit computer, GPIO shield and battery pack for each device on the system, plus one more to simulate the Gateway. <br>
 In addition, you will need devices and connectors, depending on how you configure your system.<br>
-There are three parts to this tutorial. Each part will create a new file, which can be accessed later.
+There are three parts to this tutorial. Each part will create a new file, which can be accessed later or re-used to create other projects.
 
 ## Section 1 - Code an actuator device
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Fan/Fan_Banner.gif)
 Code an actuator device
 ---------------------
 Each section requires its own micro:bit computer and MakeCode file.
-We will start this section by preparing an actuator device. For this example it will be a fan, but other devices can be subsituted.<br>
+We will start this section by preparing an actuator device. 
+An actuator is a component of a machine that is responsible for moving and controlling a mechanism or system, 
+for example by opening a valve. In this tutorial, the actuator will be a fan, but other devices can be subsituted.<br>
  
 
 ### Step 1 Connections
 Connections
 -----------------
 Connect the components and then set the Radio Group. Each device that you want to communicate with, needs to be in the same Radio Group.
-1. Connect one micro:bit, one Sensor:Bit, one battery pack and one connector wire.
+1. Connect one micro:bit, one GPIO shield, one battery pack and one connector wire.
 2. Drag a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
 3. Set the **Radio Group to 1**. This number can be changed if you are getting interferance, so longer as other devices in your system are matched
 
@@ -56,7 +58,7 @@ Receive a string via radio
 -----------------
 For this tutorial, the trigger to turn on the fan will be received via the radio on the micro:bit.
 1. **Drag** a ``||radio: on radio received receivedString||`` block on to the desktop. This is a function block like Forever.
-2. Place a ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||``.
+2. Place an ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||``.
 3. Click the **'+'** to add an **'else'** section.
 
 ```blocks
@@ -73,7 +75,7 @@ radio.onReceivedString(function (receivedString) {
 Receive a string via radio cont.
 -----------------
 Next we will add a boolean to check the message received from the Gateway.
-1. **Drag** a ``||Logic: = ||`` boolean block into the placeholder on the ``||Logic:if||`` block.
+1. **Drag** an ``||Logic: = ||`` boolean block into the placeholder on the ``||Logic:if||`` block.
 2. **Drag** the ``||Radio:receivedString||`` from the place holder in the ``||radio: on radio received receivedString||`` block to the **first** placeholder in the ``||Logic: = ||`` boolean block.
 3. Type **"FanOn"** into the **second** placeholder.
 
@@ -91,7 +93,7 @@ radio.onReceivedString(function (receivedString) {
 Receive a String via Radio cont.
 -----------------
 1. Place a ``||pins:digital write pin||`` block into the **'if'** section of the ``||Logic:if||`` block.
-2. Set the Pin number. This will be the pin used to connect to the sensor/actuator device the IoT:Bit Sheild.
+2. Set the Pin number. This will be the pin used to connect to the sensor/actuator device the GPIO Shield.
 3. Place a ``||pins:digital write pin||`` block into the **'else'** section of the ``||Logic:if||`` block.
 4. Set the Pin number to match the **'if'** section.
 
