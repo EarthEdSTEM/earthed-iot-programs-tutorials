@@ -1,7 +1,7 @@
 # IoT Network Tutorial Part 3
 
-<!---------------------------------------------------------------  
--------Section 3 of IoT_Network_Tutorial------InComplete--------
+<!----Section 3 of IoT_Network_Tutorial-----------Complete--------  
+------Create the IoT sensor code----------------------------------
 ----------------------------------------------------------------->
 ### @activities true
 
@@ -29,7 +29,7 @@ The Gateway receives this signal, and signals the fan to turn on.
 Connections
 -----------------
 Connect the components and then set the Radio Group.
-1. Connect one micro:bit, one battery pack and one connector wire.
+1. Connect one micro:bit, one GPIO shield, one battery pack and one connector wire.
 2. Drag a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
 3. Set the **Radio Group to 1**. Check that each device is in the same radio group.
 ```blocks
@@ -38,7 +38,7 @@ radio.setGroup(1)
 ### Step 2 Set the trigger
 Set the trigger
 -----------------
-For this tutorial, the trigger to transmit the "OverTemp" signal is a conditional "if" statement that compares a value received from the temperature sensor.
+For this tutorial, the trigger to transmit the 'OverTemp' signal is a conditional "if" statement that compares a value received from the temperature sensor.
 1. **Drag** an ``||Logic:if||`` block into the ``||basic: forever||`` block.
 
 ```blocks
@@ -53,7 +53,7 @@ basic.forever(function () {
 Coding: Add the Smart Science extension
 ----------------------------------------
 An extension is code that is supplied by a developer to help 'extend' the functionality of the MakeCode app. Extensions add extra blocks to the block menu and only need to be added once. 
-<br>The blocks for this tutorial are already present in the menu, however you will normally have to do the following:
+<br>The blocks for this tutorial are already present in the menu, however you would normally have to do the following:
 1. Go to the ``||Extensions||`` menu and search for the Environment-and-Science-iot extension. 
 2. Click the Environment-and-Science-iot extension to load it. New menu items will now appear, giving access to the ``||Extensions:Octopus||`` sensors.
 ![Add the extension](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/General/Add_Extension.gif)
@@ -65,8 +65,8 @@ Sense and transmit
 1. Add a 'greater than' block from the Logic Menu to the 'if' conditional.
 2. Find the BME280 temperature in Celcius block in the Octopus menu and place it into the first placeholder.
 3. Insert the number 20 in to the second placeholder.
-4. Place a sendString block into the 'if' conditonal and change the string to **"OverTemp"**.
-5. Create a 'else' section and sendString **"underTemp"**
+4. Place a sendString block into the 'if' conditional and change the string to **'OverTemp'**.
+5. Create a 'else' section and sendString **'underTemp'**
 
 ```blocks
 radio.setGroup(1)
@@ -91,7 +91,7 @@ Where to next?
 Now that each of the micro:bit computers have been coded and connected, its time to test your work.<br>
 Extensions:
 * Are the results as you expected? How could you improve your system?
-* How could you expand the network to include more devices?
+* How could you expand the network to include more devices and triggers that interact with each other?
 * Could you use variables to control multiple radio groups?
 * Could you use an internet connection to control remote devices?
 
