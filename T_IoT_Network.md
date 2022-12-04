@@ -20,7 +20,7 @@ About IoT systems
 -----------------
 At the centre of an IoT system is the Gateway. This device connects IoT devices and sensors to cloud-based computing and data processing. An example of this is an Alexa or Google Hub.<br>
 In the image below, a sensor collects data and sends it to the Gateway. From the Gateway, the data is sent to a server. This server is sometimes refered to as 'The Cloud', but really, it is just a big computer with lots of storage space. <br>
-The 'Back End' is the software that is used to process the data on the server. This is used to interact with the user interface, collect information, sort it and prepare responses which are sent back to the IoT devices on the system.
+The 'Back End' is the software that is used to process the data on the server. This is used to interact with the user interface (what users see), collect information, sort it and prepare responses which are sent back to the IoT devices on the system.
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_IoT_Network/IoT%20System.png)
 
 ### IoT network tutorial goals @unplugged
