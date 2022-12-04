@@ -1,7 +1,7 @@
 # IoT Network Tutorial Part 2
 
-<!---------------------------------------------------------------  
--------Section 2 of IoT_Network_Tutorial------InComplete--------
+<!----Section 2 of IoT_Network_Tutorial--------------Complete----  
+-----------------------------------------------------------------
 ----------------------------------------------------------------->
 ### @activities true
 
@@ -36,9 +36,11 @@ radio.setGroup(1)
 ### Step 2 Receive a string via radio
 Receive a string via radio
 -----------------
-For this tutorial, the Gateway will listen for an "OverTemp" message from a sensor, transmitting a trigger to an actuator (fan) when it does. Add the receiver and then an **if** conditional statement.
+For this tutorial, the Gateway will listen for an 'OverTemp' string message sent from a sensor, 
+which when true, will lead to trigger signal being sent to an actuator (fan). 
+Add the receiver and then an **if** conditional statement.
 1. **Drag** a ``||radio: on radio received receivedString||`` block on to the desktop.
-2. Place an ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||`` block.
+2. **Place** an ``||Logic:if||`` block inside the ``||radio: on radio received receivedString||`` block.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -51,10 +53,12 @@ radio.onReceivedString(function (receivedString) {
 ### Step 3 Receive a string via radio cont.
 Receive a string via radio cont.
 -----------------
-Next we will add a boolean to check the if string received from the sensor device equals "OverTemp". This string text can say anything, but should relate to the sensor you are using - in this case, a thermometer.<br>
+Next we will add a boolean to check the if string received from the sensor device equals the value 'OverTemp'. 
+This string text can say anything, but should relate to the sensor you are using - in this case, a thermometer.<br>
 1. **Drag** an ``||Logic: = ||`` boolean block into the placeholder on the ``||Logic:if||`` block.
 2. **Drag** the ``||Radio:receivedString||`` from the place holder in the ``||radio: on radio received receivedString||`` block to the **first** placeholder in the ``||Logic: = ||`` boolean block.
-3. Type **"OverTemp"** into the **second** placeholder.
+3. Type **'OverTemp'** into the **second** placeholder.
+
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -67,9 +71,9 @@ radio.onReceivedString(function (receivedString) {
 ### Step 4 Transmit a string if condition is true.
 Transmit a string if condition is true
 -----------------
-If "OverTemp" string is received from the temperature sensor ("OverTemp" is true), then send "FanOn" to the fan actuator. <br>
+If 'OverTemp' string is received from the temperature sensor ("OverTemp" is true), then send a "FanOn" string to the fan actuator. <br>
 1. **Place** a ``||Radio:radio send string||`` into the ``||Logic:if||`` block.
-2. Type **"FanOn"** into the placeholder.
+2. Type **'FanOn'** into the placeholder.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -83,10 +87,10 @@ radio.setGroup(1)
 ### Step 5 Transmit a string via radio
 Transmit a string via radio
 -----------------
-If the "OverTemp" condition is not true, then send a "FanOff" to the fan actuator.
+If the 'OverTemp' condition is not true (the string contains a different value), then send a 'FanOff' string to the fan actuator.
 1. Click the **+** to add an else command.
 2. **Place** a ``||Radio:radio send string||`` into the ``||Logic:else||`` block.
-2. Type **"FanOff"** into the placeholder.
+2. Type **'FanOff'** into the placeholder.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
