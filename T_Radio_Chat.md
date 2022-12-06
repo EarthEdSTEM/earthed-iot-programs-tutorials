@@ -1,15 +1,17 @@
 # Radio Chat Tutorial
 
-<!---------------------------------------------------------------
-------------------------- Radio Chat TUTORIAL-----Complete-----
+<!----Radio Chat TUTORIAL---------------------------Complete-----
+-----------------------------------------------------------------
 ----------------------------------------------------------------->
 
 ## Step 1 About the Radio @showdialog
 
 ![](https://raw.githubusercontent.com/EarthEdSTEM/earthed-iot-programs-tutorials/master/Images/T_Radio_Chat/Radio_Chat_Banner.gif)
 -------------------------------------------
-One of the fundamental ideas behind IoT, is the connection between multiple computers. Micro:bits can communicate using short range radio signals. The Radio menu contains commands for sending and receiving data.<br>
-In this tutorial we will connect two micro:bit computers and send 'Chat' messages between them. For IoT projects, the goal would be to share data.
+One of the fundamental ideas behind IoT, is the connection between multiple computers. Micro:bit computers can 
+communicate using short range radio signals. The Radio menu contains commands for sending and receiving data.<br>
+In this tutorial we will connect two micro:bit computers and send 'Chat' messages between them. 
+For IoT projects, the goal would be to share data.
  
 
 ## Step 2 Collect the parts.
@@ -32,7 +34,8 @@ radio.setGroup(1)
 Coding: Create a send button
 --------------------------
 1. Use ``||Input: on Button A pressed||`` block to send a message. Here it will be a smiley face. 
-2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. This command sends text over the micro:bit radio.
+2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. 
+This command sends a text string over the micro:bit's radio.
 3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
 4. Place a 'smiley face' into each place holder.
 
@@ -48,7 +51,8 @@ Coding: Receive a message
 --------------------------
 1. Add a ``||radio: on radio received||`` block to the work space.
 2. Add a ``||Basic: Show string||`` block **inside** the ``||radio: on radio received||`` block.
-3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder and **place** it into the placeholder on the ``||Basic: Show string||`` block.
+3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder 
+and **place** it into the placeholder on the ``||Basic: Show string||`` block.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -58,8 +62,8 @@ radio.onReceivedString(function (receivedString) {
 ## Step 6 - Extending further
 Extending further
 --------------------------
-In this example we used a ``||Input: on Button A pressed||`` block as the trigger input for the radio event. 
-A trigger could be another input could be used. 
+In this example we used an ``||Input: on Button A pressed||`` block as the trigger to start the radio event. 
+A trigger could be creaed using another input or a sensor. 
 Eg. A computer senses a high body temperature and tells a security computer to make an automated announcement. 
 The security computer then tells a traffic flow computer to shut transit gates.<br>
 What ideas can you come up with? You can exit here or move on to more advanced ideas.<br>
@@ -68,20 +72,21 @@ What ideas can you come up with? You can exit here or move on to more advanced i
 Extending further
 --------------------------
 In this section, we will use one micro:bit to switch on a fan attached to a second micro:bit.
-You will need a partner and two computers,  two micro:bit computers, an IoTBit board, a fan and a connecting wire.
+You will need a partner and two computers,  two micro:bit computers, an GPIO shield, a fan and a connecting wire.
 
 ## Step 8 - Extending further
 Connections
 --------------------------
 Connect one micro:bit to a computer via USB.<br>
-Connect the other micro:bit to a computer via USB, place it into the IOTBit board, then attach the fan to Pin 16. 
+Connect the other micro:bit to a computer via USB, place it into the GPIO shield, then attach the fan to Pin 16. 
 
 ## Step 9 - Create the code for Computer One
 Coding: Set the radio group
 --------------------------
 **On computer 1**<br>
 Place a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
-The number in the place holder needs to be the same as the one on your partner's computer.<br>
+The number in the place holder needs to be the same as the one on your partner's computer. 
+It is similar to switching to a particular station on a Walkie-Talkie.<br>
 **Repeat this step on Computer Two**
 ```blocks
 radio.setGroup(1)
@@ -92,7 +97,8 @@ Coding: Set micro:bit One to send
 --------------------------
 **On computer 1**<br>
 1. Use ``||Input: on Button A pressed||`` block to send a message. Here, pressing Button A will send an 'On' command. 
-2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. This command sends text over the micro:bit radio.
+2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. 
+This command sends text over the micro:bit radio.
 3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
 4. Type the word **'On'** into each place holder.
 
@@ -138,7 +144,7 @@ Coding: Set micro:bit One to send continued
 --------------------------
 **On computer 2**<br>
 1. Check that the radio group is the same as your partner's.
-2. Check which Pin the fan is connected to on the IoTBit board.
+2. Check which Pin the fan is connected to on the GPIO shield.
 3. Place an  ``||Logic: If||`` block into the ``||Basic: Forever||`` block.
 
 ## Step 14 - Create the code for Computer One
@@ -147,7 +153,8 @@ Coding: Receive a message
 **On computer 2**<br>
 1. Add a ``||radio: on radio received||`` block to the work space.
 2. Add a ``||Basic: Show string||`` block **inside** the ``||radio: on radio received||`` block.
-3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder and **place** it into the placeholder on the ``||Basic: Show string||`` block.
+3. **Drag** the ``||radio: receivedString block||`` from the ``||radio: on radio received||`` block place holder 
+and **place** it into the placeholder on the ``||Basic: Show string||`` block.
 
 ```blocks
 radio.onReceivedString(function (receivedString) {
