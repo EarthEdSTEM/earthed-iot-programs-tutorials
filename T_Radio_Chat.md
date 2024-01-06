@@ -17,13 +17,15 @@ For IoT projects, the goal would be to share data.
 ## Step 2 Collect the parts.
 Collect the parts
 -----------------
-For this tutorial, you will need 2x micro:bit computers, connected to two computers via USB - one for you and one for a partner.<br>
-Both you and your partner will need to create the following code.<br>
+For this tutorial, you will need 2x micro:bit computers, connected to two computers via USB - one for you and one for your partner.<br>
+Both you and your partner will need to create the code the following pages. Click 'Next'.<br>
 
 ## Step 3 - Create the code
 Coding: Set the radio group
 --------------------------
-This code begins by setting the radio group. Any micro:bit on this radio group can communicate if they have the right coding, allowing for larger groups.<br>
+This code begins by setting the radio group. Any micro:bit on this radio group can communicate if they have the right coding. When commanded to, 
+the micro:bit sends a packet of data using wifi. A data packet is a unit of data made into a single package that travels along a given network 
+path. The radio group number is placed at the front (first bit) of the packet, so that other micro:bits know that the data packet is for them.<br>
 Place a ``||radio: Set Radio Group||`` block into the ``||Basic: on start||`` block.<br>
 The number in the place holder needs to be the same as the one on your partner's computer.
 
@@ -35,7 +37,7 @@ Coding: Create a send button
 --------------------------
 1. Use ``||Input: on Button A pressed||`` block to send a message. Here it will be a smiley face. 
 2. Select a ``||radio: Send string||`` block and add it inside the ``||Input: on Button A pressed||`` block. 
-This command sends a text string over the micro:bit's radio.
+This command sends a string (text) over the micro:bit's radio, each .
 3. Add a ``||Basic: Show string||`` block to show that the text has been sent.
 4. Place a 'smiley face' into each place holder.
 
